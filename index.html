@@ -1,0 +1,369 @@
+<html>
+<head>
+<style>
+	body{
+		font-family: "Open Sans", verdana, arial, sans-serif;
+	}
+	#whatToPlot{
+		margin-bottom: 1em;
+	}
+	#options{
+		margin-left: 2em;
+	}
+	.regionCheck{
+	    display: inline-table;
+	    width: 20em;
+	    background: whitesmoke;
+	    margin: 0.2em;
+	    padding: 0.5em;
+	}
+	.sectionTitle{
+		font-size: 1.2em;
+	}
+	.checkAll{
+		margin-top: 0.2em;
+		margin-bottom: 0.6em;
+	}
+	div.regionCheck.China>div.CheckAll>input,
+	div.regionCheck.China>div.CheckAll>label,
+	div.regionCheck.Internationalconveyance>div.CheckAll>input,
+	div.regionCheck.Internationalconveyance>div.CheckAll>label{
+		display: none;
+	}
+	.regionCheck.topTen>div.countryCheckGroup:nth-child(n+13){
+		display: none;
+	}
+	div.listInfo{
+		margin-top: 0.5em;
+		margin-bottom: 1em;
+	}
+	div.showCheckboxes{
+		display:block;
+	}
+	div.hideCheckboxes{
+		display:none;
+	}
+	div.toggleAll{
+		margin-bottom: 0.3em;
+	}
+	div.seeAll{
+		color: #3276de;
+	    margin-top: 0.5em;
+	    margin-left: 2em;
+	}
+</style>
+</head>
+<body>
+	<div id='graphContainer'>
+		<!-- Plotly chart will be drawn inside this DIV -->
+	</div>
+	<div id="options">
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+	<script>
+		var globalJson = {}
+		var checkboxInfo = {}
+		var latestCasesArray = [];
+		var latestDeathsArray = [];
+		var latestArray = [];
+		function sortObject(obj,sortValue) {
+		    var arr = [];
+		    for (var prop in obj) {
+		        if (obj.hasOwnProperty(prop)) {
+		            arr.push({
+		                'key': prop,
+		                'value': obj[prop][sortValue]
+		            });
+		        }
+		    }
+		    arr.sort(function(a, b) { return b.value - a.value; });
+		    //arr.sort(function(a, b) { a.value.toLowerCase().localeCompare(b.value.toLowerCase()); }); //use this to sort as strings
+		    return arr; // returns array
+		}
+
+		$.getJSON( "covid-19-data.json" )
+		  .done(function( json ) {
+		  	processJson(json)
+		  })
+		  .fail(function( jqxhr, textStatus, error ) {
+		    var err = textStatus + ", " + error;
+		    console.log( "Request Failed: " + err );
+		});
+
+		function drawGraphLines(){
+			var graphData = [];
+				//  graphData should look like an array of variables each looking like:
+				//     var trace1 = {
+			  	//	      x: [1, 2, 3, 4],
+			  	//	      y: [10, 15, 13, 17],
+			  	//	      type: 'scatter',
+	  			//		  name: 'plotName'
+				//     };
+			noOfDates = globalJson.dates.length -1;
+			for(i=0; i<Object.keys(checkboxInfo).length; i++){
+				thisName = Object.keys(checkboxInfo)[i]
+				if(checkboxInfo[thisName]["visible"]){
+					function drawLine(lineType){
+						suffix = ""
+						if(lineType=="deaths"){
+							suffix = " (deaths)"
+						}
+						var trace1 = {
+									  x: [],
+									  y: [],
+									  type: 'scatter',
+									  name: thisName + suffix
+									};
+						for(j=0; j<globalJson.dates.length; j++){
+							//save the current date into x: []
+							thisDateKey = Object.keys(globalJson.dates[j])[0];
+							trace1.x[j] = thisDateKey;
+							//save the value for this country into y: []
+							if(Object.keys(globalJson.dates[j][thisDateKey]).length>1){
+								trace1.y[j] = globalJson.dates[j][thisDateKey][lineType][thisName];
+							}else if(typeof thisValue == 'undefined'){
+								trace1.y[j] = 0;
+							}else{
+								thisValue = globalJson.dates[j][thisDateKey][lineType][thisName];
+							}
+						}
+						graphData[graphData.length] = trace1;
+					}
+					if($("#casesCheckbox")[0].checked){
+						drawLine("cases");
+					}
+					if($("#deathsCheckbox")[0].checked){
+						drawLine("deaths");
+					}					
+				}
+			}
+			Plotly.newPlot('graphContainer', graphData);
+		}
+
+		function processJson(json_obj){
+			globalJson = json_obj;
+			optionsHtml = "<div>\
+			<div id='whatToPlot'>\
+				graph:\
+				<input type='checkbox' id='casesCheckbox' class='deathcase' name='toggle' value='cases' checked>\
+				<label for='cases'>cases</label>\
+				<input type='checkbox' id='deathsCheckbox' class='deathcase' name='toggle' value='deaths'>\
+				<label for='deaths'>deaths</label>\
+			</div>\
+		<div>Sort country checkboxes by:\
+			<input type='radio' id='radioByRegion' name='options' value='byRegion' checked>\
+			<label for='byRegion'>number of cases in each region</label>\
+			<input type='radio' id='radioByCases' name='options' value='byCases'>\
+			<label for='byCases'>number of cases globally</label> \
+			<input type='radio' id='radioByDeaths' name='options' value='byDeaths'>\
+			<label for='byDeaths'>number of deaths globally</label>\
+			<div class='listInfo'>Countries are listed with the numbers of: (cases, deaths)</div>";
+
+			// create region groups for checkboxes
+			regionCheckboxes = "<div id='byRegionCheckboxPane' class='showCheckboxes'>";
+			for(r=0; r<globalJson.regions.length;r++){
+				thisRegionKey = globalJson.regions[r].regionName
+				thisRegionClass = globalJson.regions[r].class
+				//if thisRegionKey does not end in " Territories"
+				if(!(/.+\sTerritories$/.test(thisRegionKey))){
+					if(thisRegionClass == "China"){
+						checkDefault = ""
+					}else{
+						checkDefault = "checked"
+					}
+					regionCheckboxes += "<div class='regionCheck topTen "+thisRegionClass+"'>\
+											<div class='sectionTitle'>"+thisRegionKey+"</div>\
+											<div class='checkAll'>\
+												<input type='checkbox' class='regionCheckInput code-"+thisRegionClass+"' name='code-"+thisRegionClass+"' "+checkDefault+">\
+				 					 			<label class='regionCheckLabel' for='code-"+thisRegionClass+"' labelTitle='"+thisRegionKey+"'>uncheck/check all</label>\
+			 					 			</div>"
+		 			for(rc=0; rc<globalJson.regions[r].countries.length;rc++){
+		 				thisCountryClass = globalJson.regions[r].countries[rc].class
+		 				thisCountryName = globalJson.regions[r].countries[rc].country
+						cases = globalJson["dates"][globalJson["dates"].length-1][Object.keys(globalJson["dates"][globalJson["dates"].length-1])[0]]["cases"][thisCountryName]
+						deaths = globalJson["dates"][globalJson["dates"].length-1][Object.keys(globalJson["dates"][globalJson["dates"].length-1])[0]]["deaths"][thisCountryName]
+						if(typeof deaths == 'undefined'){
+							deaths = 0;
+						}
+						regionCheckboxes += "<div class='countryCheckGroup'>\
+												<input type='checkbox' class='countryCheck' "+checkDefault+">\
+									 			<label class='countryCheckLabel' for='code-"+thisCountryClass+"' labelTitle='"+thisCountryName+"'>"+thisCountryName+" ("+cases+", "+deaths+")</label>\
+									 		</div>";
+						if(thisCountryName == "China"){
+							checkboxInfo["China"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths}
+						}else{
+							checkboxInfo[thisCountryName] = {"visible":true, "latestCases":cases, "latestDeaths":deaths}
+						}
+			 		}
+			 		if(globalJson.regions[r].countries.length>10){
+			 			regionCheckboxes += "<div class='seeAll'><span>[see all]</span></div>";
+					}			 		
+			 		regionCheckboxes += "</div>";
+				}
+			}
+			regionCheckboxes += "</div>";
+			optionsHtml += regionCheckboxes;
+
+			latestCasesArray = sortObject(checkboxInfo,"latestCases")
+			latestDeathsArray = sortObject(checkboxInfo,"latestDeaths")
+			latestCasesHtml = "<div class='toggleAll'>\
+									<input id='byCasesToggle' type='checkbox'>\
+									<label for='casesToggle'>toggle all</label>\
+							   </div>"
+			latestDeathsHtml = "<div class='toggleAll'>\
+									<input id='byCasesToggle' type='checkbox'>\
+									<label for='deathsToggle'>toggle all</label>\
+							   </div>"
+			for(lateNo=0;lateNo<latestCasesArray.length;lateNo++){
+					  latestCasesHtml += "<div>\
+										<input type='checkbox' class='countryCheck'>\
+					 					<label class='countryCheckLabel' labelTitle='"+latestCasesArray[lateNo].key+"'>"+latestCasesArray[lateNo].key+" ("+latestCasesArray[lateNo].value+", "+latestDeathsArray[lateNo].value+")</label>\
+					 			    </div>";
+				latestDeathsHtml += "<div>\
+										<input type='checkbox' class='countryCheck'>\
+					 					<label class='countryCheckLabel' labelTitle='"+latestDeathsArray[lateNo].key+"'>"+latestDeathsArray[lateNo].key+" ("+latestCasesArray[lateNo].value+", "+latestDeathsArray[lateNo].value+")</label>\
+					 		  		</div>";
+			}
+			optionsHtml += "<div id='byCasesCheckboxPane' class='latestCasesOptions hideCheckboxes'>Countries sorted by total cases"+latestCasesHtml+"</div>\
+							<div id='byDeathsCheckboxPane' class='latestDeathsOptions hideCheckboxes'>Countries sorted by total deaths"+latestDeathsHtml+"</div></div>"
+
+
+			$("div#options").html(optionsHtml)
+			drawGraphLines();
+			//once HTML is written, add click events
+			$(document).on('click', "label.regionCheckLabel", function(){
+				$(this).siblings("input").click();
+			})
+			.on('click', "label.countryCheckLabel", function(){
+				$(this).siblings("input").click();
+			})
+			.on('click', "input.regionCheckInput", function(){
+				if($(this).is(":checked")){
+					// set the checkboxInfo for each of these boxes
+					$(this).parent().siblings("div.countryCheckGroup").children("label")
+						.each(function(){
+							checkboxInfo[$(this).attr("labelTitle")]["visible"] = true;
+						});
+					// set the checkboxInfo for each of these boxes
+					$(this).parent().siblings("div.countryCheckGroup").children("input")
+						.each(function(){ 
+							this.checked = true;
+						})
+				}else{
+					$(this).parent().siblings("div.countryCheckGroup").children("label")
+						.each(function(){
+							checkboxInfo[$(this).attr("labelTitle")]["visible"] = false;
+						});
+					$(this).parent().siblings("div.countryCheckGroup").children("input")
+						.each(function(){ 
+							this.checked = false; 
+						})
+				}
+				drawGraphLines();
+			})
+			.on('click', "#byCasesToggle", function(){
+				if($(this).is(":checked")){
+					$("div#byCasesCheckboxPane > div > label.countryCheckLabel")
+						.each(function(){
+							checkboxInfo[$(this).attr("labelTitle")]["visible"] = true;
+						});
+					$("div#byCasesCheckboxPane > div > input.countryCheck")
+						.each(function(){
+							this.checked = true;
+						});
+				}else{
+					$("div#byCasesCheckboxPane > div > label.countryCheckLabel")
+						.each(function(){
+							checkboxInfo[$(this).attr("labelTitle")]["visible"] = false;
+						});
+					$("div#byCasesCheckboxPane > div > input.countryCheck")
+						.each(function(){
+							this.checked = false;
+						});
+				}
+				drawGraphLines();
+			})
+			.on('click', "#byDeathsToggle", function(){
+				if($(this).is(":checked")){
+					$("div#byDeathsCheckboxPane > div > label.countryCheckLabel")
+						.each(function(){
+							checkboxInfo[$(this).attr("labelTitle")]["visible"] = true;
+						});
+					$("div#byDeathsCheckboxPane > div > input.countryCheck")
+						.each(function(){
+							this.checked = true;
+						});
+				}else{
+					$("div#byDeathsCheckboxPane > div > label.countryCheckLabel")
+						.each(function(){
+							checkboxInfo[$(this).attr("labelTitle")]["visible"] = false;
+						});
+					$("div#byDeathsCheckboxPane > div > input.countryCheck")
+						.each(function(){
+							this.checked = false;
+						});
+				}
+				drawGraphLines();
+			})
+			.on('click', "input.countryCheck", function(){
+				if($(this).is(":checked")){
+					checkboxInfo[$(this).siblings("label").attr("labelTitle")]["visible"] = true;
+				}else{
+					checkboxInfo[$(this).siblings("label").attr("labelTitle")]["visible"] = false;
+				}
+				drawGraphLines();
+			})
+			.on('click', ".seeAll", function(){
+				if($(this).parent().hasClass("topTen")){
+					$(this).parent().removeClass("topTen");
+					$(this).children("span").html('[back to top 10]');
+				}else{
+					$(this).parent().addClass("topTen");
+					$(this).children("span").html('[see all]');
+				}
+			})
+			.on('click', "#radioByRegion", function(){
+				// hide other panes, show this one
+				$(".showCheckboxes").removeClass("showCheckboxes").addClass("hideCheckboxes");
+				$("#byRegionCheckboxPane").removeClass("hideCheckboxes").addClass("showCheckboxes");
+				$("#byRegionCheckboxPane>div.regionCheck>div.countryCheckGroup>label.countryCheckLabel").each(function(){
+				    if(checkboxInfo[$(this).attr("labeltitle")]["visible"]){
+				    	$(this).siblings("input")[0].checked = true;
+				    }else{
+				    	$(this).siblings("input")[0].checked = false;
+				    }
+				})
+			})
+			.on('click', "#radioByCases", function(){
+				// hide other panes, show this one
+				$(".showCheckboxes").removeClass("showCheckboxes").addClass("hideCheckboxes");
+				$("#byCasesCheckboxPane").removeClass("hideCheckboxes").addClass("showCheckboxes");
+				//check/upcheck checkboxes to bring them up to date with values in checkboxInfo
+				$("#byCasesCheckboxPane>div>label.countryCheckLabel").each(function(){
+				    if(checkboxInfo[$(this).attr("labeltitle")]["visible"]){
+				    	$(this).siblings("input")[0].checked = true;
+				    }else{
+				    	$(this).siblings("input")[0].checked = false;
+				    }
+				})
+			})
+			.on('click', "#radioByDeaths", function(){
+				// hide other panes, show this one
+				$(".showCheckboxes").removeClass("showCheckboxes").addClass("hideCheckboxes");
+				$("#byDeathsCheckboxPane").removeClass("hideCheckboxes").addClass("showCheckboxes");
+				//check/upcheck checkboxes to bring them up to date with values in checkboxInfo
+				$("#byDeathsCheckboxPane>div>label.countryCheckLabel").each(function(){
+				    if(checkboxInfo[$(this).attr("labeltitle")]["visible"]){
+				    	$(this).siblings("input")[0].checked = true;
+				    }else{
+				    	$(this).siblings("input")[0].checked = false;
+				    }
+				})
+			}).on('click', ".deathcase", function(){
+				drawGraphLines();
+			});
+		}
+	</script>
+</body>
+</html>
