@@ -10,9 +10,15 @@
 	#options{
 		margin-left: 2em;
 	}
+	.sortCheckOptions{
+		margin-left:2em;
+	}
+	.regionsCheckAll{
+		margin-bottom: 0.4em
+	}
 	.regionCheck{
 	    display: inline-table;
-	    width: 20em;
+	    width: 22em;
 	    background: whitesmoke;
 	    margin: 0.2em;
 	    padding: 0.5em;
@@ -147,21 +153,29 @@
 			<div id='whatToPlot'>\
 				graph:\
 				<input type='checkbox' id='casesCheckbox' class='deathcase' name='toggle' value='cases' checked>\
-				<label for='cases'>cases</label>\
+				<label class='clickable' for='casesCheckbox'>cases</label>\
 				<input type='checkbox' id='deathsCheckbox' class='deathcase' name='toggle' value='deaths'>\
-				<label for='deaths'>deaths</label>\
+				<label class='clickable' for='deathsCheckbox'>deaths</label>\
 			</div>\
 		<div>Sort country checkboxes by:\
+			<div class='sortCheckOptions'>\
 			<input type='radio' id='radioByRegion' name='options' value='byRegion' checked>\
-			<label for='byRegion'>number of cases in each region</label>\
+			<label class='clickable' for='radioByRegion'>number of cases in each region</label>\
+			<div class='sortCheckOptions'></div>\
 			<input type='radio' id='radioByCases' name='options' value='byCases'>\
-			<label for='byCases'>number of cases globally</label> \
+			<label class='clickable' for='radioByCases'>number of cases globally</label> \
+			<div class='sortCheckOptions'></div>\
 			<input type='radio' id='radioByDeaths' name='options' value='byDeaths'>\
-			<label for='byDeaths'>number of deaths globally</label>\
+			<label class='clickable' for='radioByDeaths'>number of deaths globally</label>\
+			</div>\
 			<div class='listInfo'>Countries are listed with the numbers of: (cases, deaths)</div>";
 
 			// create region groups for checkboxes
-			regionCheckboxes = "<div id='byRegionCheckboxPane' class='showCheckboxes'>";
+			regionCheckboxes = "<div id='byRegionCheckboxPane' class='showCheckboxes'>\
+									<div class='regionsCheckAll'>\
+									<input id='regionsCheckAll' type='checkbox' name='regionsCheckAll'>\
+				 					<label class='clickable' for='regionsCheckAll'>uncheck/check all</label>\
+				 					</div>";
 			for(r=0; r<globalJson.regions.length;r++){
 				thisRegionKey = globalJson.regions[r].regionName
 				thisRegionClass = globalJson.regions[r].class
@@ -209,11 +223,11 @@
 			latestDeathsArray = sortObject(checkboxInfo,"latestDeaths")
 			latestCasesHtml = "<div class='toggleAll'>\
 									<input id='byCasesToggle' type='checkbox'>\
-									<label for='casesToggle'>toggle all</label>\
+									<label class='clickable' for='byCasesToggle'>uncheck/check all</label>\
 							   </div>"
 			latestDeathsHtml = "<div class='toggleAll'>\
-									<input id='byCasesToggle' type='checkbox'>\
-									<label for='deathsToggle'>toggle all</label>\
+									<input id='byDeathsToggle' type='checkbox'>\
+									<label class='clickable' for='byDeathsToggle'>uncheck/check all</label>\
 							   </div>"
 			for(lateNo=0;lateNo<latestCasesArray.length;lateNo++){
 					  latestCasesHtml += "<div>\
@@ -237,6 +251,41 @@
 			})
 			.on('click', "label.countryCheckLabel", function(){
 				$(this).siblings("input").click();
+			})
+			.on('click', "#regionsCheckAll", function(){
+				if($(this).is(":checked")){
+					// set the checkboxInfo for each of these boxes
+					console.log("foo")
+					$(this).parent().siblings("div.regionCheck").children("div.countryCheckGroup").children("label")
+						.each(function(){
+							checkboxInfo[$(this).attr("labelTitle")]["visible"] = true;
+						});
+					// set the checkboxInfo for each of these boxes
+					$(this).parent().siblings("div.regionCheck").children("div.countryCheckGroup").children("input")
+						.each(function(){ 
+							this.checked = true;
+						})
+					//also select all of the select all checkboxes
+					$(this).parent().siblings("div.regionCheck").children("div.checkAll").children("input")
+						.each(function(){ 
+							this.checked = true;
+						})
+				}else{
+					$(this).parent().siblings("div.regionCheck").children("div.countryCheckGroup").children("label")
+						.each(function(){
+							checkboxInfo[$(this).attr("labelTitle")]["visible"] = false;
+						});
+					$(this).parent().siblings("div.regionCheck").children("div.countryCheckGroup").children("input")
+						.each(function(){ 
+							this.checked = false; 
+						})
+					//also unselect all of the select all checkboxes
+					$(this).parent().siblings("div.regionCheck").children("div.checkAll").children("input")
+						.each(function(){ 
+							this.checked = false;
+						})
+				}
+				drawGraphLines();
 			})
 			.on('click', "input.regionCheckInput", function(){
 				if($(this).is(":checked")){
@@ -285,6 +334,7 @@
 				drawGraphLines();
 			})
 			.on('click', "#byDeathsToggle", function(){
+				console.log("hai")
 				if($(this).is(":checked")){
 					$("div#byDeathsCheckboxPane > div > label.countryCheckLabel")
 						.each(function(){
@@ -362,6 +412,9 @@
 				})
 			}).on('click', ".deathcase", function(){
 				drawGraphLines();
+			})
+			.on('click', "input.clickable", function(){
+				$(this).prev('input').click();
 			});
 		}
 	</script>
