@@ -1,0 +1,79 @@
+body{
+	font-family: "Open Sans", verdana, arial, sans-serif;
+}
+a{
+	text-decoration: none;
+	color: #001ad4;
+}
+#whatToPlot{
+	margin-bottom: 0.5em;
+}
+.whatToPlotRow{
+	margin-bottom: 1em;
+}
+.whatToPlotTitle{
+	display: inline-block;
+    vertical-align: top;
+    width: 4em;
+    text-align: right;
+}
+.whatToPlotBody{
+	display: inline-block;
+}
+#options{
+	margin-left: 2em;
+}
+#checkBoxOrder{
+	font-size: medium;
+}
+#citationsNeeded{
+	float:right;
+	margin-right: 2em;	
+}
+.sortCheckOptions{
+	margin-left:2em;
+}
+.regionsCheckAll{
+	margin-bottom: 0.4em
+}
+.regionCheck{
+    display: inline-table;
+    width: 22em;
+    background: whitesmoke;
+    margin: 0.2em;
+    padding: 0.5em;
+}
+.sectionTitle{
+	font-size: 1.2em;
+}
+.checkAll{
+	margin-top: 0.2em;
+	margin-bottom: 0.6em;
+}
+div.regionCheck.China>div.CheckAll>input,
+div.regionCheck.China>div.CheckAll>label,
+div.regionCheck.Internationalconveyance>div.CheckAll>input,
+div.regionCheck.Internationalconveyance>div.CheckAll>label{
+	display: none;
+}
+.regionCheck.topTen>div.countryCheckGroup:nth-child(n+13){
+	display: none;
+}
+div.listInfo{
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+div.showCheckboxes{
+	display:block;
+}
+div.hideCheckboxes{
+	display:none;
+}
+div.toggleAll{
+	margin-bottom: 0.3em;
+}
+div.seeAll{
+	color: #3276de;
+    margin-top: 0.5em;
+    margin-left: 2em;
+}
