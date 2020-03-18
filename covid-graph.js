@@ -5,6 +5,7 @@ var latestDeathsArray = [];
 var latestArray = [];
 var normaliseNumbers = false;
 var chronological = true;
+var minimumThreshold = 100
 function sortObject(obj,sortValue) {
     var arr = [];
     for (var prop in obj) {
@@ -41,7 +42,7 @@ function drawGraphLines(){
 			//		  name: 'plotName'
 		//     };
 	var layout = {};
-	function drawLineChronological(lineType, startPosition){
+	function drawLineChronological(lineType){
 		suffix = ""
 		if(lineType=="deaths"){
 			suffix = " (deaths)"
@@ -68,9 +69,8 @@ function drawGraphLines(){
 		    title: yTitle,
 		    showline: false
 		  },
-		  showlegend: false
 		};			
-		for(j=startPosition; j<globalJson.dates.length; j++){
+		for(j=0; j<globalJson.dates.length; j++){
 			//save the current date into x: []
 			thisDateKey = Object.keys(globalJson.dates[j])[0];
 			trace1.x[j] = thisDateKey;
@@ -92,7 +92,7 @@ function drawGraphLines(){
 		graphData[graphData.length] = trace1;
 	}
 
-	function drawLineFirstReport(lineType, firstReport){
+	function drawLineFirstReport(lineType){
 		suffix = ""
 		if(normaliseNumbers){
 			yTitle = "per 100,000"
@@ -102,7 +102,7 @@ function drawGraphLines(){
 		layout = {
 		  title: 'Covid-19 proliferation',
 		  xaxis: {
-		    title: 'Days since first reported infection',
+		    title: 'Days since reaching threshold of '+ minimumThreshold,
 		    showgrid: false,
 		    zeroline: false
 		  },
@@ -110,69 +110,61 @@ function drawGraphLines(){
 		    title: yTitle,
 		    showline: false
 		  },
-		  showlegend: false
 		};
 
 		if(lineType=="deaths"){
 			suffix = " (deaths)"
 		}
+		
 		var trace1 = {
 					  x: [],
 					  y: [],
 					  type: 'scatter',
 					  name: thisName + suffix
 					};
-		for(j=firstReport; j<globalJson.dates.length; j++){
-			//save the current date into x: []
-			trace1.x[j] = j - firstReport + 1 + " days";
+		var numberReported = 0
+		for(j=0; j<globalJson.dates.length; j++){
+			
 			//save the value for this country into y: []
 			thisDateKey = Object.keys(globalJson.dates[j])[0];
 			if(typeof Object.keys(globalJson.dates[j][thisDateKey]) == 'undefined'){
-				trace1.y[j] = 0;
+				valueForY = 0;
 			}
 			if(Object.keys(globalJson.dates[j][thisDateKey]).length>1){
 				if(normaliseNumbers){
-					trace1.y[j] = globalJson.dates[j][thisDateKey][lineType][thisName]/(checkboxInfo[thisName]["population"]/100000);
+					valueForY = globalJson.dates[j][thisDateKey][lineType][thisName]/(checkboxInfo[thisName]["population"]/100000);
 				}else{
-					trace1.y[j] = globalJson.dates[j][thisDateKey][lineType][thisName];
+					valueForY = globalJson.dates[j][thisDateKey][lineType][thisName];
 				}
 			}else{
-				trace1.y[j] = 0;
+				valueForY = 0;
 			}
-			
+			if(valueForY+1 > minimumThreshold){
+				trace1.y[j] = valueForY;
+				//save the current date into x: []
+				trace1.x[j] = numberReported
+				numberReported = numberReported + 1
+			}
 		}
 		graphData[graphData.length] = trace1;
 	}
 
 
-	startingPositions = [];
-	for(i=0; i<Object.keys(checkboxInfo).length; i++){
-		thisName = Object.keys(checkboxInfo)[i]
-		if(checkboxInfo[thisName]["visible"]){
-			startingPositions[startingPositions.length] = checkboxInfo[thisName]["startPosition"]
-		}
-	}
-	//find the smallest startDate for this set - https://stackoverflow.com/a/45230160/2360572
-	if(startingPositions.length>0){
-		startPosition = startingPositions.reduce((a, b) => Math.min(a, b));
-	}else{
-		startPosition = 0;
-	}
 	for(i=0; i<Object.keys(checkboxInfo).length; i++){
 		thisName = Object.keys(checkboxInfo)[i]
 		if(checkboxInfo[thisName]["visible"]){
 			if($("#casesCheckbox")[0].checked){
 				if(chronological){
-					drawLineChronological("cases", startPosition);
+					drawLineChronological("cases", 0);
 				}else{
-					drawLineFirstReport("cases", checkboxInfo[thisName]["startPosition"]);
+					drawLineFirstReport("cases", 0);
 				}
 			}
 			if($("#deathsCheckbox")[0].checked){
 				if(chronological){
-					drawLineChronological("deaths", startPosition);
+					drawLineChronological("deaths", 0);
 				}else{
-					drawLineFirstReport("deaths", checkboxInfo[thisName]["startPosition"]);
+					drawLineFirstReport("deaths", 0);
 				}
 			}
 		}
@@ -221,12 +213,23 @@ function processJson(json_obj){
 					</div>\
 					<div class='plotStats'>\
 						<input type='radio' id='firstReportDates' name='plotAgainst' value='firstReportDates'>\
-						<label class='clickable' for='firstReportDates'>days since first report</label> \
+						<label class='clickable' for='firstReportDates'>days since reaching <select id='thresholdValues' disabled>\
+							  <option value='0'>0</option>\
+							  <option value='10'>10</option>\
+							  <option value='25'>25</option>\
+							  <option value='50'>50</option>\
+							  <option value='100' selected>100</option>\
+							  <option value='250'>250</option>\
+							  <option value='500'>500</option>\
+							  <option value='1000'>1000</option>\
+							  <option value='2000'>2000</option>\
+							</select> cases</label>\
 					</div>\
 				</div>\
 			</div>\
 		</div>\
 	</div>\
+	\
 	<div class='listInfo'>Order country checkboxes by:\
 		<select id='checkBoxOrder'>\
 		  <option value='region'>cases in each region</option>\
@@ -265,7 +268,6 @@ function processJson(json_obj){
 				cases = globalJson["dates"][globalJson["dates"].length-1][Object.keys(globalJson["dates"][globalJson["dates"].length-1])[0]]["cases"][thisCountryName]
 				deaths = globalJson["dates"][globalJson["dates"].length-1][Object.keys(globalJson["dates"][globalJson["dates"].length-1])[0]]["deaths"][thisCountryName]
 				population = globalJson["regions"][r]["countries"][rc].population
-				startPos = globalJson["regions"][r]["countries"][rc].startPos;
 				if(typeof deaths == 'undefined'){
 					deaths = 0;
 				}
@@ -274,11 +276,11 @@ function processJson(json_obj){
 							 			<label class='countryCheckLabel' for='code-"+thisCountryClass+"' labelTitle='"+thisCountryName+"'>"+thisCountryName+" ("+cases+", "+deaths+")</label>\
 							 		</div>";
 				if(thisCountryName == "China"){
-					checkboxInfo["China"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population, "startPosition":startPos}
+					checkboxInfo["China"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
 				}else if(thisCountryName ==  "International conveyance"){
-					checkboxInfo["International conveyance"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population, "startPosition":startPos}
+					checkboxInfo["International conveyance"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
 				}else{
-					checkboxInfo[thisCountryName] = {"visible":true, "latestCases":cases, "latestDeaths":deaths, "population":population, "startPosition":startPos}
+					checkboxInfo[thisCountryName] = {"visible":true, "latestCases":cases, "latestDeaths":deaths, "population":population }
 				}
 	 		}
 	 		if(globalJson.regions[r].countries.length>10){
@@ -485,6 +487,10 @@ function processJson(json_obj){
 			    }
 			})
 		}
+	}).on('change', "#thresholdValues", function(){
+		minimumThreshold = $("#thresholdValues option:selected").val();
+		// make sure firsrtReportDates radio is selelcted, which will also redraw the graph 
+		$("#firstReportDates").click();
 	})
 	.on('click', ".deathcase", function(){
 		drawGraphLines();
@@ -499,8 +505,10 @@ function processJson(json_obj){
 		drawGraphLines();	
 	}).on('click', "#calendarDates", function(){
 		chronological = true
+		$("#thresholdValues").attr("disabled", "disabled")
 		drawGraphLines();	
 	}).on('click', "#firstReportDates", function(){
+		$("#thresholdValues").removeAttr('disabled');
 		chronological = false
 		drawGraphLines();	
 	});

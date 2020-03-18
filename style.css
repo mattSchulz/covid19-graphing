@@ -23,6 +23,10 @@ a{
 #options{
 	margin-left: 2em;
 }
+#thresholdValues{
+	font-size: medium;
+	
+}
 #checkBoxOrder{
 	font-size: medium;
 }
@@ -64,7 +68,7 @@ div.regionCheck.Internationalconveyance>div.CheckAll>label{
 	display: none;
 }
 div.listInfo{
-	margin-top: 0.5em;
+	margin-top: 1.5em;
 	margin-bottom: 1em;
 }
 div.showCheckboxes{
