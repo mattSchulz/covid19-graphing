@@ -30,6 +30,9 @@ a{
 	float:right;
 	margin-right: 2em;	
 }
+#citationsNeeded > ul{
+	margin: 0.2em;
+}
 .sortCheckOptions{
 	margin-left:2em;
 }
