@@ -67,7 +67,8 @@ function drawGraphLines(){
 		  yaxis: {
 		    title: yTitle,
 		    showline: false
-		  }
+		  },
+		  showlegend: false
 		};			
 		for(j=startPosition; j<globalJson.dates.length; j++){
 			//save the current date into x: []
@@ -108,7 +109,8 @@ function drawGraphLines(){
 		  yaxis: {
 		    title: yTitle,
 		    showline: false
-		  }
+		  },
+		  showlegend: false
 		};
 
 		if(lineType=="deaths"){
@@ -180,14 +182,7 @@ function drawGraphLines(){
 
 function processJson(json_obj){
 	globalJson = json_obj;
-	optionsHtml = "<div id='citationsNeeded'>sources:<ul><li>Covid-19 data - <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports'>WHO situation reports</a></li>\
-		<li>population figures - <a href='https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population'>wikipedia</a></li></ul>\
-		<br/>\
-		feedback: <a href='mailto:covid19graph@gmail.com'>covid19graph@gmail.com</a><br/><br />\
-		<a href='mailto:covid19graph@gmail.com'>Please let me know</a> if you use this!<br />\
-		<a href='covid-19-data.json'>JSON data</a> / <a href='https://github.com/mattSchulz/covid19-graphing'>github</a> / <a href='licence.html'>MIT licence</a>\
-	</div>\
-	<div>\
+	optionsHtml = "<div>\
 		<div id='whatToPlot'>\
 			<div class='whatToPlotRow'>\
 				<div class='whatToPlotTitle'>\
@@ -318,8 +313,16 @@ function processJson(json_obj){
 	optionsHtml += "<div id='byCasesCheckboxPane' class='latestCasesOptions hideCheckboxes'>Countries sorted by total cases"+latestCasesHtml+"</div>\
 					<div id='byDeathsCheckboxPane' class='latestDeathsOptions hideCheckboxes'>Countries sorted by total deaths"+latestDeathsHtml+"</div></div>"
 
+	footer = "<div id='citationsNeeded'>\
+				<a href='mailto:covid19graph@gmail.com'>Please let me know</a> if you use this!<br />\
+				<a href='covid-19-data.json'>JSON data</a> / <a href='https://github.com/mattSchulz/covid19-graphing'>github</a> / <a href='licence.html'>MIT licence</a><br/>\
+				sources:<ul><li>Covid-19 data - <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports'>WHO situation reports</a></li>\
+				<li>population figures - <a href='https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population'>wikipedia</a> (and individual pages)</li></ul>\
+				<br/>\
+				feedback: <a href='mailto:covid19graph@gmail.com'>covid19graph@gmail.com</a><br/><br />\
+			</div>";
 
-	$("div#options").html(optionsHtml)
+	$("div#options").html(optionsHtml + footer)
 	drawGraphLines();
 	//once HTML is written, add click events
 	$(document).on('click', "label.regionCheckLabel", function(){

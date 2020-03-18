@@ -27,8 +27,9 @@ a{
 	font-size: medium;
 }
 #citationsNeeded{
-	float:right;
-	margin-right: 2em;	
+	border-top: 1px solid grey;
+	margin-top:1em;
+	padding:1em;	
 }
 #citationsNeeded > ul{
 	margin: 0.2em;
