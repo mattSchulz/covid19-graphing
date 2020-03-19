@@ -4,7 +4,7 @@ var latestCasesArray = [];
 var latestDeathsArray = [];
 var latestArray = [];
 var normaliseNumbers = false;
-var chronological = true;
+var chronological = false;
 var minimumThreshold = 100
 function sortObject(obj,sortValue) {
     var arr = [];
@@ -206,12 +206,8 @@ function processJson(json_obj){
 				</div>\
 				<div class='whatToPlotBody'>\
 					<div class='plotStats'>\
-						<input type='radio' id='calendarDates' name='plotAgainst' value='calendarDates' checked>\
-						<label class='clickable' for='calendarDates'>calendar dates</label>\
-					</div>\
-					<div class='plotStats'>\
-						<input type='radio' id='firstReportDates' name='plotAgainst' value='firstReportDates'>\
-						<label class='clickable' for='firstReportDates'>days since reaching <select id='thresholdValues' disabled>\
+						<input type='radio' id='firstReportDates' name='plotAgainst' value='firstReportDates' checked>\
+						<label class='clickable' for='firstReportDates'>days since reaching <select id='thresholdValues'>\
 							  <option value='0'>0</option>\
 							  <option value='10'>10</option>\
 							  <option value='25'>25</option>\
@@ -222,6 +218,10 @@ function processJson(json_obj){
 							  <option value='1000'>1000</option>\
 							  <option value='2000'>2000</option>\
 							</select> cases</label>\
+					</div>\
+					<div class='plotStats'>\
+						<input type='radio' id='calendarDates' name='plotAgainst' value='calendarDates'>\
+						<label class='clickable' for='calendarDates'>calendar dates</label>\
 					</div>\
 				</div>\
 			</div>\
@@ -251,7 +251,7 @@ function processJson(json_obj){
 			if((thisRegionClass == "China")||(thisRegionClass == "Internationalconveyance")){
 				checkDefault = ""
 			}else{
-				checkDefault = "checked"
+				checkDefault = ""
 			}
 			regionCheckboxes += "<div class='regionCheck topTen "+thisRegionClass+"'>\
 									<div class='sectionTitle'>"+thisRegionKey+"</div>\
@@ -278,7 +278,7 @@ function processJson(json_obj){
 				}else if(thisCountryName ==  "International conveyance"){
 					checkboxInfo["International conveyance"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
 				}else{
-					checkboxInfo[thisCountryName] = {"visible":true, "latestCases":cases, "latestDeaths":deaths, "population":population }
+					checkboxInfo[thisCountryName] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
 				}
 	 		}
 	 		if(globalJson.regions[r].countries.length>10){
@@ -321,6 +321,19 @@ function processJson(json_obj){
 
 	$("div#options").html(optionsHtml + footer)
 	drawGraphLines();
+	setTimeout(function () {
+		//check some boxes to graph some initial lines
+		$("#byRegionCheckboxPane > div.regionCheck.topTen.WesternPacificRegion > div:nth-child(4) > input").click()
+		$("#byRegionCheckboxPane > div.regionCheck.topTen.WesternPacificRegion > div:nth-child(3) > input").click()
+		$("#byRegionCheckboxPane > div.regionCheck.topTen.EuropeanRegion > div:nth-child(3) > input").click()
+		$("#byRegionCheckboxPane > div.regionCheck.topTen.EuropeanRegion > div:nth-child(4) > input").click()
+		$("#byRegionCheckboxPane > div.regionCheck.topTen.EuropeanRegion > div:nth-child(5) > input").click()
+		$("#byRegionCheckboxPane > div.regionCheck.topTen.EuropeanRegion > div:nth-child(6) > input").click()
+		$("#byRegionCheckboxPane > div.regionCheck.EasternMediterraneanRegion > div:nth-child(3) > input").click()
+		$("#byRegionCheckboxPane > div.regionCheck.RegionoftheAmericas > div:nth-child(3) > input").click()
+		$("#byRegionCheckboxPane > div.regionCheck.RegionoftheAmericas > div:nth-child(4) > input").click();
+	}, 10);
+
 	//once HTML is written, add click events
 	$(document).on('click', "label.regionCheckLabel", function(){
 		$(this).siblings("input").click();
