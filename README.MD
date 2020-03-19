@@ -1,0 +1,1 @@
+   [Plots graphs of WHO data for Covid-19](https://www.datatrends.online).
