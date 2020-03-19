@@ -36,7 +36,7 @@ function drawGraphLines(){
 	  	//	      x: [1, 2, 3, 4],
 	  	//	      y: [10, 15, 13, 17],
 	  	//	      type: 'scatter',
-			//		  name: 'plotName'
+	    //		  name: 'plotName'
 		//     };
 	var layout = {};
 	function drawLineChronological(lineType){
@@ -127,6 +127,7 @@ function drawGraphLines(){
 			if(typeof Object.keys(globalJson.dates[j][thisDateKey]) == 'undefined'){
 				valueForY = 0;
 			}
+			//this should possibly be length>0 ?
 			if(Object.keys(globalJson.dates[j][thisDateKey]).length>1){
 				if(normaliseNumbers){
 					valueForY = globalJson.dates[j][thisDateKey][lineType][thisName]/(checkboxInfo[thisName]["population"]/100000);
@@ -313,12 +314,9 @@ function processJson(json_obj){
 					<div id='byDeathsCheckboxPane' class='latestDeathsOptions hideCheckboxes'>Countries sorted by total deaths"+latestDeathsHtml+"</div></div>"
 
 	footer = "<div id='citationsNeeded'>\
-				<a href='mailto:covid19graph@gmail.com'>Please let me know</a> if you use this!<br />\
 				<a href='covid-19-data.json'>JSON data</a> / <a href='https://github.com/mattSchulz/covid19-graphing'>github</a> / <a href='licence.html'>MIT licence</a><br/>\
 				sources:<ul><li>Covid-19 data - <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports'>WHO situation reports</a></li>\
 				<li>population figures - <a href='https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population'>wikipedia</a> (and individual pages)</li></ul>\
-				<br/>\
-				feedback: <a href='mailto:covid19graph@gmail.com'>covid19graph@gmail.com</a><br/><br />\
 			</div>";
 
 	$("div#options").html(optionsHtml + footer)
