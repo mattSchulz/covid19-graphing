@@ -30,9 +30,6 @@ $.getJSON( "covid-19-data.json" )
     console.log( "Request Failed: " + err );
 });
 function drawGraphLines(){
-	//start with an earliest date that's easy to beat
-	var earliestDate = "29991212";
-
 	var graphData = [];
 		//  graphData should look like an array of variables each looking like:
 		//     var trace1 = {
