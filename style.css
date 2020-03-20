@@ -43,6 +43,12 @@ a{
 .regionsCheckAll{
 	margin-bottom: 0.4em
 }
+.pluralCase{
+	display:inline;
+}
+.perNormalText{
+	display:none;
+}
 .regionCheck{
     display: inline-table;
     width: 22em;

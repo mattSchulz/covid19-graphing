@@ -209,15 +209,21 @@ function processJson(json_obj){
 						<input type='radio' id='firstReportDates' name='plotAgainst' value='firstReportDates' checked>\
 						<label class='clickable' for='firstReportDates'>days since reaching <select id='thresholdValues'>\
 							  <option value='0'>0</option>\
-							  <option value='10'>10</option>\
-							  <option value='25'>25</option>\
+							  <option value='1'>1</option>\
+							  <option value='5'>5</option>\
+							  <option value='10' selected>10</option>\
+							  <option value='20'>20</option>\
+							  <option value='30'>30</option>\
+							  <option value='40'>40</option>\
 							  <option value='50'>50</option>\
-							  <option value='100' selected>100</option>\
+							  <option value='100'>100</option>\
+							  <option value='150'>150</option>\
+							  <option value='200'>200</option>\
 							  <option value='250'>250</option>\
 							  <option value='500'>500</option>\
 							  <option value='1000'>1000</option>\
 							  <option value='2000'>2000</option>\
-							</select> cases</label>\
+							</select> case<span class='pluralCase'>s</span><span class='perNormalText'> (per 100,000)</span></label>\
 					</div>\
 					<div class='plotStats'>\
 						<input type='radio' id='calendarDates' name='plotAgainst' value='calendarDates'>\
@@ -251,7 +257,7 @@ function processJson(json_obj){
 			if((thisRegionClass == "China")||(thisRegionClass == "Internationalconveyance")){
 				checkDefault = ""
 			}else{
-				checkDefault = ""
+				checkDefault = "checked"
 			}
 			regionCheckboxes += "<div class='regionCheck topTen "+thisRegionClass+"'>\
 									<div class='sectionTitle'>"+thisRegionKey+"</div>\
@@ -278,7 +284,7 @@ function processJson(json_obj){
 				}else if(thisCountryName ==  "International conveyance"){
 					checkboxInfo["International conveyance"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
 				}else{
-					checkboxInfo[thisCountryName] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
+					checkboxInfo[thisCountryName] = {"visible":true, "latestCases":cases, "latestDeaths":deaths, "population":population }
 				}
 	 		}
 	 		if(globalJson.regions[r].countries.length>10){
@@ -321,19 +327,6 @@ function processJson(json_obj){
 
 	$("div#options").html(optionsHtml + footer)
 	drawGraphLines();
-	setTimeout(function () {
-		//check some boxes to graph some initial lines
-		$("#byRegionCheckboxPane > div.regionCheck.topTen.WesternPacificRegion > div:nth-child(4) > input").click()
-		$("#byRegionCheckboxPane > div.regionCheck.topTen.WesternPacificRegion > div:nth-child(3) > input").click()
-		$("#byRegionCheckboxPane > div.regionCheck.topTen.EuropeanRegion > div:nth-child(3) > input").click()
-		$("#byRegionCheckboxPane > div.regionCheck.topTen.EuropeanRegion > div:nth-child(4) > input").click()
-		$("#byRegionCheckboxPane > div.regionCheck.topTen.EuropeanRegion > div:nth-child(5) > input").click()
-		$("#byRegionCheckboxPane > div.regionCheck.topTen.EuropeanRegion > div:nth-child(6) > input").click()
-		$("#byRegionCheckboxPane > div.regionCheck.EasternMediterraneanRegion > div:nth-child(3) > input").click()
-		$("#byRegionCheckboxPane > div.regionCheck.RegionoftheAmericas > div:nth-child(3) > input").click()
-		$("#byRegionCheckboxPane > div.regionCheck.RegionoftheAmericas > div:nth-child(4) > input").click();
-	}, 10);
-
 	//once HTML is written, add click events
 	$(document).on('click', "label.regionCheckLabel", function(){
 		$(this).siblings("input").click();
@@ -497,6 +490,11 @@ function processJson(json_obj){
 		}
 	}).on('change', "#thresholdValues", function(){
 		minimumThreshold = $("#thresholdValues option:selected").val();
+		if(minimumThreshold==1){
+			$(".pluralCase").hide();
+		}else{
+			$(".pluralCase").show();
+		}
 		// make sure firsrtReportDates radio is selelcted, which will also redraw the graph 
 		$("#firstReportDates").click();
 	})
@@ -507,9 +505,11 @@ function processJson(json_obj){
 		$(this).prev('input').click();
 	}).on('click', "#graphPerHT", function(){
 		normaliseNumbers = true
+		$(".perNormalText").show()
 		drawGraphLines();
 	}).on('click', "#graphIndividuals", function(){
 		normaliseNumbers = false
+		$(".perNormalText").hide()
 		drawGraphLines();	
 	}).on('click', "#calendarDates", function(){
 		chronological = true
