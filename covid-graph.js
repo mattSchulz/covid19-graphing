@@ -5,7 +5,7 @@ var latestDeathsArray = [];
 var latestArray = [];
 var normaliseNumbers = false;
 var chronological = false;
-var minimumThreshold = 100
+var minimumThreshold = 10
 function sortObject(obj,sortValue) {
     var arr = [];
     for (var prop in obj) {
