@@ -322,7 +322,7 @@ function processJson(json_obj){
 	footer = "<div id='citationsNeeded'>\
 				sources:<ul><li>Covid-19 data - <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports'>WHO situation reports</a></li>\
 				<li>population figures - <a href='https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population'>wikipedia</a> (and individual pages)</li></ul><br />\
-				Development and data-harvest <a href='https://twitter.com/monototo'>@monototo</a>, contributing design and data maintenance <a href='https://twitter.com/eeejaytee'>@eeejaytee</a>.<br />\
+				Development and data-harvest <a href='https://twitter.com/monototo'>@monototo</a>. Contributing design and data maintenance <a href='https://twitter.com/eeejaytee'>@eeejaytee</a>.<br />\
 				<a href='covid-19-data.json'>JSON data</a> / <a href='https://github.com/mattSchulz/covid19-graphing'>github</a> / <a href='licence.html'>MIT licence</a><br/><br/>\
 			</div>";
 
