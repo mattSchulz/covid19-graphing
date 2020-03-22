@@ -492,9 +492,9 @@ function processJson(json_obj){
 	}).on('change', "#thresholdValues", function(){
 		minimumThreshold = $("#thresholdValues option:selected").val();
 		if(minimumThreshold==1){
-			$(".pluralCase").hide();
+			$(".pluralCase").removeClass("showThisInline").addClass("hideThis");
 		}else{
-			$(".pluralCase").show();
+			$(".pluralCase").removeClass("hideThis").addClass("showThisInline");
 		}
 		// make sure firsrtReportDates radio is selelcted, which will also redraw the graph 
 		$("#firstReportDates").click();
@@ -506,11 +506,11 @@ function processJson(json_obj){
 		$(this).prev('input').click();
 	}).on('click', "#graphPerHT", function(){
 		normaliseNumbers = true
-		$(".perNormalText").show()
+		$(".perNormalText").removeClass("hideThis").addClass("showThisInline");
 		drawGraphLines();
 	}).on('click', "#graphIndividuals", function(){
 		normaliseNumbers = false
-		$(".perNormalText").hide()
+		$(".perNormalText").removeClass("showThisInline").addClass("hideThis");
 		drawGraphLines();	
 	}).on('click', "#calendarDates", function(){
 		chronological = true
