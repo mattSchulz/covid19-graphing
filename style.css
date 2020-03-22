@@ -1,6 +1,15 @@
 body{
 	font-family: "Open Sans", verdana, arial, sans-serif;
 }
+.hideThis{
+	display: none;
+}
+.showThis{
+	display: block
+}
+.showThisInline{
+	display: inline-block
+}
 a{
 	text-decoration: none;
 	color: #001ad4;
