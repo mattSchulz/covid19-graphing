@@ -279,7 +279,9 @@ function processJson(json_obj){
 										<input type='checkbox' class='countryCheck' "+checkDefault+">\
 							 			<label class='countryCheckLabel' for='code-"+thisCountryClass+"' labelTitle='"+thisCountryName+"'>"+thisCountryName+" ("+cases+", "+deaths+")</label>\
 							 		</div>";
-				if(thisCountryName ==  "International conveyance"){
+				if(thisCountryName ==  "Global"){
+					checkboxInfo["Global"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
+				}else if(thisCountryName ==  "International conveyance"){
 					checkboxInfo["International conveyance"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
 				}else{
 					checkboxInfo[thisCountryName] = {"visible":true, "latestCases":cases, "latestDeaths":deaths, "population":population }
