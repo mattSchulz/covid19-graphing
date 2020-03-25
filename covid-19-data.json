@@ -1,4 +1,5 @@
 {
+  "reportText":"(up to 64)",
   "regions": [
     {
       "regionName": "Global",
@@ -31,9 +32,9 @@
       "regionName": "Western Pacific Region Territories",
       "class": "WesternPacificRegionTerritories",
       "countries": [
-    { "country": "Guam", "class": "Guam", "population": 162742 },
-    { "country": "French Polynesia", "class": "FrenchPolynesia", "population": 275918 },
-    { "country": "New Caledonia", "class": "NewCaledonia", "population": 282200 }
+        { "country": "Guam", "class": "Guam", "population": 162742 },
+        { "country": "French Polynesia", "class": "FrenchPolynesia", "population": 275918 },
+        { "country": "New Caledonia", "class": "NewCaledonia", "population": 282200 }
       ]
     },
     {
@@ -72,7 +73,7 @@
         { "country": "Bulgaria", "class": "Bulgaria", "population": 7000039 },
         { "country": "Slovakia", "class": "Slovakia", "population": 5456362 },
         { "country": "Hungary", "class": "Hungary", "population": 9772756 },
-      { "country": "San Marino", "class": "SanMarion", "population": 33344 },
+        { "country": "San Marino", "class": "SanMarion", "population": 33344 },
         { "country": "Latvia", "class": "Latvia", "population": 1906800 },
         { "country": "Lithuania", "class": "Lithuania", "population": 2793350 },
         { "country": "Andorra", "class": "Andorra", "population": 77543 },
@@ -84,7 +85,7 @@
         { "country": "Malta", "class": "Malta", "population": 493559 },
         { "country": "Ukaraine", "class": "Ukaraine", "population": 41902416 },
         { "country": "Belarus", "class": "Belarus", "population": 9413446 },
-      { "country": "Azerbaijan", "class": "Azerbaijan", "population": 10067108 },
+        { "country": "Azerbaijan", "class": "Azerbaijan", "population": 10067108 },
         { "country": "Georgia", "class": "Georgia", "population": 3723464 },
         { "country": "Kazakhstan", "class": "Kazakhstan", "population": 18663384 },
         { "country": "Liechtenstein", "class": "Liechtenstein", "population": 38557 },
@@ -229,15 +230,15 @@
         { "country": "Democratic Republic of the Congo", "class": "DemocraticRepublicoftheCongo", "population": 89561404 },
         { "country": "Mauritius", "class": "Mauritius", "population": 1265985 },
         { "country": "Rwanda", "class": "Rwanda", "population": 11262564 },
-    { "country": "Ghana", "class": "Ghana", "population": 28308301 },
-    { "country": "Côte d’Ivoire", "class": "CôtedIvoire", "population": 25823071 },
+        { "country": "Ghana", "class": "Ghana", "population": 28308301 },
+        { "country": "Côte d’Ivoire", "class": "CôtedIvoire", "population": 25823071 },
         { "country": "Nigeria", "class": "Nigeria", "population": 206139587 },
         { "country": "Togo", "class": "Togo", "population": 7538000 },
         { "country": "Kenya", "class": "Kenya", "population": 47564296 },
         { "country": "Madagascar", "class": "Madagascar", "population": 26262313 },
         { "country": "United Republic of Tanzania", "class": "UnitedRepublicofTanzania", "population": 4809768 },
         { "country": "Ethiopia", "class": "Ethiopia", "population": 109224414 },
-    { "country": "Uganda", "class": "Uganda", "population": 42729036 },
+        { "country": "Uganda", "class": "Uganda", "population": 42729036 },
         { "country": "Seychelles", "class": "Seychelles", "population": 97096 },
         { "country": "Equatorial Guinea", "class": "EquatorialGuinea", "population": 1358276 },
         { "country": "Gabon", "class": "Gabon", "population": 2119275 },
@@ -253,8 +254,8 @@
         { "country": "Zambia", "class": "Zambia", "population": 17351708 },
         { "country": "Angola","class": "Angola", "population": 25789024 },
         { "country": "Mauritania", "class": "Mauritania", "population": 4077347 },
-    { "country": "Niger", "class": "Niger", "population": 22442831 },
-    { "country": "Zimbabwe", "class": "Zimbabwe", "population": 14438802 },
+        { "country": "Niger", "class": "Niger", "population": 22442831 },
+        { "country": "Zimbabwe", "class": "Zimbabwe", "population": 14438802 },
         { "country": "Eritrea", "class": "Eritrea", "population": 5750433 },
         { "country": "Gambia", "class": "Gambia", "population": 2051363 },
         { "country": "Mozambique", "class": "Mozambique", "population": 29496004 }
