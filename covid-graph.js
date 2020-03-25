@@ -90,16 +90,18 @@ function drawGraphLines(){
 	}
 
 	function drawLineFirstReport(lineType){
-		suffix = ""
+		suffix = "";
+		xaxisSuffix = "";
 		if(normaliseNumbers){
 			yTitle = "per 100,000"
+			xaxisSuffix = " per 100,000"
 		}else{
 			yTitle = "Individuals"
 		}
 		layout = {
 		  title: 'Covid-19 proliferation',
 		  xaxis: {
-		    title: 'Days since reaching threshold of '+ minimumThreshold,
+		    title: 'Days since reaching threshold of '+ minimumThreshold + xaxisSuffix,
 		    showgrid: false,
 		    zeroline: false
 		  },
