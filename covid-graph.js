@@ -237,8 +237,8 @@ function processJson(json_obj){
 	<div class='listInfo'>Order country checkboxes by:\
 		<select class='fontMedium' id='checkBoxOrder'>\
 		  <option value='region'>cases in each region</option>\
-		  <option value='cases'>cases globally</option>\
-		  <option value='deaths'>deaths globally</option>\
+		  <option value='cases'>cases in decending order</option>\
+		  <option value='deaths'>deaths in decending order</option>\
 		</select>\
 	</div>\
 	<div>Countries are listed with numbers of: (cases, deaths)</div>";
@@ -254,7 +254,7 @@ function processJson(json_obj){
 		thisRegionClass = globalJson.regions[r].class
 		//if thisRegionKey does not end in " Territories"
 		if(!(/.+\sTerritories$/.test(thisRegionKey))){
-			if((thisRegionClass == "China")||(thisRegionClass == "Internationalconveyance")){
+			if((thisRegionClass == "Global")||(thisRegionClass == "Internationalconveyance")){
 				checkDefault = ""
 			}else{
 				checkDefault = "checked"
@@ -279,9 +279,7 @@ function processJson(json_obj){
 										<input type='checkbox' class='countryCheck' "+checkDefault+">\
 							 			<label class='countryCheckLabel' for='code-"+thisCountryClass+"' labelTitle='"+thisCountryName+"'>"+thisCountryName+" ("+cases+", "+deaths+")</label>\
 							 		</div>";
-				if(thisCountryName == "China"){
-					checkboxInfo["China"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
-				}else if(thisCountryName ==  "International conveyance"){
+				if(thisCountryName ==  "International conveyance"){
 					checkboxInfo["International conveyance"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
 				}else{
 					checkboxInfo[thisCountryName] = {"visible":true, "latestCases":cases, "latestDeaths":deaths, "population":population }

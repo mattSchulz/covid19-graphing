@@ -1,24 +1,25 @@
 {
   "regions": [
     {
-      "regionName": "China",
-      "class": "China",
+      "regionName": "Global",
+      "class": "Global",
       "countries": [
-        { "country": "China","class": "China","population": 1401754280}
+        { "country": "Global","class":"Global","population": 7713468000}
       ]
     },
     {
       "regionName": "Western Pacific Region",
       "class": "WesternPacificRegion",
       "countries": [
+        { "country": "China","class": "China","population": 1401754280},
         { "country": "Republic of Korea", "class": "RepublicofKorea", "population": 51780579 },
         { "country": "Australia", "class": "Australia", "population": 25645795 },
         { "country": "Malaysia", "class": "Malaysia", "population": 32718760 },
         { "country": "Japan", "class": "Japan", "population": 126010000 },
         { "country": "Singapore", "class": "Singapore", "population": 5703600 },
         { "country": "Philippines", "class": "Philippines", "population": 108402887 },
-       	{ "country": "Viet Nam", "class": "VietNam", "population": 96208984 },
-       	{ "country": "New Zealand", "class": "NewZealand", "population": 4970195 },
+        { "country": "Viet Nam", "class": "VietNam", "population": 96208984 },
+        { "country": "New Zealand", "class": "NewZealand", "population": 4970195 },
         { "country": "Brunei Darussalam", "class": "BruneiDarussalam", "population": 442400 },
         { "country": "Cambodia", "class": "Cambodia", "population": 15288489 },
         { "country": "Mongolia", "class": "Mongolia", "population": 3307476 },
@@ -30,9 +31,9 @@
       "regionName": "Western Pacific Region Territories",
       "class": "WesternPacificRegionTerritories",
       "countries": [
-		{ "country": "Guam", "class": "Guam", "population": 162742 },
-		{ "country": "French Polynesia", "class": "FrenchPolynesia", "population": 275918 },
-		{ "country": "New Caledonia", "class": "NewCaledonia", "population": 282200 }
+    { "country": "Guam", "class": "Guam", "population": 162742 },
+    { "country": "French Polynesia", "class": "FrenchPolynesia", "population": 275918 },
+    { "country": "New Caledonia", "class": "NewCaledonia", "population": 282200 }
       ]
     },
     {
@@ -60,18 +61,18 @@
         { "country": "Poland", "class": "Poland", "population": 38386000 },
         { "country": "Finland", "class": "Finland", "population": 5527573 },
         { "country": "Greece", "class": "Greece", "population": 10724599 },
-      	{ "country": "Iceland", "class": "Iceland", "population": 364260 },
+        { "country": "Iceland", "class": "Iceland", "population": 364260 },
         { "country": "Romania", "class": "Romania", "population": 19405156 },
         { "country": "Slovenia", "class": "Slovenia", "population": 2094060 },
         { "country": "Russian Federation", "class": "RussianFederation", "population": 146745098 },
         { "country": "Estonia", "class": "Estonia", "population": 1328360 },
-      	{ "country": "Croatia", "class": "Croatia", "population": 4076246 },
+        { "country": "Croatia", "class": "Croatia", "population": 4076246 },
         { "country": "Serbia", "class": "Serbia", "population": 6963764 },
         { "country": "Armenia", "class": "Armenia", "population": 2957500 },
         { "country": "Bulgaria", "class": "Bulgaria", "population": 7000039 },
         { "country": "Slovakia", "class": "Slovakia", "population": 5456362 },
         { "country": "Hungary", "class": "Hungary", "population": 9772756 },
-    	{ "country": "San Marino", "class": "SanMarion", "population": 33344 },
+      { "country": "San Marino", "class": "SanMarion", "population": 33344 },
         { "country": "Latvia", "class": "Latvia", "population": 1906800 },
         { "country": "Lithuania", "class": "Lithuania", "population": 2793350 },
         { "country": "Andorra", "class": "Andorra", "population": 77543 },
@@ -83,7 +84,7 @@
         { "country": "Malta", "class": "Malta", "population": 493559 },
         { "country": "Ukaraine", "class": "Ukaraine", "population": 41902416 },
         { "country": "Belarus", "class": "Belarus", "population": 9413446 },
-    	{ "country": "Azerbaijan", "class": "Azerbaijan", "population": 10067108 },
+      { "country": "Azerbaijan", "class": "Azerbaijan", "population": 10067108 },
         { "country": "Georgia", "class": "Georgia", "population": 3723464 },
         { "country": "Kazakhstan", "class": "Kazakhstan", "population": 18663384 },
         { "country": "Liechtenstein", "class": "Liechtenstein", "population": 38557 },
@@ -102,7 +103,7 @@
         { "country": "Kosovo", "class": "Kosovo", "population": 1810463 },
         { "country": "Guernsey", "class": "Guernsey", "population": 62792 },
         { "country": "Jersey", "class": "Jersey", "population": 106800 },
-       	{ "country": "Gibraltar", "class": "Gibraltar", "population": 33701 },
+        { "country": "Gibraltar", "class": "Gibraltar", "population": 33701 },
         { "country": "Isle of Man", "class": "IsleofMan", "population": 83314 },
         { "country": "Greenland", "class": "Greenland", "population": 55992 }
       ]
@@ -116,7 +117,7 @@
         { "country": "India", "class": "India", "population": 1359772087 },
         { "country": "Sri Lanka", "class": "SriLanka", "population": 21803000 },
         { "country": "Bangladesh", "class": "Bangladesh", "population": 168265026 },
-       	{ "country": "Maldives", "class": "Maldives", "population": 374775 },
+        { "country": "Maldives", "class": "Maldives", "population": 374775 },
         { "country": "Bhutan", "class": "Bhutan", "population": 741672 },
         { "country": "Myanmar", "class": "Myanmar", "population": 53582855 },
         { "country": "Nepal", "class": "Nepal", "population": 29609623 },
@@ -134,7 +135,7 @@
         { "country": "Bahrain", "class": "Bahrain", "population": 1543300 },
         { "country": "Egypt", "class": "Egypt", "population": 100127124 },
         { "country": "Lebanon", "class": "Lebanon", "population": 6825442 },
-       	{ "country": "Iraq", "class": "Iraq", "population": 39127900 },
+        { "country": "Iraq", "class": "Iraq", "population": 39127900 },
         { "country": "United Arab Emirates", "class": "UnitedArabEmirates", "population": 9890400 },
         { "country": "Kuwait", "class": "Kuwait", "population": 4420110 },
         { "country": "Morocco", "class": "Morocco", "population": 35838381 },
@@ -143,7 +144,7 @@
         { "country": "Oman", "class": "Oman", "population": 4664790 },
         { "country": "Afghanistan", "class": "Afghanistan", "population": 32225560 },
         { "country": "Djibouti", "class": "Djibouti", "population": 884017 },
-       	{ "country": "Sudan", "class": "Sudan", "population": 42345710 },
+        { "country": "Sudan", "class": "Sudan", "population": 42345710 },
         { "country": "Somalia", "class": "Somalia", "population": 11031386 },
         { "country": "Syrian Arab Republic", "class": "Syrian Arab Republic", "population": 17070135 }
       ]
@@ -162,7 +163,7 @@
         { "country": "United States of America", "class": "UnitedStatesofAmerica", "population": 329448153 },
         { "country": "Brazil", "class": "Brazil", "population": 211252866 },
         { "country": "Canada", "class": "Canada", "population": 37956869 },
-       	{ "country": "Ecuador", "class": "Ecuador", "population": 17443880 },
+        { "country": "Ecuador", "class": "Ecuador", "population": 17443880 },
         { "country": "Chile", "class": "Chile", "population": 19107216 },
         { "country": "Peru", "class": "Peru", "population": 32131400 },
         { "country": "Mexico", "class": "Mexico", "population": 126577691 },
@@ -205,12 +206,12 @@
         { "country": "Puerto Rico", "class": "PuertoRico", "population": 3193694 },
         { "country": "French Guiana", "class": "FrenchGuiana", "population": 290691 },
         { "country": "United States Virgin Islands", "class": "UnitedStatesVirginIslands", "population": 106405 },
-		{ "country": "Aruba", "class": "Aruba", "population": 112309 },
-		{ "country": "Saint Martin", "class": "SaintMartin", "population": 35746 },
+    { "country": "Aruba", "class": "Aruba", "population": 112309 },
+    { "country": "Saint Martin", "class": "SaintMartin", "population": 35746 },
         { "country": "Bermuda", "class": "Bermuda", "population": 71176 },
         { "country": "Cayman Islands", "class": "CaymanIslands", "population": 68076 },
         { "country": "Curaçao", "class": "Curaçao", "population": 158665 },
-       	{ "country": "Saint Barthélemy", "class": "SaintBarthélemy", "population": 9793 },
+        { "country": "Saint Barthélemy", "class": "SaintBarthélemy", "population": 9793 },
         { "country": "Sint Maarten", "class": "SintMaarten", "population": 41486 },
         { "country": "Montserrat", "class": "Montserrat", "population": 4649 },
         { "country": "Turks and Caicos Islands", "class": "Turks and Caicos Islands", "population": 31458 }        
@@ -228,15 +229,15 @@
         { "country": "Democratic Republic of the Congo", "class": "DemocraticRepublicoftheCongo", "population": 89561404 },
         { "country": "Mauritius", "class": "Mauritius", "population": 1265985 },
         { "country": "Rwanda", "class": "Rwanda", "population": 11262564 },
-		{ "country": "Ghana", "class": "Ghana", "population": 28308301 },
-		{ "country": "Côte d’Ivoire", "class": "CôtedIvoire", "population": 25823071 },
+    { "country": "Ghana", "class": "Ghana", "population": 28308301 },
+    { "country": "Côte d’Ivoire", "class": "CôtedIvoire", "population": 25823071 },
         { "country": "Nigeria", "class": "Nigeria", "population": 206139587 },
         { "country": "Togo", "class": "Togo", "population": 7538000 },
         { "country": "Kenya", "class": "Kenya", "population": 47564296 },
         { "country": "Madagascar", "class": "Madagascar", "population": 26262313 },
         { "country": "United Republic of Tanzania", "class": "UnitedRepublicofTanzania", "population": 4809768 },
         { "country": "Ethiopia", "class": "Ethiopia", "population": 109224414 },
-		{ "country": "Uganda", "class": "Uganda", "population": 42729036 },
+    { "country": "Uganda", "class": "Uganda", "population": 42729036 },
         { "country": "Seychelles", "class": "Seychelles", "population": 97096 },
         { "country": "Equatorial Guinea", "class": "EquatorialGuinea", "population": 1358276 },
         { "country": "Gabon", "class": "Gabon", "population": 2119275 },
@@ -252,8 +253,8 @@
         { "country": "Zambia", "class": "Zambia", "population": 17351708 },
         { "country": "Angola","class": "Angola", "population": 25789024 },
         { "country": "Mauritania", "class": "Mauritania", "population": 4077347 },
-		{ "country": "Niger", "class": "Niger", "population": 22442831 },
-		{ "country": "Zimbabwe", "class": "Zimbabwe", "population": 14438802 },
+    { "country": "Niger", "class": "Niger", "population": 22442831 },
+    { "country": "Zimbabwe", "class": "Zimbabwe", "population": 14438802 },
         { "country": "Eritrea", "class": "Eritrea", "population": 5750433 },
         { "country": "Gambia", "class": "Gambia", "population": 2051363 },
         { "country": "Mozambique", "class": "Mozambique", "population": 29496004 }
@@ -275,16 +276,18 @@
       ]
     }
   ],
-  "dates": [
+    "dates": [
     {
       "2020-01-20": {
         "cases": {
+          "Global" : 282,
           "China": 278,
           "Japan": 1,
           "Republic of Korea": 1,
           "Thailand": 2
         },
         "deaths": {
+          "Global" : 6,
           "China": 6
         }
       }
@@ -292,12 +295,14 @@
     {
       "2020-01-21": {
         "cases": {
+          "Global": 314,
           "China": 310,
           "Japan": 1,
           "Republic of Korea": 1,
           "Thailand": 2
         },
         "deaths": {
+          "Global": 6,
           "China": 6
         }
       }
@@ -305,6 +310,7 @@
     {
       "2020-01-23": {
         "cases": {
+          "Global": 581,
           "China": 574,
           "Japan": 1,
           "Republic of Korea": 1,
@@ -312,6 +318,7 @@
           "United States of America": 1
         },
         "deaths": {
+          "Global": 17,
           "China": 17
         }
       }
@@ -319,6 +326,7 @@
     {
       "2020-01-24": {
         "cases": {
+          "Global": 846,
           "China": 835,
           "Japan": 1,
           "Republic of Korea": 2,
@@ -328,6 +336,7 @@
           "United States of America": 1
         },
         "deaths": {
+          "Global": 25,
           "China": 25
         }
       }
@@ -335,6 +344,7 @@
     {
       "2020-01-25": {
         "cases": {
+          "Global": 1320,
           "China": 1297,
           "Japan": 3,
           "Republic of Korea": 2,
@@ -347,6 +357,7 @@
           "France": 3
         },
         "deaths": {
+          "Global": 41,
           "China": 41
         }
       }
@@ -354,6 +365,7 @@
     {
       "2020-01-26": {
         "cases": {
+          "Global": 2014,
           "China": 1985,
           "Japan": 3,
           "Republic of Korea": 2,
@@ -367,6 +379,7 @@
           "France": 3
         },
         "deaths": {
+          "Global": 56,
           "China": 56
         }
       }
@@ -374,6 +387,7 @@
     {
       "2020-01-27": {
         "cases": {
+          "Global": 2798,
           "China": 2761,
           "Japan": 4,
           "Republic of Korea": 4,
@@ -388,6 +402,7 @@
           "France": 3
         },
         "deaths": {
+          "Global": 80,
           "China": 80
         }
       }
@@ -395,6 +410,7 @@
     {
       "2020-01-28": {
         "cases": {
+          "Global": 4593,
           "China": 4537,
           "Japan": 6,
           "Republic of Korea": 4,
@@ -412,6 +428,7 @@
           "Germany": 1
         },
         "deaths": {
+          "Global": 106,
           "China": 106
         }
       }
@@ -419,6 +436,7 @@
     {
       "2020-01-29": {
         "cases": {
+          "Global": 6065,
           "China": 5997,
           "Japan": 7,
           "Republic of Korea": 4,
@@ -437,6 +455,7 @@
           "United Arab Emirates": 4
         },
         "deaths": {
+          "Global": 132,
           "China": 132
         }
       }
@@ -444,6 +463,7 @@
     {
       "2020-01-30": {
         "cases": {
+          "Global": 7818,
           "China": 7736,
           "Japan": 11,
           "Republic of Korea": 4,
@@ -465,6 +485,7 @@
           "United Arab Emirates": 4
         },
         "deaths": {
+          "Global": 170,
           "China": 170
         }
       }
@@ -472,6 +493,7 @@
     {
       "2020-01-31": {
         "cases": {
+          "Global": 9820,
           "China": 9720,
           "Japan": 14,
           "Republic of Korea": 11,
@@ -494,6 +516,7 @@
           "United Arab Emirates": 4
         },
         "deaths": {
+          "Global": 213,
           "China": 213
         }
       }
@@ -501,6 +524,7 @@
     {
       "2020-02-01": {
         "cases": {
+          "Global": 11953,
           "China": 11821,
           "Japan": 17,
           "Republic of Korea": 12,
@@ -527,6 +551,7 @@
           "United Arab Emirates": 4
         },
         "deaths": {
+          "Global": 259,
           "China": 259
         }
       }
@@ -534,6 +559,7 @@
     {
       "2020-02-02": {
         "cases": {
+          "Global": 14557,
           "China": 14411,
           "Japan": 20,
           "Republic of Korea": 15,
@@ -560,13 +586,16 @@
           "United Arab Emirates": 5
         },
         "deaths": {
-          "China": 304
+          "Global": 305,
+          "China": 304,
+          "Philippines": 1
         }
       }
     },
     {
       "2020-02-03": {
         "cases": {
+          "Global": 17391,
           "China": 17238,
           "Japan": 20,
           "Republic of Korea": 15,
@@ -593,6 +622,7 @@
           "United Arab Emirates": 5
         },
         "deaths": {
+          "Global": 362,
           "China": 361,
           "Philippines": 1
         }
@@ -601,6 +631,7 @@
     {
       "2020-02-04": {
         "cases": {
+          "Global": 20630,
           "China": 20471,
           "Japan": 20,
           "Republic of Korea": 16,
@@ -627,6 +658,7 @@
           "United Arab Emirates": 5
         },
         "deaths": {
+          "Global": 426,
           "China": 425,
           "Philippines": 1
         }
@@ -635,6 +667,7 @@
     {
       "2020-02-05": {
         "cases": {
+          "Global": 24554,
           "China": 24363,
           "Japan": 33,
           "Republic of Korea": 18,
@@ -662,6 +695,7 @@
           "United Arab Emirates": 5
         },
         "deaths": {
+          "Global": 492,
           "China": 491,
           "Philippines": 1
         }
@@ -670,6 +704,7 @@
     {
       "2020-02-06": {
         "cases": {
+          "Global": 28276,
           "China": 28060,
           "Japan": 25,
           "Republic of Korea": 23,
@@ -698,6 +733,7 @@
           "International conveyance": 20
         },
         "deaths": {
+          "Global": 565,
           "China": 564,
           "Philippines": 1
         }
@@ -706,6 +742,7 @@
     {
       "2020-02-07": {
         "cases": {
+          "Global": 31481,
           "China": 31211,
           "Singapore": 30,
           "Japan": 25,
@@ -734,6 +771,7 @@
           "International conveyance": 61
         },
         "deaths": {
+          "Global": 638,
           "China": 637,
           "Philippines": 1
         }
@@ -742,6 +780,7 @@
     {
       "2020-02-08": {
         "cases": {
+          "Global": 34886,
           "China": 34598,
           "Singapore": 33,
           "Japan": 25,
@@ -770,6 +809,7 @@
           "International conveyance": 64
         },
         "deaths": {
+          "Global": 724,
           "China": 723,
           "Philippines": 1
         }
@@ -778,6 +818,7 @@
     {
       "2020-02-09": {
         "cases": {
+          "Global": 37558,
           "China": 37251,
           "Singapore": 40,
           "Republic of Korea": 27,
@@ -806,6 +847,7 @@
           "International conveyance": 64
         },
         "deaths": {
+          "Global": 813,
           "China": 812,
           "Philippines": 1
         }
@@ -814,6 +856,7 @@
     {
       "2020-02-10": {
         "cases": {
+          "Global": 40554,
           "China": 40235,
           "Singapore": 43,
           "Republic of Korea": 27,
@@ -842,6 +885,7 @@
           "International conveyance": 70
         },
         "deaths": {
+          "Global": 910,
           "China": 909,
           "Philippines": 1
         }
@@ -850,6 +894,7 @@
     {
       "2020-02-11": {
         "cases": {
+          "Global": 43103,
           "China": 42708,
           "Singapore": 45,
           "Republic of Korea": 28,
@@ -878,6 +923,7 @@
           "International conveyance": 135
         },
         "deaths": {
+          "Global": 1018,
           "China": 1017,
           "Philippines": 1
         }
@@ -886,6 +932,7 @@
     {
       "2020-02-12": {
         "cases": {
+          "Global": 45171,
           "China": 44730,
           "Singapore": 47,
           "Republic of Korea": 28,
@@ -914,6 +961,7 @@
           "International conveyance": 175
         },
         "deaths": {
+          "Global": 1115,
           "China": 1114,
           "Philippines": 1
         }
@@ -922,6 +970,7 @@
     {
       "2020-02-13": {
         "cases": {
+          "Global": 46997,
           "China": 46550,
           "Singapore": 50,
           "Japan": 29,
@@ -950,6 +999,7 @@
           "International conveyance": 174
         },
         "deaths": {
+          "Global": 1369,
           "China": 1368,
           "Philippines": 1
         }
@@ -958,6 +1008,7 @@
     {
       "2020-02-14": {
         "cases": {
+          "Global": 49053,
           "China": 48548,
           "Singapore": 58,
           "Japan": 33,
@@ -986,6 +1037,7 @@
           "International conveyance": 218
         },
         "deaths": {
+          "Global": 1383,
           "China": 1381,
           "Japan": 1,
           "Philippines": 1
@@ -995,6 +1047,7 @@
     {
       "2020-02-15": {
         "cases": {
+          "Global": 50580,
           "China": 50054,
           "Singapore": 67,
           "Japan": 41,
@@ -1024,6 +1077,7 @@
           "International conveyance": 218
         },
         "deaths": {
+          "Global": 1526,
           "China": 1524,
           "Japan": 1,
           "Philippines": 1
@@ -1033,6 +1087,7 @@
     {
       "2020-02-16": {
         "cases": {
+          "Global": 51857,
           "China": 51174,
           "Singapore": 72,
           "Japan": 53,
@@ -1062,6 +1117,7 @@
           "International conveyance": 355
         },
         "deaths": {
+          "Global": 1669,
           "China": 1666,
           "Japan": 1,
           "Philippines": 1,
@@ -1072,6 +1128,7 @@
     {
       "2020-02-17": {
         "cases": {
+          "Global": 71429,
           "China": 70635,
           "Singapore": 75,
           "Japan": 59,
@@ -1101,6 +1158,7 @@
           "International conveyance": 454
         },
         "deaths": {
+          "Global": 1775,
           "China": 1772,
           "Japan": 1,
           "Philippines": 1,
@@ -1111,6 +1169,7 @@
     {
       "2020-02-18": {
         "cases": {
+          "Global": 73332,
           "China": 72528,
           "Singapore": 77,
           "Japan": 65,
@@ -1140,6 +1199,7 @@
           "International conveyance": 454
         },
         "deaths": {
+          "Global": 1873,
           "China": 1870,
           "Japan": 1,
           "Philippines": 1,
@@ -1150,6 +1210,7 @@
     {
       "2020-02-19": {
         "cases": {
+          "Global": 75204,
           "China": 74280,
           "Singapore": 81,
           "Japan": 73,
@@ -1179,6 +1240,7 @@
           "International conveyance": 542
         },
         "deaths": {
+          "Global": 2009,
           "China": 2006,
           "Japan": 1,
           "Philippines": 1,
@@ -1189,6 +1251,7 @@
     {
       "2020-02-20": {
         "cases": {
+          "Global": 75748,
           "China": 74675,
           "Republic of Korea": 104,
           "Japan": 85,
@@ -1219,6 +1282,7 @@
           "International conveyance": 621
         },
         "deaths": {
+          "Global": 2129,
           "China": 2121,
           "Republic of Korea": 1,
           "Japan": 1,
@@ -1232,6 +1296,7 @@
     {
       "2020-02-21": {
         "cases": {
+          "Global": 76769,
           "China": 75569,
           "Republic of Korea": 204,
           "Japan": 93,
@@ -1262,6 +1327,7 @@
           "International conveyance": 634
         },
         "deaths": {
+          "Global": 2247,
           "China": 2239,
           "Republic of Korea": 1,
           "Japan": 1,
@@ -1275,6 +1341,7 @@
     {
       "2020-02-22": {
         "cases": {
+          "Global": 77794,
           "China": 76392,
           "Republic of Korea": 346,
           "Japan": 105,
@@ -1307,6 +1374,7 @@
           "International conveyance": 634
         },
         "deaths": {
+          "Global": 2359,
           "China": 2348,
           "Republic of Korea": 2,
           "Japan": 1,
@@ -1320,6 +1388,7 @@
     {
       "2020-02-23": {
         "cases": {
+          "Global": 78811,
           "China": 77042,
           "Republic of Korea": 602,
           "Japan": 132,
@@ -1352,6 +1421,7 @@
           "International conveyance": 634
         },
         "deaths": {
+          "Global": 2462,
           "China": 2445,
           "Republic of Korea": 5,
           "Japan": 1,
@@ -1366,6 +1436,7 @@
     {
       "2020-02-24": {
         "cases": {
+          "Global": 79331,
           "China": 77262,
           "Republic of Korea": 763,
           "Japan": 144,
@@ -1399,6 +1470,7 @@
           "International conveyance": 691
         },
         "deaths": {
+          "Global": 2618,
           "China": 2595,
           "Republic of Korea": 7,
           "Japan": 1,
@@ -1413,6 +1485,7 @@
     {
       "2020-02-25": {
         "cases": {
+          "Global": 80239,
           "China": 77780,
           "Republic of Korea": 977,
           "Japan": 157,
@@ -1450,6 +1523,7 @@
           "International conveyance": 691
         },
         "deaths": {
+          "Global": 2700,
           "China": 2666,
           "Republic of Korea": 10,
           "Japan": 1,
@@ -1464,6 +1538,7 @@
     {
       "2020-02-26": {
         "cases": {
+          "Global": 81109,
           "China": 78191,
           "Republic of Korea": 1261,
           "Japan": 164,
@@ -1505,6 +1580,7 @@
           "International conveyance": 691
         },
         "deaths": {
+          "Global": 2762,
           "China": 2718,
           "Republic of Korea": 12,
           "Japan": 1,
@@ -1519,6 +1595,7 @@
     {
       "2020-02-27": {
         "cases": {
+          "Global": 82294,
           "China": 78630,
           "Republic of Korea": 1766,
           "Japan": 186,
@@ -1569,6 +1646,7 @@
           "International conveyance": 705
         },
         "deaths": {
+          "Global": 2804,
           "China": 2747,
           "Republic of Korea": 13,
           "Japan": 3,
@@ -1583,6 +1661,7 @@
     {
       "2020-02-28": {
         "cases": {
+          "Global": 83652,
           "China": 78961,
           "Republic of Korea": 2337,
           "Japan": 210,
@@ -1638,6 +1717,7 @@
           "International conveyance": 705
         },
         "deaths": {
+          "Global": 2858,
           "China": 2791,
           "Republic of Korea": 13,
           "Japan": 4,
@@ -1652,6 +1732,7 @@
     {
       "2020-02-29": {
         "cases": {
+          "Global": 85403,
           "China": 79394,
           "Republic of Korea": 3150,
           "Japan": 230,
@@ -1709,6 +1790,7 @@
           "International conveyance": 705
         },
         "deaths": {
+          "Global": 2924,
           "China": 2838,
           "Republic of Korea": 17,
           "Japan": 5,
@@ -1723,6 +1805,7 @@
     {
       "2020-03-01": {
         "cases": {
+          "Global": 87137,
           "China": 79968,
           "Republic of Korea": 3736,
           "Japan": 239,
@@ -1785,6 +1868,7 @@
           "International conveyance": 705
         },
         "deaths": {
+          "Global": 2977,
           "China": 2873,
           "Republic of Korea": 18,
           "Japan": 5,
@@ -1799,6 +1883,7 @@
     {
       "2020-03-02": {
         "cases": {
+          "Global": 88948,
           "China": 80174,
           "Republic of Korea": 4212,
           "Japan": 254,
@@ -1867,6 +1952,7 @@
           "International conveyance": 706
         },
         "deaths": {
+          "Global": 3043,
           "China": 2915,
           "Republic of Korea": 22,
           "Japan": 6,
@@ -1883,6 +1969,7 @@
     {
       "2020-03-03": {
         "cases": {
+          "Global": 90869,
           "China": 80304,
           "Republic of Korea": 4812,
           "Japan": 268,
@@ -1959,6 +2046,7 @@
           "International conveyance": 706
         },
         "deaths": {
+          "Global": 3112,
           "China": 2946,
           "Republic of Korea": 28,
           "Japan": 6,
@@ -1976,6 +2064,7 @@
     {
       "2020-03-04": {
         "cases": {
+          "Global": 93091,
           "China": 80422,
           "Republic of Korea": 5328,
           "Japan": 284,
@@ -2056,6 +2145,7 @@
           "International conveyance": 706
         },
         "deaths": {
+          "Global": 3198,
           "China": 2984,
           "Republic of Korea": 32,
           "Japan": 6,
@@ -2073,6 +2163,7 @@
     {
       "2020-03-05": {
         "cases": {
+          "Global": 95324,
           "China": 80565,
           "Republic of Korea": 5766,
           "Japan": 317,
@@ -2161,6 +2252,7 @@
           "International conveyance": 706
         },
         "deaths": {
+          "Global": 3281,
           "China": 3015,
           "Republic of Korea": 35,
           "Japan": 6,
@@ -2180,6 +2272,7 @@
     {
       "2020-03-06": {
         "cases": {
+          "Global": 98192,
           "China": 80711,
           "Republic of Korea": 6284,
           "Japan": 349,
@@ -2272,6 +2365,7 @@
           "International conveyance": 696
         },
         "deaths": {
+          "Global": 3380,
           "China": 3045,
           "Republic of Korea": 42,
           "Japan": 6,
@@ -2292,6 +2386,7 @@
     {
       "2020-03-07": {
         "cases": {
+          "Global": 101927,
           "China": 80813,
           "Republic of Korea": 6767,
           "Japan": 408,
@@ -2389,6 +2484,7 @@
           "International conveyance": 696
         },
         "deaths": {
+          "Global": 3486,
           "China": 3073,
           "Republic of Korea": 44,
           "Japan": 6,
@@ -2411,6 +2507,7 @@
     {
       "2020-03-08": {
         "cases": {
+          "Global": 105586,
           "China": 80859,
           "Republic of Korea": 7134,
           "Japan": 455,
@@ -2516,6 +2613,7 @@
           "International conveyance": 696
         },
         "deaths": {
+          "Global": 3584,
           "China": 3100,
           "Republic of Korea": 50,
           "Japan": 6,
@@ -2540,6 +2638,7 @@
     {
       "2020-03-09": {
         "cases": {
+          "Global": 109577,
           "China": 80904,
           "Republic of Korea": 7382,
           "Japan": 488,
@@ -2648,6 +2747,7 @@
           "International conveyance": 696
         },
         "deaths": {
+          "Global": 3809,
           "China": 3123,
           "Republic of Korea": 51,
           "Japan": 7,
@@ -2673,6 +2773,7 @@
     {
       "2020-03-10": {
         "cases": {
+          "Global": 113702,
           "China": 80924,
           "Republic of Korea": 7513,
           "Japan": 514,
@@ -2786,6 +2887,7 @@
           "International conveyance": 696
         },
         "deaths": {
+          "Global": 4012,
           "China": 3140,
           "Republic of Korea": 54,
           "Japan": 9,
@@ -2812,6 +2914,7 @@
     {
       "2020-03-11": {
         "cases": {
+          "Global": 118319,
           "China": 80955,
           "Republic of Korea": 7755,
           "Japan": 568,
@@ -2929,6 +3032,7 @@
           "International conveyance": 696
         },
         "deaths": {
+          "Global": 4292,
           "China": 3162,
           "Republic of Korea": 60,
           "Japan": 12,
@@ -2960,6 +3064,7 @@
     {
       "2020-03-12": {
         "cases": {
+          "Global": 125260,
           "China": 80981,
           "Republic of Korea": 7869,
           "Japan": 620,
@@ -3081,6 +3186,7 @@
           "International conveyance": 696
         },
         "deaths": {
+          "Global": 4613,
           "China": 3173,
           "Republic of Korea": 66,
           "Japan": 15,
@@ -3116,6 +3222,7 @@
     {
       "2020-03-13": {
         "cases": {
+          "Global": 132758,
           "China": 80991,
           "Republic of Korea": 7979,
           "Japan": 675,
@@ -3242,6 +3349,7 @@
           "International conveyance": 696
         },
         "deaths": {
+          "Global": 4955,
           "China": 3180,
           "Republic of Korea": 66,
           "Japan": 19,
@@ -3281,6 +3389,7 @@
     {
       "2020-03-14": {
         "cases": {
+          "Global": 142534,
           "China": 81021,
           "Republic of Korea": 8086,
           "Japan": 716,
@@ -3419,6 +3528,7 @@
           "International conveyance": 697
         },
         "deaths": {
+          "Global": 5392,
           "China": 3194,
           "Republic of Korea": 72,
           "Japan": 21,
@@ -3462,6 +3572,7 @@
     {
       "2020-03-15": {
         "cases": {
+          "Global": 153517,
           "China": 81048,
           "Republic of Korea": 8162,
           "Japan": 780,
@@ -3609,6 +3720,7 @@
           "International conveyance": 697
         },
         "deaths": {
+          "Global": 5735,
           "China": 3204,
           "Republic of Korea": 75,
           "Japan": 22,
@@ -3652,6 +3764,7 @@
     {
       "2020-03-16": {
         "cases": {
+          "Global": 167515,
           "China": 81077,
           "Republic of Korea": 8236,
           "Japan": 814,
@@ -3806,6 +3919,7 @@
           "International conveyance": 712
         },
         "deaths": {
+          "Global": 6606,
           "China": 3218,
           "Republic of Korea": 75,
           "Japan": 24,
@@ -3858,6 +3972,7 @@
     {
       "2020-03-17": {
         "cases": {
+          "Global": 179111,
           "China": 81116,
           "Republic of Korea": 8320,
           "Japan": 829,
@@ -4020,6 +4135,7 @@
           "International conveyance": 712
         },
         "deaths": {
+          "Global": 7426,
           "China": 3231,
           "Republic of Korea": 81,
           "Japan": 28,
@@ -4073,6 +4189,7 @@
     {
       "2020-03-18": {
         "cases": {
+          "Global": 191127,
           "China": 81116,
           "Republic of Korea": 8320,
           "Japan": 829,
@@ -4105,11 +4222,11 @@
           "Finland": 319,
           "Israel": 304,
           "Ireland": 292,
-		  "Slovenia": 275,
+      "Slovenia": 275,
           "Poland": 246,
           "Estonia": 225,
           "Iceland": 225,
-		  "Romania": 184,
+      "Romania": 184,
           "Luxembourg": 140,
           "San Marino": 104,
           "Slovakia": 97,
@@ -4236,6 +4353,7 @@
           "International conveyance": 712
         },
         "deaths": {
+          "Global": 7807,
           "China": 3231,
           "Republic of Korea": 81,
           "Japan": 28,
@@ -4290,6 +4408,7 @@
     {
       "2020-03-19": {
         "cases": {
+          "Global": 209839,
           "China": 81174,
           "Republic of Korea": 8413,
           "Japan": 873,
@@ -4323,10 +4442,10 @@
           "Finland": 359,
           "Ireland": 292,
           "Poland": 287,
-		  "Slovenia": 286,
+      "Slovenia": 286,
           "Estonia": 258,
           "Iceland": 250,
-		  "Romania": 246,
+      "Romania": 246,
           "Luxembourg": 210,
           "Turkey": 191,
           "Russian Federation": 147,
@@ -4461,6 +4580,7 @@
           "International conveyance": 712
         },
         "deaths": {
+          "Global": 8778,
           "China": 3242,
           "Republic of Korea": 84,
           "Japan": 29,
@@ -4522,6 +4642,7 @@
         {
       "2020-03-20": {
         "cases": {
+          "Global": 234073,
           "China": 81300,
           "Republic of Korea": 8652,
           "Japan": 950,
@@ -4559,9 +4680,9 @@
           "Luxembourg": 345,
           "Iceland": 330,
           "Poland": 325,
-		  "Slovenia": 319,
+      "Slovenia": 319,
           "Estonia": 267,
-		  "Romania": 260,
+      "Romania": 260,
           "Russian Federation": 199,
           "Turkey": 191,
           "San Marino": 126,
@@ -4701,6 +4822,7 @@
           "International conveyance": 712
         },
         "deaths": {
+          "Global": 9840,
           "China": 3253,
           "Republic of Korea": 94,
           "Japan": 33,
@@ -4767,6 +4889,8 @@
         {
       "2020-03-21": {
         "cases": {
+          "Global": 266073,
+          
           "China": 81416,
           "Republic of Korea": 8799,
           "Malaysia": 1030,
@@ -4808,8 +4932,8 @@
           "Finland": 450,
           "Poland": 425,
           "Iceland": 409,
-		  "Slovenia": 341,
-		  "Romania": 308,
+      "Slovenia": 341,
+      "Romania": 308,
           "Estonia": 283,
           "Russian Federation": 253,
           "San Marino": 151,
@@ -4963,6 +5087,8 @@
           "International conveyance": 712
         },
         "deaths": {
+          "Global": 11184,
+          
           "China": 3261,
           "Republic of Korea": 102,
           "Malaysia": 3,
@@ -5045,6 +5171,8 @@
         {
       "2020-03-22": {
         "cases": {
+          "Global": 292142,
+          
           "China": 81498,
           "Republic of Korea": 8897,
           "Malaysia": 1183,
@@ -5086,8 +5214,8 @@
           "Greece": 530,
           "Finland": 521,
           "Iceland": 473,
-		  "Slovenia": 383,
-		  "Romania": 367,
+      "Slovenia": 383,
+      "Romania": 367,
           "Estonia": 306,
           "Russian Federation": 306,
           "Croatia": 206,
@@ -5245,6 +5373,8 @@
           "International conveyance": 712
         },
         "deaths": {
+          "Global": 12784,
+          
           "China": 3267,
           "Republic of Korea": 104,
           "Malaysia": 3,
@@ -5336,6 +5466,8 @@
         {
       "2020-03-23": {
         "cases": {
+          "Global": 332930,
+          
           "China": 81601,
           "Republic of Korea": 8961,
           "Australia": 1396,
@@ -5378,8 +5510,8 @@
           "Greece": 624,
           "Iceland": 568,
           "Russian Federation": 438,
-		  "Romania": 433,
-		  "Slovenia": 414,
+      "Romania": 433,
+      "Slovenia": 414,
           "Estonia": 326,
           "Croatia": 235,
           "Serbia": 188,
@@ -5540,6 +5672,8 @@
           "International conveyance": 712
         },
         "deaths": {
+          "Global": 14510,
+
           "China": 3276,
           "Republic of Korea": 111,
           "Australia": 7,
@@ -5640,6 +5774,8 @@
         {
       "2020-03-24": {
         "cases": {
+          "Global": 372757,
+
           "China": 81747,
           "Republic of Korea": 9037,
           "Australia": 1709,
@@ -5681,8 +5817,8 @@
           "Finland": 700,
           "Greece": 695,
           "Iceland": 588,
-		  "Romania": 576,
-		  "Slovenia": 442,
+      "Romania": 576,
+      "Slovenia": 442,
           "Russian Federation": 438,
           "Estonia": 352,
           "Croatia": 306,
@@ -5848,6 +5984,8 @@
           "International conveyance": 712
         },
         "deaths": {
+          "Global": 16231,
+
           "China": 3283,
           "Republic of Korea": 120,
           "Australia": 7,
