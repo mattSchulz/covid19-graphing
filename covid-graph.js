@@ -90,16 +90,18 @@ function drawGraphLines(){
 	}
 
 	function drawLineFirstReport(lineType){
-		suffix = ""
+		suffix = "";
+		xaxisSuffix = "";
 		if(normaliseNumbers){
 			yTitle = "per 100,000"
+			xaxisSuffix = " per 100,000"
 		}else{
 			yTitle = "Individuals"
 		}
 		layout = {
 		  title: 'Covid-19 proliferation',
 		  xaxis: {
-		    title: 'Days since reaching threshold of '+ minimumThreshold,
+		    title: 'Days since reaching threshold of '+ minimumThreshold + xaxisSuffix,
 		    showgrid: false,
 		    zeroline: false
 		  },
@@ -237,8 +239,8 @@ function processJson(json_obj){
 	<div class='listInfo'>Order country checkboxes by:\
 		<select class='fontMedium' id='checkBoxOrder'>\
 		  <option value='region'>cases in each region</option>\
-		  <option value='cases'>cases globally</option>\
-		  <option value='deaths'>deaths globally</option>\
+		  <option value='cases'>cases in decending order</option>\
+		  <option value='deaths'>deaths in decending order</option>\
 		</select>\
 	</div>\
 	<div>Countries are listed with numbers of: (cases, deaths)</div>";
@@ -254,7 +256,7 @@ function processJson(json_obj){
 		thisRegionClass = globalJson.regions[r].class
 		//if thisRegionKey does not end in " Territories"
 		if(!(/.+\sTerritories$/.test(thisRegionKey))){
-			if((thisRegionClass == "China")||(thisRegionClass == "Internationalconveyance")){
+			if((thisRegionClass == "Global")||(thisRegionClass == "Internationalconveyance")){
 				checkDefault = ""
 			}else{
 				checkDefault = "checked"
@@ -279,8 +281,8 @@ function processJson(json_obj){
 										<input type='checkbox' class='countryCheck' "+checkDefault+">\
 							 			<label class='countryCheckLabel' for='code-"+thisCountryClass+"' labelTitle='"+thisCountryName+"'>"+thisCountryName+" ("+cases+", "+deaths+")</label>\
 							 		</div>";
-				if(thisCountryName == "China"){
-					checkboxInfo["China"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
+				if(thisCountryName ==  "Global"){
+					checkboxInfo["Global"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
 				}else if(thisCountryName ==  "International conveyance"){
 					checkboxInfo["International conveyance"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
 				}else{
@@ -320,7 +322,7 @@ function processJson(json_obj){
 					<div id='byDeathsCheckboxPane' class='latestDeathsOptions hideCheckboxes'>Countries sorted by total deaths"+latestDeathsHtml+"</div></div>"
 
 	footer = "<div id='citationsNeeded'>\
-				sources:<ul><li>Covid-19 data - <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports'>WHO situation reports</a></li>\
+				sources:<ul><li>Covid-19 data - <a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports'>WHO situation reports "+globalJson.reportText+"</a></li>\
 				<li>population figures - <a href='https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population'>wikipedia</a> (and individual pages)</li></ul><br />\
 				Development and data-harvest <a href='https://twitter.com/monototo'>@monototo</a>. Contributing design and data maintenance <a href='https://twitter.com/eeejaytee'>@eeejaytee</a>.<br />\
 				<a href='covid-19-data.json'>JSON data</a> / <a href='https://github.com/mattSchulz/covid19-graphing'>github</a> / <a href='licence.html'>MIT licence</a><br/><br/>\

@@ -60,7 +60,7 @@ a{
 }
 .regionCheck{
     display: inline-table;
-    width: 22em;
+    width: 25em;
     background: whitesmoke;
     margin: 0.2em;
     padding: 0.5em;
@@ -72,8 +72,8 @@ a{
 	margin-top: 0.2em;
 	margin-bottom: 0.6em;
 }
-div.regionCheck.China>div.CheckAll>input,
-div.regionCheck.China>div.CheckAll>label,
+div.regionCheck.Global>div.CheckAll>input,
+div.regionCheck.Global>div.CheckAll>label,
 div.regionCheck.Internationalconveyance>div.CheckAll>input,
 div.regionCheck.Internationalconveyance>div.CheckAll>label{
 	display: none;
