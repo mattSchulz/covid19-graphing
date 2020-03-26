@@ -265,7 +265,7 @@ function processJson(json_obj){
 									<div class='sectionTitle'>"+thisRegionKey+"</div>\
 									<div class='checkAll'>\
 										<input type='checkbox' class='regionCheckInput code-"+thisRegionClass+"' name='code-"+thisRegionClass+"' "+checkDefault+">\
-		 					 			<label class='regionCheckLabel' for='code-"+thisRegionClass+"' labelTitle='"+thisRegionKey+"'>uncheck/check all</label>\
+		 					 			<label class='regionCheckLabel' for='code-"+thisRegionClass+"' data-labelTitle='"+thisRegionKey+"'>uncheck/check all</label>\
 	 					 			</div>"
 	 		listLength = globalJson.regions[r].countries.length
  			for(rc=0; rc<listLength;rc++){
@@ -279,7 +279,7 @@ function processJson(json_obj){
 				}
 				regionCheckboxes += "<div class='countryCheckGroup'>\
 										<input type='checkbox' class='countryCheck' "+checkDefault+">\
-							 			<label class='countryCheckLabel' for='code-"+thisCountryClass+"' labelTitle='"+thisCountryName+"'>"+thisCountryName+" ("+cases+", "+deaths+")</label>\
+							 			<label class='countryCheckLabel' for='code-"+thisCountryClass+"' data-labelTitle='"+thisCountryName+"'>"+thisCountryName+" ("+cases+", "+deaths+")</label>\
 							 		</div>";
 				if(thisCountryName ==  "Global"){
 					checkboxInfo["Global"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
@@ -311,11 +311,11 @@ function processJson(json_obj){
 	for(lateNo=0;lateNo<latestCasesArray.length;lateNo++){
 			  latestCasesHtml += "<div>\
 								<input type='checkbox' class='countryCheck'>\
-			 					<label class='countryCheckLabel' labelTitle='"+latestCasesArray[lateNo].key+"'>"+latestCasesArray[lateNo].key+" ("+latestCasesArray[lateNo].value+", "+latestDeathsArray[lateNo].value+")</label>\
+			 					<label class='countryCheckLabel' data-labelTitle='"+latestCasesArray[lateNo].key+"'>"+latestCasesArray[lateNo].key+" ("+latestCasesArray[lateNo].value+", "+latestDeathsArray[lateNo].value+")</label>\
 			 			    </div>";
 		latestDeathsHtml += "<div>\
 								<input type='checkbox' class='countryCheck'>\
-			 					<label class='countryCheckLabel' labelTitle='"+latestDeathsArray[lateNo].key+"'>"+latestDeathsArray[lateNo].key+" ("+latestCasesArray[lateNo].value+", "+latestDeathsArray[lateNo].value+")</label>\
+			 					<label class='countryCheckLabel' data-labelTitle='"+latestDeathsArray[lateNo].key+"'>"+latestDeathsArray[lateNo].key+" ("+latestCasesArray[lateNo].value+", "+latestDeathsArray[lateNo].value+")</label>\
 			 		  		</div>";
 	}
 	optionsHtml += "<div id='byCasesCheckboxPane' class='latestCasesOptions hideCheckboxes'>Countries sorted by total cases"+latestCasesHtml+"</div>\
@@ -342,7 +342,7 @@ function processJson(json_obj){
 			// set the checkboxInfo for each of these boxes
 			$(this).parent().siblings("div.regionCheck").children("div.countryCheckGroup").children("label")
 				.each(function(){
-					checkboxInfo[$(this).attr("labelTitle")]["visible"] = true;
+					checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = true;
 				});
 			// set the checkboxInfo for each of these boxes
 			$(this).parent().siblings("div.regionCheck").children("div.countryCheckGroup").children("input")
@@ -357,7 +357,7 @@ function processJson(json_obj){
 		}else{
 			$(this).parent().siblings("div.regionCheck").children("div.countryCheckGroup").children("label")
 				.each(function(){
-					checkboxInfo[$(this).attr("labelTitle")]["visible"] = false;
+					checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = false;
 				});
 			$(this).parent().siblings("div.regionCheck").children("div.countryCheckGroup").children("input")
 				.each(function(){ 
@@ -376,7 +376,7 @@ function processJson(json_obj){
 			// set the checkboxInfo for each of these boxes
 			$(this).parent().siblings("div.countryCheckGroup").children("label")
 				.each(function(){
-					checkboxInfo[$(this).attr("labelTitle")]["visible"] = true;
+					checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = true;
 				});
 			// set the checkboxInfo for each of these boxes
 			$(this).parent().siblings("div.countryCheckGroup").children("input")
@@ -386,7 +386,7 @@ function processJson(json_obj){
 		}else{
 			$(this).parent().siblings("div.countryCheckGroup").children("label")
 				.each(function(){
-					checkboxInfo[$(this).attr("labelTitle")]["visible"] = false;
+					checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = false;
 				});
 			$(this).parent().siblings("div.countryCheckGroup").children("input")
 				.each(function(){ 
@@ -399,7 +399,7 @@ function processJson(json_obj){
 		if($(this).is(":checked")){
 			$("div#byCasesCheckboxPane > div > label.countryCheckLabel")
 				.each(function(){
-					checkboxInfo[$(this).attr("labelTitle")]["visible"] = true;
+					checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = true;
 				});
 			$("div#byCasesCheckboxPane > div > input.countryCheck")
 				.each(function(){
@@ -408,7 +408,7 @@ function processJson(json_obj){
 		}else{
 			$("div#byCasesCheckboxPane > div > label.countryCheckLabel")
 				.each(function(){
-					checkboxInfo[$(this).attr("labelTitle")]["visible"] = false;
+					checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = false;
 				});
 			$("div#byCasesCheckboxPane > div > input.countryCheck")
 				.each(function(){
@@ -421,7 +421,7 @@ function processJson(json_obj){
 		if($(this).is(":checked")){
 			$("div#byDeathsCheckboxPane > div > label.countryCheckLabel")
 				.each(function(){
-					checkboxInfo[$(this).attr("labelTitle")]["visible"] = true;
+					checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = true;
 				});
 			$("div#byDeathsCheckboxPane > div > input.countryCheck")
 				.each(function(){
@@ -430,7 +430,7 @@ function processJson(json_obj){
 		}else{
 			$("div#byDeathsCheckboxPane > div > label.countryCheckLabel")
 				.each(function(){
-					checkboxInfo[$(this).attr("labelTitle")]["visible"] = false;
+					checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = false;
 				});
 			$("div#byDeathsCheckboxPane > div > input.countryCheck")
 				.each(function(){
@@ -441,9 +441,9 @@ function processJson(json_obj){
 	})
 	.on('click', "input.countryCheck", function(){
 		if($(this).is(":checked")){
-			checkboxInfo[$(this).siblings("label").attr("labelTitle")]["visible"] = true;
+			checkboxInfo[$(this).siblings("label").attr("data-labelTitle")]["visible"] = true;
 		}else{
-			checkboxInfo[$(this).siblings("label").attr("labelTitle")]["visible"] = false;
+			checkboxInfo[$(this).siblings("label").attr("data-labelTitle")]["visible"] = false;
 		}
 		drawGraphLines();
 	})
@@ -462,7 +462,7 @@ function processJson(json_obj){
 			$(".showCheckboxes").removeClass("showCheckboxes").addClass("hideCheckboxes");
 			$("#byRegionCheckboxPane").removeClass("hideCheckboxes").addClass("showCheckboxes");
 			$("#byRegionCheckboxPane>div.regionCheck>div.countryCheckGroup>label.countryCheckLabel").each(function(){
-			    if(checkboxInfo[$(this).attr("labeltitle")]["visible"]){
+			    if(checkboxInfo[$(this).attr("data-labeltitle")]["visible"]){
 			    	$(this).siblings("input")[0].checked = true;
 			    }else{
 			    	$(this).siblings("input")[0].checked = false;
@@ -473,7 +473,7 @@ function processJson(json_obj){
 			$("#byCasesCheckboxPane").removeClass("hideCheckboxes").addClass("showCheckboxes");
 			//check/upcheck checkboxes to bring them up to date with values in checkboxInfo
 			$("#byCasesCheckboxPane>div>label.countryCheckLabel").each(function(){
-			    if(checkboxInfo[$(this).attr("labeltitle")]["visible"]){
+			    if(checkboxInfo[$(this).attr("data-labeltitle")]["visible"]){
 			    	$(this).siblings("input")[0].checked = true;
 			    }else{
 			    	$(this).siblings("input")[0].checked = false;
@@ -484,7 +484,7 @@ function processJson(json_obj){
 			$("#byDeathsCheckboxPane").removeClass("hideCheckboxes").addClass("showCheckboxes");
 			//check/upcheck checkboxes to bring them up to date with values in checkboxInfo
 			$("#byDeathsCheckboxPane>div>label.countryCheckLabel").each(function(){
-			    if(checkboxInfo[$(this).attr("labeltitle")]["visible"]){
+			    if(checkboxInfo[$(this).attr("data-labeltitle")]["visible"]){
 			    	$(this).siblings("input")[0].checked = true;
 			    }else{
 			    	$(this).siblings("input")[0].checked = false;
