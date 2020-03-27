@@ -25,7 +25,7 @@
         { "country": "Cambodia", "class": "Cambodia", "population": 15288489 },
         { "country": "Mongolia", "class": "Mongolia", "population": 3307476 },
         { "country": "Fiji", "class": "Fiji", "population": 926276 },
-        { "country": "Lao People's Democratic Republic", "class": "LaoPeople'sDemocraticRepublic", "population": 7061507 },
+        { "country": "Lao People’s Democratic Republic", "class": "LaoPeoplesDemocraticRepublic", "population": 7061507 },
         { "country": "Papua New Guinea", "class": "PapuaNewGuinea", "population": 8606323 }
       ]
     },
@@ -6110,7 +6110,7 @@
           "Cambodia": 91,
           "Mongolia": 10,
           "Fiji": 4,
-          "Lao People's Democratic Republic": 2,
+          "Lao People’s Democratic Republic": 2,
           "Papua New Guinea": 1,
           
           "Guam": 32,
@@ -6431,7 +6431,7 @@
           "Cambodia": 96,
           "Mongolia": 10,
           "Fiji": 5,
-          "Lao People's Democratic Republic": 3,
+          "Lao People’s Democratic Republic": 3,
           "Papua New Guinea": 1,
           
           "Guam": 37,
