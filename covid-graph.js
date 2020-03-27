@@ -393,7 +393,8 @@ function processJson(json_obj){
 			$(this).parent().siblings("div.countryCheckGroup").children("label")
 				.each(function(){
 					if(typeof $(this).attr("data-labelTitle") != 'undefined'){
-						checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = false;
+						thing = $(this).attr("data-labelTitle")
+						checkboxInfo[thing]["visible"] = false;
 					}
 				});
 			$(this).parent().siblings("div.countryCheckGroup").children("input")
