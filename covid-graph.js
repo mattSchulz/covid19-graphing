@@ -340,31 +340,35 @@ function processJson(json_obj){
 	.on('click', "#regionsCheckAll", function(){
 		if($(this).is(":checked")){
 			// set the checkboxInfo for each of these boxes
-			$(this).parent().siblings("div.regionCheck").children("div.countryCheckGroup").children("label")
+			$(this).siblings("div.regionCheck").children("div.countryCheckGroup").children("label")
 				.each(function(){
-					checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = true;
+					if(typeof $(this).attr("data-labelTitle") != 'undefined'){
+						checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = true;
+					}
 				});
 			// set the checkboxInfo for each of these boxes
-			$(this).parent().siblings("div.regionCheck").children("div.countryCheckGroup").children("input")
+			$(this).siblings("div.regionCheck").children("div.countryCheckGroup").children("input")
 				.each(function(){ 
 					this.checked = true;
 				})
 			//also select all of the select all checkboxes
-			$(this).parent().siblings("div.regionCheck").children("div.checkAll").children("input")
+			$(this).siblings("div.regionCheck").children("div.checkAll").children("input")
 				.each(function(){ 
 					this.checked = true;
 				})
 		}else{
-			$(this).parent().siblings("div.regionCheck").children("div.countryCheckGroup").children("label")
+			$(this).siblings("div.regionCheck").children("div.countryCheckGroup").children("label")
 				.each(function(){
-					checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = false;
+					if(typeof $(this).attr("data-labelTitle") != 'undefined'){
+						checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = false;
+					}
 				});
-			$(this).parent().siblings("div.regionCheck").children("div.countryCheckGroup").children("input")
+			$(this).siblings("div.regionCheck").children("div.countryCheckGroup").children("input")
 				.each(function(){ 
 					this.checked = false; 
 				})
 			//also unselect all of the select all checkboxes
-			$(this).parent().siblings("div.regionCheck").children("div.checkAll").children("input")
+			$(this).siblings("div.regionCheck").children("div.checkAll").children("input")
 				.each(function(){ 
 					this.checked = false;
 				})
@@ -382,7 +386,7 @@ function processJson(json_obj){
 			$(this).parent().siblings("div.countryCheckGroup").children("input")
 				.each(function(){ 
 					this.checked = true;
-				})
+				});
 		}else{
 			$(this).parent().siblings("div.countryCheckGroup").children("label")
 				.each(function(){
