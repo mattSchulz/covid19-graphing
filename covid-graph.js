@@ -6,7 +6,6 @@ var latestArray = [];
 var normaliseNumbers = false;
 var chronological = false;
 var minimumThreshold = 10;
-var logString = ""
 function sortObject(obj,sortValue) {
     var arr = [];
     for (var prop in obj) {
@@ -65,9 +64,7 @@ function drawGraphLines(){
 		  },
 		  yaxis: {
 		    title: yTitle,
-		    showline: false,
-		    type: logString,
-		    autorange: true
+		    showline: false
 		  },
 		};			
 		for(j=0; j<globalJson.dates.length; j++){
@@ -110,9 +107,7 @@ function drawGraphLines(){
 		  },
 		  yaxis: {
 		    title: yTitle,
-		    showline: false,
-		    type: logString,
-		    autorange: true
+		    showline: false
 		  },
 		};
 
@@ -204,21 +199,6 @@ function processJson(json_obj){
 					<div class='plotStats'>\
 						<input type='radio' id='graphPerHT' name='plotStats' value='hundredthousand'>\
 						<label class='clickable' for='graphPerHT'>normalised statistics (per 100,000)</label> \
-					</div>\
-				</div>\
-			</div>\
-			<div class='whatToPlotRow'>\
-				<div class='whatToPlotTitle'>\
-					scale:\
-				</div>\
-				<div class='whatToPlotBody'>\
-					<div class='plotStats'>\
-						<input type='radio' id='linear' name='plotScale' value='linear' checked>\
-						<label class='clickable' for='linear'>linear</label>\
-					</div>\
-					<div class='plotStats'>\
-						<input type='radio' id='logarithmic' name='plotScale' value='logarithmic'>\
-						<label class='clickable' for='logarithmic'>logarithmic</label> \
 					</div>\
 				</div>\
 			</div>\
@@ -527,26 +507,20 @@ function processJson(json_obj){
 	.on('click', "input.clickable", function(){
 		$(this).prev('input').click();
 	}).on('click', "#graphPerHT", function(){
-		normaliseNumbers = true;
+		normaliseNumbers = true
 		$(".perNormalText").removeClass("hideThis").addClass("showThisInline");
 		drawGraphLines();
 	}).on('click', "#graphIndividuals", function(){
-		normaliseNumbers = false;
+		normaliseNumbers = false
 		$(".perNormalText").removeClass("showThisInline").addClass("hideThis");
 		drawGraphLines();	
 	}).on('click', "#calendarDates", function(){
-		chronological = true;
+		chronological = true
 		$("#thresholdValues").attr("disabled", "disabled")
 		drawGraphLines();	
 	}).on('click', "#firstReportDates", function(){
 		$("#thresholdValues").removeAttr('disabled');
-		chronological = false;
-		drawGraphLines();	
-	}).on('click', "#linear", function(){
-		logString = "";
-		drawGraphLines();	
-	}).on('click', "#logarithmic", function(){
-		logString = "log";
+		chronological = false
 		drawGraphLines();	
 	});
 }
