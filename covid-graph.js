@@ -380,7 +380,9 @@ function processJson(json_obj){
 			// set the checkboxInfo for each of these boxes
 			$(this).parent().siblings("div.countryCheckGroup").children("label")
 				.each(function(){
-					checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = true;
+					if(typeof $(this).attr("data-labelTitle") != 'undefined'){
+						checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = true;
+					}
 				});
 			// set the checkboxInfo for each of these boxes
 			$(this).parent().siblings("div.countryCheckGroup").children("input")
@@ -390,7 +392,9 @@ function processJson(json_obj){
 		}else{
 			$(this).parent().siblings("div.countryCheckGroup").children("label")
 				.each(function(){
-					checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = false;
+					if(typeof $(this).attr("data-labelTitle") != 'undefined'){
+						checkboxInfo[$(this).attr("data-labelTitle")]["visible"] = false;
+					}
 				});
 			$(this).parent().siblings("div.countryCheckGroup").children("input")
 				.each(function(){ 
