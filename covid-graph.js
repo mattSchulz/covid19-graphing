@@ -189,7 +189,7 @@ function processJson(json_obj){
 					<input type='checkbox' id='casesCheckbox' class='deathcase' name='toggle' value='cases' checked>\
 					<label class='clickable' for='casesCheckbox'>confirmed cases</label>\
 					<input type='checkbox' id='deathsCheckbox' class='deathcase' name='toggle' value='deaths'>\
-					<label class='clickable' for='deathsCheckbox'>confirmed deaths</label>\
+					<label class='clickable' for='deathsCheckbox'>deaths</label>\
 				</div>\
 			</div>\
 			<div class='whatToPlotRow'>\
