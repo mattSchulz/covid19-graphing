@@ -23,6 +23,9 @@ function sortObject(obj,sortValue) {
 }
 
 $.getJSON( "covid-19-data.json" )
+randomTag = Math.random()
+jsonURL = "covid-19-data.json?="+randomTag
+$.getJSON( jsonURL )
   .done(function( json ) {
   	processJson(json)
   })
