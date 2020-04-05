@@ -21,8 +21,6 @@ function sortObject(obj,sortValue) {
     //arr.sort(function(a, b) { a.value.toLowerCase().localeCompare(b.value.toLowerCase()); }); //use this to sort as strings
     return arr; // returns array
 }
-
-$.getJSON( "covid-19-data.json" )
 randomTag = Math.random()
 jsonURL = "covid-19-data.json?="+randomTag
 $.getJSON( jsonURL )
