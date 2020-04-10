@@ -47,9 +47,9 @@ function drawGraphLines(){
 					  type: 'scatter',
 					  name: thisName
 					};
-		yTitle = "% of confirmed cases who have died"
+		yTitle = "Deaths as % of confirmed cases"
 		layout = {
-		  title: 'fatality rate',
+		  title: 'Fatality rate',
 		  xaxis: {
 		    title: 'Date',
 		    showgrid: false,
@@ -82,9 +82,9 @@ function drawGraphLines(){
 
 	function drawLineFirstReport(lineType){
 		suffix = "";
-		yTitle = "% of confirmed cases who have died"
+		yTitle = "Deaths as % of confirmed cases"
 		layout = {
-		  title: 'fatality rate',
+		  title: 'Fatality rate',
 		  xaxis: {
 		    title: 'Days since reaching threshold of '+ minimumThreshold,
 		    showgrid: false,
@@ -147,26 +147,6 @@ function processJson(json_obj){
 		<div id='whatToPlot'>\
 			<div class='whatToPlotRow'>\
 				<div class='whatToPlotTitle'>\
-					graph:\
-				</div>\
-			</div>\
-			<div class='whatToPlotRow'>\
-				<div class='whatToPlotTitle'>\
-					scale:\
-				</div>\
-				<div class='whatToPlotBody'>\
-					<div class='plotStats'>\
-						<input type='radio' id='linear' name='plotScale' value='linear' checked>\
-						<label class='clickable' for='linear'>linear</label>\
-					</div>\
-					<div class='plotStats'>\
-						<input type='radio' id='logarithmic' name='plotScale' value='logarithmic'>\
-						<label class='clickable' for='logarithmic'>logarithmic</label> \
-					</div>\
-				</div>\
-			</div>\
-			<div class='whatToPlotRow'>\
-				<div class='whatToPlotTitle'>\
 					against:\
 				</div>\
 				<div class='whatToPlotBody'>\
@@ -219,8 +199,8 @@ function processJson(json_obj){
 		thisRegionClass = globalJson.regions[r].class
 		//if thisRegionKey does not end in " Territories"
 		if(!(/.+\sTerritories$/.test(thisRegionKey))){
-			if((thisRegionClass == "Global")||(thisRegionClass == "Internationalconveyance")){
-				checkDefault = ""
+			if((thisRegionClass == "Global")||(thisRegionClass == "fooBar")){
+				checkDefault = "checked"
 			}else{
 				checkDefault = ""
 			}
@@ -245,7 +225,7 @@ function processJson(json_obj){
 							 			<label class='countryCheckLabel' for='code-"+thisCountryClass+"' data-labelTitle='"+thisCountryName+"'>"+thisCountryName+" ("+cases+", "+deaths+")</label>\
 							 		</div>";
 				if(thisCountryName ==  "Global"){
-					checkboxInfo["Global"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
+					checkboxInfo["Global"] = {"visible":true, "latestCases":cases, "latestDeaths":deaths, "population":population }
 				}else if(thisCountryName ==  "International conveyance"){
 					checkboxInfo["International conveyance"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
 				}else{
