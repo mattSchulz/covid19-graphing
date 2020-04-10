@@ -3,7 +3,7 @@ var checkboxInfo = {}
 var latestCasesArray = [];
 var latestDeathsArray = [];
 var latestArray = [];
-var chronological = false;
+var chronological = true;
 var minimumThreshold = 0;
 var logString = ""
 function sortObject(obj,sortValue) {
@@ -49,7 +49,7 @@ function drawGraphLines(){
 					};
 		yTitle = "Deaths as % of confirmed cases"
 		layout = {
-		  title: 'Fatality rate',
+		  title: 'Covid-19 Fatality rate',
 		  xaxis: {
 		    title: 'Date',
 		    showgrid: false,
@@ -71,7 +71,7 @@ function drawGraphLines(){
 				trace1.y[j] = 0;
 			}
 			if(Object.keys(globalJson.dates[j][thisDateKey]).length>1){
-				trace1.y[j] = globalJson.dates[j][thisDateKey]["deaths"][thisName] / globalJson.dates[j][thisDateKey]["cases"][thisName];
+				trace1.y[j] = (globalJson.dates[j][thisDateKey]["deaths"][thisName] / globalJson.dates[j][thisDateKey]["cases"][thisName]) * 100 ;
 			}else{
 				trace1.y[j] = 0;
 			}
@@ -84,7 +84,7 @@ function drawGraphLines(){
 		suffix = "";
 		yTitle = "Deaths as % of confirmed cases"
 		layout = {
-		  title: 'Fatality rate',
+		  title: 'Covid-19 Fatality rate',
 		  xaxis: {
 		    title: 'Days since reaching threshold of '+ minimumThreshold,
 		    showgrid: false,
@@ -143,43 +143,7 @@ function drawGraphLines(){
 
 function processJson(json_obj){
 	globalJson = json_obj;
-	optionsHtml = "<div>\
-		<div id='whatToPlot'>\
-			<div class='whatToPlotRow'>\
-				<div class='whatToPlotTitle'>\
-					against:\
-				</div>\
-				<div class='whatToPlotBody'>\
-					<div class='plotStats'>\
-						<input type='radio' id='firstReportDates' name='plotAgainst' value='firstReportDates' checked>\
-						<label class='clickable' for='firstReportDates'>days since reaching <select class='fontMedium' id='thresholdValues'>\
-							  <option value='0' selected>0</option>\
-							  <option value='1'>1</option>\
-							  <option value='5'>5</option>\
-							  <option value='10'>10</option>\
-							  <option value='20'>20</option>\
-							  <option value='30'>30</option>\
-							  <option value='40'>40</option>\
-							  <option value='50'>50</option>\
-							  <option value='100'>100</option>\
-							  <option value='150'>150</option>\
-							  <option value='200'>200</option>\
-							  <option value='250'>250</option>\
-							  <option value='500'>500</option>\
-							  <option value='1000'>1000</option>\
-							  <option value='2000'>2000</option>\
-							</select> case<span class='pluralCase'>s</span><span class='perNormalText'> (per 100,000)</span></label>\
-					</div>\
-					<div class='plotStats'>\
-						<input type='radio' id='calendarDates' name='plotAgainst' value='calendarDates'>\
-						<label class='clickable' for='calendarDates'>calendar dates</label>\
-					</div>\
-				</div>\
-			</div>\
-		</div>\
-	</div>\
-	\
-	<div class='listInfo'>Order country checkboxes by:\
+	optionsHtml = "<div class='listInfo'>Order country checkboxes by:\
 		<select class='fontMedium' id='checkBoxOrder'>\
 		  <option value='region'>cases in each region</option>\
 		  <option value='cases'>cases in decending order</option>\
