@@ -3,7 +3,6 @@ var checkboxInfo = {}
 var latestCasesArray = [];
 var latestDeathsArray = [];
 var latestArray = [];
-var normaliseNumbers = false;
 var chronological = false;
 var minimumThreshold = 10;
 var logString = ""
@@ -42,21 +41,13 @@ function drawGraphLines(){
 		//     };
 	var layout = {};
 	function drawLineChronological(lineType){
-		suffix = ""
-		if(lineType=="deaths"){
-			suffix = " (deaths)"
-		}
 		var trace1 = {
 					  x: [],
 					  y: [],
 					  type: 'scatter',
-					  name: thisName + suffix
+					  name: thisName
 					};
-		if(normaliseNumbers){
-			yTitle = "per 100,000"
-		}else{
-			yTitle = "Individuals"
-		}
+		yTitle = "Individuals"
 		layout = {
 		  title: 'Covid-19 proliferation',
 		  xaxis: {
@@ -80,11 +71,7 @@ function drawGraphLines(){
 				trace1.y[j] = 0;
 			}
 			if(Object.keys(globalJson.dates[j][thisDateKey]).length>1){
-				if(normaliseNumbers){
-					trace1.y[j] = globalJson.dates[j][thisDateKey][lineType][thisName]/(checkboxInfo[thisName]["population"]/100000);
-				}else{
-					trace1.y[j] = globalJson.dates[j][thisDateKey][lineType][thisName];
-				}
+				trace1.y[j] = globalJson.dates[j][thisDateKey]["deaths"][thisName] / globalJson.dates[j][thisDateKey]["cases"][thisName];
 			}else{
 				trace1.y[j] = 0;
 			}
@@ -95,17 +82,11 @@ function drawGraphLines(){
 
 	function drawLineFirstReport(lineType){
 		suffix = "";
-		xaxisSuffix = "";
-		if(normaliseNumbers){
-			yTitle = "per 100,000"
-			xaxisSuffix = " per 100,000"
-		}else{
-			yTitle = "Individuals"
-		}
+		yTitle = "Individuals"
 		layout = {
 		  title: 'Covid-19 proliferation',
 		  xaxis: {
-		    title: 'Days since reaching threshold of '+ minimumThreshold + xaxisSuffix,
+		    title: 'Days since reaching threshold of '+ minimumThreshold,
 		    showgrid: false,
 		    zeroline: false
 		  },
@@ -117,19 +98,15 @@ function drawGraphLines(){
 		  },
 		};
 
-		if(lineType=="deaths"){
-			suffix = " (deaths)"
-		}
-		
 		var trace1 = {
 					  x: [],
 					  y: [],
 					  type: 'scatter',
-					  name: thisName + suffix
+					  name: thisName
 					};
 		var numberReported = 0
 		for(j=0; j<globalJson.dates.length; j++){
-			
+			valueForY = ""
 			//save the value for this country into y: []
 			thisDateKey = Object.keys(globalJson.dates[j])[0];
 			if(typeof Object.keys(globalJson.dates[j][thisDateKey]) == 'undefined'){
@@ -137,11 +114,7 @@ function drawGraphLines(){
 			}
 			//this should possibly be length>0 ?
 			if(Object.keys(globalJson.dates[j][thisDateKey]).length>1){
-				if(normaliseNumbers){
-					valueForY = globalJson.dates[j][thisDateKey][lineType][thisName]/(checkboxInfo[thisName]["population"]/100000);
-				}else{
-					valueForY = globalJson.dates[j][thisDateKey][lineType][thisName];
-				}
+				valueForY = (globalJson.dates[j][thisDateKey]["deaths"][thisName] / globalJson.dates[j][thisDateKey]["cases"][thisName]) * 100 ;
 			}else{
 				valueForY = 0;
 			}
@@ -155,23 +128,13 @@ function drawGraphLines(){
 		graphData[graphData.length] = trace1;
 	}
 
-
 	for(i=0; i<Object.keys(checkboxInfo).length; i++){
 		thisName = Object.keys(checkboxInfo)[i]
 		if(checkboxInfo[thisName]["visible"]){
-			if($("#casesCheckbox")[0].checked){
-				if(chronological){
-					drawLineChronological("cases");
-				}else{
-					drawLineFirstReport("cases");
-				}
-			}
-			if($("#deathsCheckbox")[0].checked){
-				if(chronological){
-					drawLineChronological("deaths");
-				}else{
-					drawLineFirstReport("deaths");
-				}
+			if(chronological){
+				drawLineChronological("cases");
+			}else{
+				drawLineFirstReport("cases");
 			}
 		}
 	}
@@ -185,27 +148,6 @@ function processJson(json_obj){
 			<div class='whatToPlotRow'>\
 				<div class='whatToPlotTitle'>\
 					graph:\
-				</div>\
-				<div class='whatToPlotBody'>\
-					<input type='checkbox' id='casesCheckbox' class='deathcase' name='toggle' value='cases' checked>\
-					<label class='clickable' for='casesCheckbox'>confirmed cases</label>\
-					<input type='checkbox' id='deathsCheckbox' class='deathcase' name='toggle' value='deaths'>\
-					<label class='clickable' for='deathsCheckbox'>deaths</label>\
-				</div>\
-			</div>\
-			<div class='whatToPlotRow'>\
-				<div class='whatToPlotTitle'>\
-					using:\
-				</div>\
-				<div class='whatToPlotBody'>\
-					<div class='plotStats'>\
-						<input type='radio' id='graphIndividuals' name='plotStats' value='indivdual' checked>\
-						<label class='clickable' for='graphIndividuals'>individual cases</label>\
-					</div>\
-					<div class='plotStats'>\
-						<input type='radio' id='graphPerHT' name='plotStats' value='hundredthousand'>\
-						<label class='clickable' for='graphPerHT'>normalised statistics (per 100,000)</label> \
-					</div>\
 				</div>\
 			</div>\
 			<div class='whatToPlotRow'>\
@@ -527,14 +469,6 @@ function processJson(json_obj){
 	})
 	.on('click', "input.clickable", function(){
 		$(this).prev('input').click();
-	}).on('click', "#graphPerHT", function(){
-		normaliseNumbers = true;
-		$(".perNormalText").removeClass("hideThis").addClass("showThisInline");
-		drawGraphLines();
-	}).on('click', "#graphIndividuals", function(){
-		normaliseNumbers = false;
-		$(".perNormalText").removeClass("showThisInline").addClass("hideThis");
-		drawGraphLines();	
 	}).on('click', "#calendarDates", function(){
 		chronological = true;
 		$("#thresholdValues").attr("disabled", "disabled")
