@@ -4,7 +4,7 @@ var latestCasesArray = [];
 var latestDeathsArray = [];
 var latestArray = [];
 var chronological = false;
-var minimumThreshold = 10;
+var minimumThreshold = 0;
 var logString = ""
 function sortObject(obj,sortValue) {
     var arr = [];
@@ -47,9 +47,9 @@ function drawGraphLines(){
 					  type: 'scatter',
 					  name: thisName
 					};
-		yTitle = "Individuals"
+		yTitle = "% of confirmed cases who have died"
 		layout = {
-		  title: 'Covid-19 proliferation',
+		  title: 'fatality rate',
 		  xaxis: {
 		    title: 'Date',
 		    showgrid: false,
@@ -82,9 +82,9 @@ function drawGraphLines(){
 
 	function drawLineFirstReport(lineType){
 		suffix = "";
-		yTitle = "Individuals"
+		yTitle = "% of confirmed cases who have died"
 		layout = {
-		  title: 'Covid-19 proliferation',
+		  title: 'fatality rate',
 		  xaxis: {
 		    title: 'Days since reaching threshold of '+ minimumThreshold,
 		    showgrid: false,
@@ -173,10 +173,10 @@ function processJson(json_obj){
 					<div class='plotStats'>\
 						<input type='radio' id='firstReportDates' name='plotAgainst' value='firstReportDates' checked>\
 						<label class='clickable' for='firstReportDates'>days since reaching <select class='fontMedium' id='thresholdValues'>\
-							  <option value='0'>0</option>\
+							  <option value='0' selected>0</option>\
 							  <option value='1'>1</option>\
 							  <option value='5'>5</option>\
-							  <option value='10' selected>10</option>\
+							  <option value='10'>10</option>\
 							  <option value='20'>20</option>\
 							  <option value='30'>30</option>\
 							  <option value='40'>40</option>\
@@ -222,7 +222,7 @@ function processJson(json_obj){
 			if((thisRegionClass == "Global")||(thisRegionClass == "Internationalconveyance")){
 				checkDefault = ""
 			}else{
-				checkDefault = "checked"
+				checkDefault = ""
 			}
 			regionCheckboxes += "<div class='regionCheck topTen "+thisRegionClass+"'>\
 									<div class='sectionTitle'>"+thisRegionKey+"</div>\
@@ -249,7 +249,7 @@ function processJson(json_obj){
 				}else if(thisCountryName ==  "International conveyance"){
 					checkboxInfo["International conveyance"] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
 				}else{
-					checkboxInfo[thisCountryName] = {"visible":true, "latestCases":cases, "latestDeaths":deaths, "population":population }
+					checkboxInfo[thisCountryName] = {"visible":false, "latestCases":cases, "latestDeaths":deaths, "population":population }
 				}
 	 		}
 	 		if(globalJson.regions[r].countries.length>10){
