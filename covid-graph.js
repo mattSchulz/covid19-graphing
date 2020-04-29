@@ -276,7 +276,7 @@ function processJson(json_obj){
 		thisRegionKey = globalJson.regions[r].regionName
 		thisRegionClass = globalJson.regions[r].class
 		//if thisRegionKey does not end in " Territories"
-		if(!(/.+\sTerritories$/.test(thisRegionKey))){
+		
 			if((thisRegionClass == "Global")||(thisRegionClass == "Internationalconveyance")){
 				checkDefault = ""
 			}else{
@@ -314,7 +314,7 @@ function processJson(json_obj){
 	 			regionCheckboxes += "<div class='seeAll' listLth="+listLength+"><span>[see all "+listLength+" countries]</span></div>";
 			}			 		
 	 		regionCheckboxes += "</div>";
-		}
+		
 	}
 	regionCheckboxes += "</div>";
 	optionsHtml += regionCheckboxes;

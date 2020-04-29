@@ -26,13 +26,7 @@
         { "country": "Mongolia", "class": "Mongolia", "population": 3307476 },
         { "country": "Lao People’s Democratic Republic", "class": "LaoPeople’sDemocraticRepublic", "population": 7061507 },
         { "country": "Fiji", "class": "Fiji", "population": 926276 },
-        { "country": "Papua New Guinea", "class": "PapuaNewGuinea", "population": 8606323 }
-      ]
-    },
-    {
-      "regionName": "Western Pacific Region Territories",
-      "class": "WesternPacificRegionTerritories",
-      "countries": [
+        { "country": "Papua New Guinea", "class": "PapuaNewGuinea", "population": 8606323 },
         { "country": "Guam", "class": "Guam", "population": 162742 },
         { "country": "French Polynesia", "class": "FrenchPolynesia", "population": 275918 },
         { "country": "New Caledonia", "class": "NewCaledonia", "population": 282200 },
@@ -95,13 +89,7 @@
         { "country": "Montenegro", "class": "Montenegro", "population": 631219 },
         { "country": "Liechtenstein", "class": "Liechtenstein", "population": 38557 },
         { "country": "Monaco", "class": "Monaco", "population": 38300 },
-        { "country": "Holy See", "class": "HolySee", "population": 1000 }
-      ]
-    },
-    {
-      "regionName": "European Region Territories",
-      "class": "EuropeanRegionTerritories",
-      "countries": [
+        { "country": "Holy See", "class": "HolySee", "population": 1000 },
         { "country": "Kosovo", "class": "Kosovo", "population": 1810463 },
         { "country": "Isle of Man", "class": "IsleofMan", "population": 83314 },
         { "country": "Jersey", "class": "Jersey", "population": 106800 },
@@ -151,13 +139,7 @@
         { "country": "Sudan", "class": "Sudan", "population": 42345710 },
         { "country": "Libya", "class": "Libya", "population": 6653210 },
         { "country": "Syrian Arab Republic", "class": "Syrian Arab Republic", "population": 17070135 },
-        { "country": "Yemen", "class": "Yemen", "population": 28498683 }
-      ]
-    },
-    {
-      "regionName": "Eastern Mediterranean Region Territories",
-      "class": "EasternMediterraneanRegionTerritories",
-      "countries": [
+        { "country": "Yemen", "class": "Yemen", "population": 28498683 },
         { "country": "occupied Palestinian terriotory", "class": "occupiedPalestinianterriotory", "population": 4543126 }
       ]
     },
@@ -197,16 +179,9 @@
         { "country": "Dominica", "class": "Dominica", "population": 71625 },
         { "country": "Saint Kitts and Nevis", "class": "SaintKittsandNevis", "population": 52441 },
         { "country": "Saint Lucia", "class": "SaintLucia", "population": 181889 },
-        { "country": "Saint Vinvent and the Grenadines", "class": "SaintVinventandtheGrenadines", "population": 110608 },
+        { "country": "Saint Vincent and the Grenadines", "class": "SaintVincentandtheGrenadines", "population": 110608 },
         { "country": "Nicaragua", "class": "Nicaragua", "population": 6167237 },
-        { "country": "Suriname", "class": "Suriname", "population": 575990 }
-      ],
-      "startPos": ""
-    },
-    {
-      "regionName": "Region of the Americas Territories",
-      "class": "RegionoftheAmericasTerritories",
-      "countries": [
+        { "country": "Suriname", "class": "Suriname", "population": 575990 },
         { "country": "Puerto Rico", "class": "PuertoRico", "population": 3193694 },
         { "country": "Martinique", "class": "Martinique", "population": 376480 },
         { "country": "Guadeloupe", "class": "Guadeloupe", "population": 395700 },
@@ -276,13 +251,7 @@
         { "country": "Gambia", "class": "Gambia", "population": 2051363 },
         { "country": "São Tomé and Príncipe", "class": "SãoToméandPríncipe", "population": 211028 },
         { "country": "Mauritania", "class": "Mauritania", "population": 4077347 },
-        { "country": "South Sudan", "class": "SouthSudan", "population": 10975927 }
-      ]
-    },
-    {
-      "regionName": "African Region Territories",
-      "class": "RegionoftheAmericasTerritories",
-      "countries": [
+        { "country": "South Sudan", "class": "SouthSudan", "population": 10975927 },
         { "country": "Réunion", "class": "Réunion", "population": 859959 },
         { "country": "Mayotte", "class": "Mayotte", "population": 279471 }
       ]
@@ -3350,7 +3319,7 @@
           "Honduras": 2,
           "Guyana": 1,
           "Jamaica": 1,
-          "Saint Vinvent and the Grenadines": 1,
+          "Saint Vincent and the Grenadines": 1,
           "French Guiana": 6,
           "Martinique": 4,
           "Saint Martin": 2,
@@ -3522,7 +3491,7 @@
           "Venezuela (Bolivarian Republic of)": 2,
           "Antigua and Barbuda": 1,
           "Guadeloupe": 1,
-          "Saint Vinvent and the Grenadines": 1,
+          "Saint Vincent and the Grenadines": 1,
           "Trinidad and Tobago": 1,
           "French Guiana": 6,
           "Martinique": 6,
@@ -3705,7 +3674,7 @@
           "Honduras": 2,
           "Venezuela (Bolivarian Republic of)": 2,
           "Antigua and Barbuda": 1,
-          "Saint Vinvent and the Grenadines": 1,
+          "Saint Vincent and the Grenadines": 1,
           "Trinidad and Tobago": 1,
           "French Guiana": 7,
           "Martinique": 10,
@@ -3901,7 +3870,7 @@
           "Antigua and Barbuda": 1,
           "Guatemala": 1,
           "Saint Lucia": 1,
-          "Saint Vinvent and the Grenadines": 1,
+          "Saint Vincent and the Grenadines": 1,
           "Suriname": 1,
           "Martinique": 15,
           "French Guiana": 7,
@@ -4112,7 +4081,7 @@
           "Antigua and Barbuda": 1,
           "Bahamas": 1,
           "Guatemala": 1,
-          "Saint Vinvent and the Grenadines": 1,
+          "Saint Vincent and the Grenadines": 1,
           "Suriname": 1,
           "Guadeloupe": 18,
           "Martinique": 16,
@@ -4330,7 +4299,7 @@
           "Saint Lucia": 2,
           "Antigua and Barbuda": 1,
           "Bahamas": 1,
-          "Saint Vinvent and the Grenadines": 1,
+          "Saint Vincent and the Grenadines": 1,
           "Suriname": 1,
           "Guadeloupe": 18,
           "Martinique": 16,
@@ -4554,7 +4523,7 @@
           "Saint Lucia": 2,
           "Antigua and Barbuda": 1,
           "Montserrat": 1,
-          "Saint Vinvent and the Grenadines": 1,
+          "Saint Vincent and the Grenadines": 1,
           "Suriname": 1,
           "Guadeloupe": 33,
           "Martinique": 23,
