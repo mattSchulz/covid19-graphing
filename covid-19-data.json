@@ -1,5 +1,5 @@
 {
-  "reportText":"(up to 126)",
+  "reportText":"(up to 128)",
   "regions": [
     {
       "regionName": "Global",
@@ -24,30 +24,30 @@
         { "country": "Gabon", "class": "Gabon", "population": 2119275 },
         { "country": "Kenya", "class": "Kenya", "population": 47564296 },
         { "country": "Guinea-Bissau", "class": "Guinea-Bissau", "population": 1874303 },
-        { "country": "Equatorial Guinea", "class": "EquatorialGuinea", "population": 1358276 },
         { "country": "Mali", "class": "Mali", "population": 19329841 },
+        { "country": "Equatorial Guinea", "class": "EquatorialGuinea", "population": 1358276 },
         { "country": "Niger", "class": "Niger", "population": 22442831 },
         { "country": "Zambia", "class": "Zambia", "population": 17351708 },
         { "country": "Burkina Faso", "class": "BurkinaFaso", "population": 20870060 },
-        { "country": "Sierra Leone", "class": "SierraLeone", "population": 7092113 },
-        { "country": "Chad", "class": "Chad", "population": 13670084 },   
         { "country": "South Sudan", "class": "SouthSudan", "population": 10975927 },
-        { "country": "Central African Republic", "class": "CentralAfricanRepublic", "population": 5496011 },
+        { "country": "Sierra Leone", "class": "SierraLeone", "population": 7092113 },
         { "country": "Ethiopia", "class": "Ethiopia", "population": 109224414 },
+        { "country": "Chad", "class": "Chad", "population": 13670084 },   
+        { "country": "Central African Republic", "class": "CentralAfricanRepublic", "population": 5496011 },
         { "country": "Madagascar", "class": "Madagascar", "population": 26262313 },
-        { "country": "United Republic of Tanzania", "class": "UnitedRepublicofTanzania", "population": 4809768 },
         { "country": "Congo", "class": "Congo", "population": 5518092 },
+        { "country": "United Republic of Tanzania", "class": "UnitedRepublicofTanzania", "population": 4809768 },
         { "country": "Togo", "class": "Togo", "population": 7538000 },
         { "country": "Cabo Verde", "class": "CaboVerde", "population": 543767 },
-        { "country": "Mauritius", "class": "Mauritius", "population": 1265985 },
-        { "country": "Rwanda", "class": "Rwanda", "population": 11262564 },
         { "country": "Uganda", "class": "Uganda", "population": 42729036 },
+        { "country": "Rwanda", "class": "Rwanda", "population": 11262564 },
+        { "country": "Mauritius", "class": "Mauritius", "population": 1265985 },
+        { "country": "São Tomé and Príncipe", "class": "SãoToméandPríncipe", "population": 211028 },
         { "country": "Liberia", "class": "Liberia", "population": 4809768 },
-        { "country": "Eswatini", "class": "Eswatini", "population": 1093238 },
         { "country": "Mauritania", "class": "Mauritania", "population": 4077347 },
+        { "country": "Eswatini", "class": "Eswatini", "population": 1093238 },
         { "country": "Mozambique", "class": "Mozambique", "population": 29496004 },
         { "country": "Benin", "class": "Benin", "population": 11485044 },
-        { "country": "São Tomé and Príncipe", "class": "SãoToméandPríncipe", "population": 211028 },
         { "country": "Malawi", "class": "Malawi", "population": 18143217 },
         { "country": "Angola","class": "Angola", "population": 25789024 },
         { "country": "Zimbabwe", "class": "Zimbabwe", "population": 14438802 },
@@ -82,11 +82,11 @@
         { "country": "Bolivia, Plurinational State of", "class": "BoliviaPlurinationalStateof", "population": 11469896 },
         { "country": "Honduras", "class": "Honduras", "population": 9158345 },
         { "country": "Guatemala", "class": "Guatemala", "population":  17263239 },
-        { "country": "Cuba", "class": "Cuba", "population": 11209628 },
         { "country": "El Salvador", "class": "El Salvador", "population": 6420746 },
+        { "country": "Cuba", "class": "Cuba", "population": 11209628 },
         { "country": "Venezuela (Bolivarian Republic of)", "class": "VenezuelaBolivarianRepublicof", "population": 32219521 },
-        { "country": "Costa Rica", "class": "CostaRica", "population": 5058007 },
         { "country": "Haiti", "class": "Haiti", "population": 11123178 },
+        { "country": "Costa Rica", "class": "CostaRica", "population": 5058007 },
         { "country": "Paraguay", "class": "Paraguay", "population": 7152703 },
         { "country": "Uruguay", "class": "Uruguay", "population": 3449285 },
         { "country": "Jamaica", "class": "Jamaica", "population": 2726667 },
@@ -108,8 +108,8 @@
         { "country": "French Guiana", "class": "FrenchGuiana", "population": 290691 },
         { "country": "Martinique", "class": "Martinique", "population": 376480 },
         { "country": "Guadeloupe", "class": "Guadeloupe", "population": 395700 },
-        { "country": "Bermuda", "class": "Bermuda", "population": 71176 },
         { "country": "Cayman Islands", "class": "CaymanIslands", "population": 68076 },
+        { "country": "Bermuda", "class": "Bermuda", "population": 71176 },
 		{ "country": "Aruba", "class": "Aruba", "population": 112309 },
         { "country": "Sint Maarten", "class": "SintMaarten", "population": 41486 },
         { "country": "United States Virgin Islands", "class": "UnitedStatesVirginIslands", "population": 106405 },
@@ -169,8 +169,8 @@
         { "country": "Netherlands", "class": "Netherlands", "population": 17444381 },
         { "country": "Belarus", "class": "Belarus", "population": 9413446 },
         { "country": "Sweden", "class": "Sweden", "population": 10333456 },
-        { "country": "Switzerland", "class": "Switzerland", "population": 8586550 },
         { "country": "Portugal", "class": "Portugal", "population": 10276617 },
+        { "country": "Switzerland", "class": "Switzerland", "population": 8586550 },
         { "country": "Ireland", "class": "Ireland", "population": 4921500 },
         { "country": "Poland", "class": "Poland", "population": 38386000 },
         { "country": "Ukraine", "class": "Ukraine", "population": 41902416 },
@@ -179,8 +179,8 @@
         { "country": "Austria", "class": "Austria", "population": 8902600 },
         { "country": "Denmark", "class": "Denmark", "population": 5822763 },
         { "country": "Serbia", "class": "Serbia", "population": 6963764 },
-        { "country": "Czechia", "class": "Czechia", "population": 10681161 },
         { "country": "Kazakhstan", "class": "Kazakhstan", "population": 18663384 },
+        { "country": "Czechia", "class": "Czechia", "population": 10681161 },
         { "country": "Norway", "class": "Norway", "population": 5367580 },
         { "country": "Armenia", "class": "Armenia", "population": 2957500 },
         { "country": "Republic of Moldova", "class": "RepublicofMoldova", "population": 2681735 },
@@ -198,9 +198,9 @@
         { "country": "Estonia", "class": "Estonia", "population": 1328360 },
         { "country": "Iceland", "class": "Iceland", "population": 364260 },
         { "country": "Lithuania", "class": "Lithuania", "population": 2793350 },
+        { "country": "Kyrgyzstan", "class": "Kyrgyzstan", "population": 6389500 },
         { "country": "Slovakia", "class": "Slovakia", "population": 5456362 },
         { "country": "Slovenia", "class": "Slovenia", "population": 2094060 },
-        { "country": "Kyrgyzstan", "class": "Kyrgyzstan", "population": 6389500 },
         { "country": "Latvia", "class": "Latvia", "population": 1906800 },
         { "country": "Albania", "class": "Albania", "population": 2862427 },
         { "country": "Cyprus", "class": "Cyprus", "population": 875900 },
@@ -265,10 +265,10 @@
       ]
     },
     {
-      "regionName": "International conveyance",
-      "class": "Internationalconveyance",
+      "regionName": "Other",
+      "class": "Other",
       "countries": [
-        { "country": "International conveyance", "class": "Internationalconveyance", "population": 3700 }
+        { "country": "International conveyances", "class": "Internationalconveyances", "population": 741 }
       ]
     }
   ],
@@ -726,7 +726,7 @@
           "United Kingdom": 2,
           "Belgium": 1,
           "United Arab Emirates": 5,
-          "International conveyance": 20
+          "International conveyances": 20
         },
         "deaths": {
           "Global": 565,
@@ -764,7 +764,7 @@
           "Spain": 1,
           "Sweden": 1,
           "United Arab Emirates": 5,
-          "International conveyance": 61
+          "International conveyances": 61
         },
         "deaths": {
           "Global": 638,
@@ -802,7 +802,7 @@
           "Spain": 1,
           "Sweden": 1,
           "United Arab Emirates": 7,
-          "International conveyance": 64
+          "International conveyances": 64
         },
         "deaths": {
           "Global": 724,
@@ -840,7 +840,7 @@
           "Spain": 1,
           "Sweden": 1,
           "United Arab Emirates": 7,
-          "International conveyance": 64
+          "International conveyances": 64
         },
         "deaths": {
           "Global": 813,
@@ -878,7 +878,7 @@
           "Finland": 1,
           "Sweden": 1,
           "United Arab Emirates": 7,
-          "International conveyance": 70
+          "International conveyances": 70
         },
         "deaths": {
           "Global": 910,
@@ -916,7 +916,7 @@
           "Finland": 1,
           "Sweden": 1,
           "United Arab Emirates": 8,
-          "International conveyance": 135
+          "International conveyances": 135
         },
         "deaths": {
           "Global": 1018,
@@ -954,7 +954,7 @@
           "Finland": 1,
           "Sweden": 1,
           "United Arab Emirates": 8,
-          "International conveyance": 175
+          "International conveyances": 175
         },
         "deaths": {
           "Global": 1115,
@@ -992,7 +992,7 @@
           "Finland": 1,
           "Sweden": 1,
           "United Arab Emirates": 8,
-          "International conveyance": 174
+          "International conveyances": 174
         },
         "deaths": {
           "Global": 1369,
@@ -1030,7 +1030,7 @@
           "Finland": 1,
           "Sweden": 1,
           "United Arab Emirates": 8,
-          "International conveyance": 218
+          "International conveyances": 218
         },
         "deaths": {
           "Global": 1383,
@@ -1070,7 +1070,7 @@
           "Sweden": 1,
           "United Arab Emirates": 8,
           "Egypt": 1,
-          "International conveyance": 218
+          "International conveyances": 218
         },
         "deaths": {
           "Global": 1526,
@@ -1110,7 +1110,7 @@
           "Sweden": 1,
           "United Arab Emirates": 8,
           "Egypt": 1,
-          "International conveyance": 355
+          "International conveyances": 355
         },
         "deaths": {
           "Global": 1669,
@@ -1151,7 +1151,7 @@
           "Sweden": 1,
           "United Arab Emirates": 9,
           "Egypt": 1,
-          "International conveyance": 454
+          "International conveyances": 454
         },
         "deaths": {
           "Global": 1775,
@@ -1192,7 +1192,7 @@
           "Sweden": 1,
           "United Arab Emirates": 9,
           "Egypt": 1,
-          "International conveyance": 454
+          "International conveyances": 454
         },
         "deaths": {
           "Global": 1873,
@@ -1233,7 +1233,7 @@
           "Sweden": 1,
           "United Arab Emirates": 9,
           "Egypt": 1,
-          "International conveyance": 542
+          "International conveyances": 542
         },
         "deaths": {
           "Global": 2009,
@@ -1275,7 +1275,7 @@
           "United Arab Emirates": 9,
           "Iran": 2,
           "Egypt": 1,
-          "International conveyance": 621
+          "International conveyances": 621
         },
         "deaths": {
           "Global": 2129,
@@ -1285,7 +1285,7 @@
           "Philippines": 1,
           "France": 1,
           "Iran": 2,
-          "International conveyance": 2
+          "International conveyances": 2
         }
       }
     },
@@ -1320,7 +1320,7 @@
           "United Arab Emirates": 9,
           "Iran": 5,
           "Egypt": 1,
-          "International conveyance": 634
+          "International conveyances": 634
         },
         "deaths": {
           "Global": 2247,
@@ -1330,7 +1330,7 @@
           "Philippines": 1,
           "France": 1,
           "Iran": 2,
-          "International conveyance": 2
+          "International conveyances": 2
         }
       }
     },
@@ -1367,7 +1367,7 @@
           "Iran": 18,
           "Egypt": 1,
           "Lebanon": 1,
-          "International conveyance": 634
+          "International conveyances": 634
         },
         "deaths": {
           "Global": 2359,
@@ -1377,7 +1377,7 @@
           "Philippines": 1,
           "France": 1,
           "Iran": 4,
-          "International conveyance": 2
+          "International conveyances": 2
         }
       }
     },
@@ -1414,7 +1414,7 @@
           "United Arab Emirates": 13,
           "Egypt": 1,
           "Lebanon": 1,
-          "International conveyance": 634
+          "International conveyances": 634
         },
         "deaths": {
           "Global": 2462,
@@ -1425,7 +1425,7 @@
           "France": 1,
           "Italy": 2,
           "Iran": 5,
-          "International conveyance": 2
+          "International conveyances": 2
         }
       }
     },
@@ -1463,7 +1463,7 @@
           "Kuwait": 3,
           "Egypt": 1,
           "Lebanon": 1,
-          "International conveyance": 691
+          "International conveyances": 691
         },
         "deaths": {
           "Global": 2618,
@@ -1474,7 +1474,7 @@
           "France": 1,
           "Italy": 2,
           "Iran": 8,
-          "International conveyance": 3
+          "International conveyances": 3
         }
       }
     },
@@ -1516,7 +1516,7 @@
           "Egypt": 1,
           "Iraq": 1,
           "Lebanon": 1,
-          "International conveyance": 691
+          "International conveyances": 691
         },
         "deaths": {
           "Global": 2700,
@@ -1527,7 +1527,7 @@
           "Italy": 6,
           "France": 1,
           "Iran": 12,
-          "International conveyance": 3
+          "International conveyances": 3
         }
       }
     },
@@ -1573,7 +1573,7 @@
           "Egypt": 1,
           "Lebanon": 1,
           "Algeria": 1,
-          "International conveyance": 691
+          "International conveyances": 691
         },
         "deaths": {
           "Global": 2762,
@@ -1584,7 +1584,7 @@
           "Italy": 11,
           "France": 1,
           "Iran": 15,
-          "International conveyance": 3
+          "International conveyances": 3
         }
       }
     },
@@ -1639,7 +1639,7 @@
           "Afghanistan": 1,
           "Egypt": 1,
           "Algeria": 1,
-          "International conveyance": 705
+          "International conveyances": 705
         },
         "deaths": {
           "Global": 2804,
@@ -1650,7 +1650,7 @@
           "Italy": 12,
           "France": 2,
           "Iran": 22,
-          "International conveyance": 4
+          "International conveyances": 4
         }
       }
     },
@@ -1710,7 +1710,7 @@
           "Brazil": 1,
           "Algeria": 1,
           "Nigeria": 1,
-          "International conveyance": 705
+          "International conveyances": 705
         },
         "deaths": {
           "Global": 2858,
@@ -1721,7 +1721,7 @@
           "Italy": 17,
           "France": 2,
           "Iran": 26,
-          "International conveyance": 4
+          "International conveyances": 4
         }
       }
     },
@@ -1783,7 +1783,7 @@
           "Brazil": 1,
           "Algeria": 1,
           "Nigeria": 1,
-          "International conveyance": 705
+          "International conveyances": 705
         },
         "deaths": {
           "Global": 2924,
@@ -1794,7 +1794,7 @@
           "Italy": 21,
           "France": 2,
           "Iran": 34,
-          "International conveyance": 6
+          "International conveyances": 6
         }
       }
     },
@@ -1861,7 +1861,7 @@
           "Ecuador": 1,
           "Algeria": 1,
           "Nigeria": 1,
-          "International conveyance": 705
+          "International conveyances": 705
         },
         "deaths": {
           "Global": 2977,
@@ -1872,7 +1872,7 @@
           "Italy": 29,
           "France": 2,
           "Iran": 43,
-          "International conveyance": 6
+          "International conveyances": 6
         }
       }
     },
@@ -1945,7 +1945,7 @@
           "Ecuador": 1,
           "Algeria": 1,
           "Nigeria": 1,
-          "International conveyance": 706
+          "International conveyances": 706
         },
         "deaths": {
           "Global": 3043,
@@ -1958,7 +1958,7 @@
           "France": 2,
           "Thailand": 1,
           "Iran": 54,
-          "International conveyance": 6
+          "International conveyances": 6
         }
       }
     },
@@ -2039,7 +2039,7 @@
           "Algeria": 5,
           "Nigeria": 1,
           "Senegal": 1,
-          "International conveyance": 706
+          "International conveyances": 706
         },
         "deaths": {
           "Global": 3112,
@@ -2053,7 +2053,7 @@
           "Thailand": 1,
           "Iran": 66,
           "United States of America": 2,
-          "International conveyance": 6
+          "International conveyances": 6
         }
       }
     },
@@ -2138,7 +2138,7 @@
           "Algeria": 5,
           "Nigeria": 1,
           "Senegal": 1,
-          "International conveyance": 706
+          "International conveyances": 706
         },
         "deaths": {
           "Global": 3198,
@@ -2152,7 +2152,7 @@
           "Thailand": 1,
           "Iran": 77,
           "United States of America": 6,
-          "International conveyance": 6
+          "International conveyances": 6
         }
       }
     },
@@ -2245,7 +2245,7 @@
           "Algeria": 12,
           "Senegal": 4,
           "Nigeria": 1,
-          "International conveyance": 706
+          "International conveyances": 706
         },
         "deaths": {
           "Global": 3281,
@@ -2261,7 +2261,7 @@
           "Iran": 92,
           "Iraq": 2,
           "United States of America": 9,
-          "International conveyance": 6
+          "International conveyances": 6
         }
       }
     },
@@ -2358,7 +2358,7 @@
           "Cameroon": 1,
           "Nigeria": 1,
           "South Africa": 1,
-          "International conveyance": 696
+          "International conveyances": 696
         },
         "deaths": {
           "Global": 3380,
@@ -2375,7 +2375,7 @@
           "Iran": 107,
           "Iraq": 2,
           "United States of America": 10,
-          "International conveyance": 6
+          "International conveyances": 6
         }
       }
     },
@@ -2477,7 +2477,7 @@
           "Nigeria": 1,
           "South Africa": 1,
           "Togo": 1,
-          "International conveyance": 696
+          "International conveyances": 696
         },
         "deaths": {
           "Global": 3486,
@@ -2496,7 +2496,7 @@
           "Iran": 124,
           "Iraq": 4,
           "United States of America": 11,
-          "International conveyance": 6
+          "International conveyances": 6
         }
       }
     },
@@ -2606,7 +2606,7 @@
           "South Africa": 2,
           "Nigeria": 1,
           "Togo": 1,
-          "International conveyance": 696
+          "International conveyances": 696
         },
         "deaths": {
           "Global": 3584,
@@ -2627,7 +2627,7 @@
           "Iraq": 4,
           "United States of America": 11,
           "Argentina": 1,
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -2740,7 +2740,7 @@
           "Cameroon": 2,
           "Nigeria": 2,
           "Togo": 1,
-          "International conveyance": 696
+          "International conveyances": 696
         },
         "deaths": {
           "Global": 3809,
@@ -2762,7 +2762,7 @@
           "Egypt": 1,
           "United States of America": 11,
           "Argentina": 1,
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -2880,7 +2880,7 @@
           "Cameroon": 2,
           "Nigeria": 2,
           "Togo": 1,
-          "International conveyance": 696
+          "International conveyances": 696
         },
         "deaths": {
           "Global": 4012,
@@ -2903,7 +2903,7 @@
           "Egypt": 1,
           "United States of America": 19,
           "Argentina": 1,
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -3025,7 +3025,7 @@
           "Nigeria": 2,
           "Democratic Republic of the Congo": 1,
           "Togo": 1,
-          "International conveyance": 696
+          "International conveyances": 696
         },
         "deaths": {
           "Global": 4292,
@@ -3053,7 +3053,7 @@
           "Canada": 1,
           "Argentina": 1,
           "Panama": 1,
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -3179,7 +3179,7 @@
           "Côte d’Ivoire": 1,
           "Democratic Republic of the Congo": 1,
           "Togo": 1,
-          "International conveyance": 696
+          "International conveyances": 696
         },
         "deaths": {
           "Global": 4613,
@@ -3211,7 +3211,7 @@
           "Argentina": 1,
           "Panama": 1,
           "Algeria": 1,
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -3342,7 +3342,7 @@
           "Democratic Republic of the Congo": 1,
           "Togo": 1,
           "Réunion": 3,
-          "International conveyance": 696
+          "International conveyances": 696
         },
         "deaths": {
           "Global": 4955,
@@ -3378,7 +3378,7 @@
           "Panama": 1,
           "Guyana": 1,
           "Algeria": 1,
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -3521,7 +3521,7 @@
           "Kenya": 1,
           "Togo": 1,
           "Réunion": 5,
-          "International conveyance": 697
+          "International conveyances": 697
         },
         "deaths": {
           "Global": 5392,
@@ -3561,7 +3561,7 @@
           "Panama": 1,
           "Guyana": 1,
           "Algeria": 2,
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -3713,7 +3713,7 @@
           "Togo": 1,
           "Réunion": 6,
           "Mayotte": 1,
-          "International conveyance": 697
+          "International conveyances": 697
         },
         "deaths": {
           "Global": 5735,
@@ -3753,7 +3753,7 @@
           "Panama": 1,
           "Guyana": 1,
           "Algeria": 3,
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -3912,7 +3912,7 @@
           "Togo": 1,
           "Réunion": 9,
           "Mayotte": 1,
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 6606,
@@ -3961,7 +3961,7 @@
           "Guatemala": 1,
           "Cayman Islands": 1,
           "Algeria": 3,
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -4128,7 +4128,7 @@
           "United Republic of Tanzania": 1,
           "Réunion": 9,
           "Mayotte": 1,
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 7426,
@@ -4178,7 +4178,7 @@
           "Guatemala": 1,
           "Cayman Islands": 1,
           "Algeria": 4,
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -4346,7 +4346,7 @@
           "United Republic of Tanzania": 1,
           "Réunion": 9,
           "Mayotte": 1,
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 7807,
@@ -4397,7 +4397,7 @@
           "Guyana": 1,
           "Cayman Islands": 1,
           "Algeria": 4,
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -4573,7 +4573,7 @@
           "Togo": 1,
           "Réunion": 12,
           "Mayotte": 3,
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 8778,
@@ -4631,7 +4631,7 @@
           "Cayman Islands": 1,
           "Algeria": 6,
           "Burkina Faso": 1,
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -4815,7 +4815,7 @@
           "Niger": 1,
           "Réunion": 12,
           "Mayotte": 3,
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 9840,
@@ -4878,7 +4878,7 @@
           "Cayman Islands": 1,
           "Algeria": 7,
           "Burkina Faso": 1,
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -5080,7 +5080,7 @@
           "Réunion": 28,
           "Mayotte": 4,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 11184,
@@ -5160,7 +5160,7 @@
           "Burkina Faso": 1,
           "Gabon": 1,
           
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -5366,7 +5366,7 @@
           "Réunion": 47,
           "Mayotte": 11,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 12784,
@@ -5455,7 +5455,7 @@
           "Democratic Republic of the Congo": 1,
           "Gabon": 1,
           
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -5665,7 +5665,7 @@
           "Réunion": 64,
           "Mayotte": 14,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 14510,
@@ -5763,7 +5763,7 @@
           "Democratic Republic of the Congo": 2,
           "Gabon": 1,
           
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -5977,7 +5977,7 @@
           "Réunion": 71,
           "Mayotte": 24,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 16231,
@@ -6078,7 +6078,7 @@
           "Gabon": 1,
           "Zimbabwe": 1,
           
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -6294,7 +6294,7 @@
           "Réunion": 83,
           "Mayotte": 30,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 18440,
@@ -6399,7 +6399,7 @@
           "Gabon": 1,
           "Zimbabwe": 1,
           
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -6618,7 +6618,7 @@
           "Réunion": 94,
           "Mayotte": 35,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 20834,
@@ -6731,7 +6731,7 @@
           "Gabon": 1,
           "Zimbabwe": 1,
           
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -6952,7 +6952,7 @@
           "Réunion": 135,
           "Mayotte": 50,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 23335,
@@ -7070,7 +7070,7 @@
           "Gabon": 1,
           "Zimbabwe": 1,
           
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -7291,7 +7291,7 @@
           "Réunion": 135,
           "Mayotte": 50,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 26494,
@@ -7418,7 +7418,7 @@
           "Zimbabwe": 1,
           "Gambia": 1,
           
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -7640,7 +7640,7 @@
           "Réunion": 143,
           "Mayotte": 50,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 29957,
@@ -7770,7 +7770,7 @@
           "Zimbabwe": 1,
           "Gambia": 1,
           
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -7992,7 +7992,7 @@
           "Réunion": 207,
           "Mayotte": 82,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 33106,
@@ -8125,7 +8125,7 @@
           "Zimbabwe": 1,
           "Gambia": 1,
           
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -8347,7 +8347,7 @@
           "Réunion": 207,
           "Mayotte": 82,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 36405,
@@ -8482,7 +8482,7 @@
           "Zimbabwe": 1,
           "Gambia": 1,
           
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -8707,7 +8707,7 @@
           "Réunion": 247,
           "Mayotte": 101,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 40598,
@@ -8848,7 +8848,7 @@
           "Cabo Verde": 1,
           "Gambia": 1,
           
-          "International conveyance": 7
+          "International conveyances": 7
         }
       }
     },
@@ -9073,7 +9073,7 @@
           "Réunion": 281,
           "Mayotte": 116,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 45526,
@@ -9221,7 +9221,7 @@
           
           "Mayotte": 2,
           
-          "International conveyance": 11
+          "International conveyances": 11
         }
       }
     },
@@ -9447,7 +9447,7 @@
           "Réunion": 308,
           "Mayotte": 128,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 50322,
@@ -9604,7 +9604,7 @@
           
           "Mayotte": 2,
           
-          "International conveyance": 11
+          "International conveyances": 11
         }
       }
     },
@@ -9831,7 +9831,7 @@
           "Réunion": 321,
           "Mayotte": 128,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 56985,
@@ -9992,7 +9992,7 @@
           
           "Mayotte": 2,
           
-          "International conveyance": 11
+          "International conveyances": 11
         }
       }
     },
@@ -10220,7 +10220,7 @@
           "Réunion": 334,
           "Mayotte": 147,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 62784,
@@ -10384,7 +10384,7 @@
           
           "Mayotte": 2,
           
-          "International conveyance": 11
+          "International conveyances": 11
         }
       }
     },
@@ -10613,7 +10613,7 @@
           "Réunion": 334,
           "Mayotte": 147,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 67594,
@@ -10779,7 +10779,7 @@
           
           "Mayotte": 2,
           
-          "International conveyance": 11
+          "International conveyances": 11
         }
       }
     },
@@ -11009,7 +11009,7 @@
           "Réunion": 349,
           "Mayotte": 164,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 72614,
@@ -11182,7 +11182,7 @@
           
           "Mayotte": 2,
           
-          "International conveyance": 11
+          "International conveyances": 11
         }
       }
     },
@@ -11413,7 +11413,7 @@
           "Réunion": 358,
           "Mayotte": 184,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 79235,
@@ -11588,7 +11588,7 @@
           
           "Mayotte": 2,
           
-          "International conveyance": 11
+          "International conveyances": 11
         }
       }
     },
@@ -11819,7 +11819,7 @@
           "Réunion": 362,
           "Mayotte": 186,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 85522,
@@ -11997,7 +11997,7 @@
           
           "Mayotte": 2,
           
-          "International conveyance": 11
+          "International conveyances": 11
         }
       }
     },
@@ -12228,7 +12228,7 @@
           "Réunion": 376,
           "Mayotte": 191,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 92798,
@@ -12407,7 +12407,7 @@
           
           "Mayotte": 2,
           
-          "International conveyance": 11
+          "International conveyances": 11
         }
       }
     },
@@ -12639,7 +12639,7 @@
           "Réunion": 382,
           "Mayotte": 191,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 99690,
@@ -12818,7 +12818,7 @@
           
           "Mayotte": 2,
           
-          "International conveyance": 11
+          "International conveyances": 11
         }
       }
     },
@@ -13050,7 +13050,7 @@
           "Réunion": 388,
           "Mayotte": 191,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 105952,
@@ -13229,7 +13229,7 @@
           
           "Mayotte": 2,
           
-          "International conveyance": 11
+          "International conveyances": 11
         }
       }
     },
@@ -13461,7 +13461,7 @@
           "Réunion": 389,
           "Mayotte": 207,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 111652,
@@ -13640,7 +13640,7 @@
           
           "Mayotte": 3,
           
-          "International conveyance": 12
+          "International conveyances": 12
         }
       }
     },
@@ -13872,7 +13872,7 @@
           "Réunion": 391,
           "Mayotte": 207,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 117021,
@@ -14051,7 +14051,7 @@
           
           "Mayotte": 3,
           
-          "International conveyance": 12
+          "International conveyances": 12
         }
       }
     },
@@ -14283,7 +14283,7 @@
           "Réunion": 391,
           "Mayotte": 217,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 123010,
@@ -14462,7 +14462,7 @@
           
           "Mayotte": 3,
           
-          "International conveyance": 12
+          "International conveyances": 12
         }
       }
     },
@@ -14694,7 +14694,7 @@
           "Réunion": 390,
           "Mayotte": 221,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 130885,
@@ -14875,7 +14875,7 @@
           
           "Mayotte": 3,
           
-          "International conveyance": 12
+          "International conveyances": 12
         }
       }
     },
@@ -15107,7 +15107,7 @@
           "Réunion": 394,
           "Mayotte": 233,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 139378,
@@ -15290,7 +15290,7 @@
           
           "Mayotte": 3,
           
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -15522,7 +15522,7 @@
           "Réunion": 402,
           "Mayotte": 245,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 146088,
@@ -15705,7 +15705,7 @@
           
           "Mayotte": 4,
           
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -15937,7 +15937,7 @@
           "Réunion": 407,
           "Mayotte": 245,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 152551,
@@ -16120,7 +16120,7 @@
           
           "Mayotte": 4,
           
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -16352,7 +16352,7 @@
           "Réunion": 408,
           "Mayotte": 284,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 157847,
@@ -16537,7 +16537,7 @@
           
           "Mayotte": 4,
           
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -16769,7 +16769,7 @@
           "Réunion": 408,
           "Mayotte": 284,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 162956,
@@ -16955,7 +16955,7 @@
           
           "Mayotte": 4,
           
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -17187,7 +17187,7 @@
           "Réunion": 410,
           "Mayotte": 311,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 169006,
@@ -17373,7 +17373,7 @@
           
           "Mayotte": 4,
           
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -17605,7 +17605,7 @@
           "Réunion": 410,
           "Mayotte": 326,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 175694,
@@ -17793,7 +17793,7 @@
           
           "Mayotte": 4,
           
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -18025,7 +18025,7 @@
           "Réunion": 412,
           "Mayotte": 339,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 181938,
@@ -18213,7 +18213,7 @@
           
           "Mayotte": 4,
           
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -18445,7 +18445,7 @@
           "Réunion": 412,
           "Mayotte": 354,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 187705,
@@ -18633,7 +18633,7 @@
           
           "Mayotte": 4,
           
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -18865,7 +18865,7 @@
           "Réunion": 412,
           "Mayotte": 354,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 193710,
@@ -19054,7 +19054,7 @@
           
           "Mayotte": 4,
           
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -19286,7 +19286,7 @@
           "Réunion": 417,
           "Mayotte": 401,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 198668,
@@ -19476,7 +19476,7 @@
           
           "Mayotte": 4,
           
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -19708,7 +19708,7 @@
           "Mayotte": 433,
           "Réunion": 418,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 202597,
@@ -19898,7 +19898,7 @@
           
           "Mayotte": 4,
           
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -20130,7 +20130,7 @@
           "Mayotte": 460,
           "Réunion": 418,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 207973,
@@ -20321,7 +20321,7 @@
           
           "Mayotte": 4,
           
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -20553,7 +20553,7 @@
           "Mayotte": 460,
           "Réunion": 420,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 217769,
@@ -20744,7 +20744,7 @@
           
           "Mayotte": 4,
           
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -20978,7 +20978,7 @@
           "New Caledonia": 18,
           "Northern Mariana Islands (Commonwealth of the)": 14,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 224172,
@@ -21171,7 +21171,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -21405,7 +21405,7 @@
           "New Caledonia": 18,
           "Northern Mariana Islands (Commonwealth of the)": 14,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 229971,
@@ -21599,7 +21599,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -21833,7 +21833,7 @@
           "New Caledonia": 18,
           "Northern Mariana Islands (Commonwealth of the)": 14,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 238628,
@@ -22028,7 +22028,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -22262,7 +22262,7 @@
           "New Caledonia": 18,
           "Northern Mariana Islands (Commonwealth of the)": 14,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 239604,
@@ -22457,7 +22457,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -22691,7 +22691,7 @@
           "New Caledonia": 18,
           "Northern Mariana Islands (Commonwealth of the)": 14,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 243401,
@@ -22887,7 +22887,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -23121,7 +23121,7 @@
           "New Caledonia": 18,
           "Northern Mariana Islands (Commonwealth of the)": 14,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 247503,
@@ -23317,7 +23317,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -23551,7 +23551,7 @@
           "New Caledonia": 18,
           "Northern Mariana Islands (Commonwealth of the)": 15,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 254045,
@@ -23747,7 +23747,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -23981,7 +23981,7 @@
           "New Caledonia": 18,
           "Northern Mariana Islands (Commonwealth of the)": 15,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 259474,
@@ -24177,7 +24177,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -24411,7 +24411,7 @@
           "New Caledonia": 18,
           "Northern Mariana Islands (Commonwealth of the)": 15,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 265862,
@@ -24607,7 +24607,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -24841,7 +24841,7 @@
           "New Caledonia": 18,
           "Northern Mariana Islands (Commonwealth of the)": 16,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 274361,
@@ -25037,7 +25037,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -25271,7 +25271,7 @@
           "New Caledonia": 18,
           "Northern Mariana Islands (Commonwealth of the)": 16,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 278892,
@@ -25467,7 +25467,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -25701,7 +25701,7 @@
           "New Caledonia": 19,
           "Northern Mariana Islands (Commonwealth of the)": 18,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 283153,
@@ -25897,7 +25897,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -26131,7 +26131,7 @@
           "Northern Mariana Islands (Commonwealth of the)": 19,
           "New Caledonia": 18,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 287399,
@@ -26327,7 +26327,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -26562,7 +26562,7 @@
           "Northern Mariana Islands (Commonwealth of the)": 19,
           "New Caledonia": 18,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 292046,
@@ -26758,7 +26758,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -26993,7 +26993,7 @@
           "Northern Mariana Islands (Commonwealth of the)": 19,
           "New Caledonia": 18,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 297119,
@@ -27190,7 +27190,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -27425,7 +27425,7 @@
           "Northern Mariana Islands (Commonwealth of the)": 19,
           "New Caledonia": 18,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 302059,
@@ -27622,7 +27622,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -27857,7 +27857,7 @@
           "Northern Mariana Islands (Commonwealth of the)": 21,
           "New Caledonia": 18,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 307395,
@@ -28055,7 +28055,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -28290,7 +28290,7 @@
           "Northern Mariana Islands (Commonwealth of the)": 21,
           "New Caledonia": 18,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 311847,
@@ -28489,7 +28489,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -28724,7 +28724,7 @@
           "Northern Mariana Islands (Commonwealth of the)": 21,
           "New Caledonia": 18,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 316169,
@@ -28923,7 +28923,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -29158,7 +29158,7 @@
           "Northern Mariana Islands (Commonwealth of the)": 21,
           "New Caledonia": 18,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 318789,
@@ -29357,7 +29357,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -29592,7 +29592,7 @@
           "Northern Mariana Islands (Commonwealth of the)": 21,
           "New Caledonia": 18,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 323256,
@@ -29792,7 +29792,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -30027,7 +30027,7 @@
           "Northern Mariana Islands (Commonwealth of the)": 22,
           "New Caledonia": 18,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 327738,
@@ -30227,7 +30227,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -30462,7 +30462,7 @@
           "Northern Mariana Islands (Commonwealth of the)": 22,
           "New Caledonia": 18,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 333401,
@@ -30662,7 +30662,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -30897,7 +30897,7 @@
           "Northern Mariana Islands (Commonwealth of the)": 22,
           "New Caledonia": 18,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 337687,
@@ -31098,7 +31098,7 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
         }
       }
     },
@@ -31333,7 +31333,7 @@
           "Northern Mariana Islands (Commonwealth of the)": 22,
           "New Caledonia": 18,
           
-          "International conveyance": 712
+          "International conveyances": 712
         },
         "deaths": {
           "Global": 342029,
@@ -31534,7 +31534,881 @@
           "Guam": 5,
           "Northern Mariana Islands (Commonwealth of the)": 2,
                    
-          "International conveyance": 13
+          "International conveyances": 13
+        }
+      }
+    },
+      	{
+      "2020-05-26": {
+        "cases": {
+          "Global": 5404512,
+
+          "South Africa": 23615,
+          "Algeria": 8503,
+          "Nigeria": 8068,
+          "Ghana": 6808,
+          "Cameroon": 4890,
+          "Guinea": 3322,
+          "Senegal": 3130,
+          "Côte d’Ivoire": 2423,
+          "Democratic Republic of the Congo": 2304,
+          "Gabon": 2135,
+          "Kenya": 1286,
+          "Guinea-Bissau": 1173,
+          "Mali": 1059,
+          "Equatorial Guinea": 1043,
+          "Niger": 951,
+          "Zambia": 920,
+          "Burkina Faso": 841,
+          "Sierra Leone": 735,
+          "Chad": 687,
+          "Ethiopia": 655,
+          "South Sudan": 655,
+          "Central African Republic": 652,
+          "Madagascar": 542,
+          "Congo": 531,
+          "United Republic of Tanzania": 509,
+          "Cabo Verde": 390,
+          "Togo": 386,
+          "Rwanda": 336,
+          "Mauritius": 334,
+          "Uganda": 304,
+          "Liberia": 265,
+          "Mauritania": 262,
+          "Eswatini": 256,
+          "Mozambique": 209,
+          "Benin": 191,
+          "São Tomé and Príncipe": 165,
+          "Malawi": 101,
+          "Angola": 69,
+          "Zimbabwe": 56,
+          "Comoros": 43,
+          "Burundi": 42,
+          "Eritrea" : 39,
+          "Botswana": 35,
+          "Gambia": 25,
+          "Namibia": 21,
+          "Seychelles": 11,
+          "Lesotho": 2,
+          
+          "Mayotte": 1609,
+          "Réunion": 456,
+
+          "United States of America": 1618757,
+          "Brazil": 363211,
+          "Peru": 119959,
+          "Canada": 85103,
+          "Chile": 73997,
+          "Mexico": 68620,
+          "Ecuador": 37355,
+          "Columbia": 21175,
+          "Dominican Republic": 15073,
+          "Argentina": 12076,
+          "Panama": 10926,
+          "Bolivia, Plurinational State of": 6263,
+          "Honduras": 3950,
+          "Guatemala": 3424,
+          "El Salvador": 1983,
+          "Cuba": 1947,
+          "Venezuela (Bolivarian Republic of)": 1121,
+          "Haiti": 958,
+          "Costa Rica": 930,
+          "Paraguay": 865,
+          "Uruguay": 769,
+          "Jamaica": 552,
+          "Nicaragua": 279,
+          "Guyana": 135,
+          "Trinidad and Tobago": 116,
+          "Bahamas": 100,
+          "Barbados": 92,
+          "Antigua and Barbuda": 25,
+          "Grenada": 22,
+          "Belize": 18,
+          "Saint Lucia": 18,
+          "Saint Vincent and the Grenadines": 18,
+          "Dominica": 16,
+          "Saint Kitts and Nevis": 15,
+          "Suriname": 11,
+          
+          "Puerto Rico": 3260,
+          "French Guiana": 328,
+          "Martinique": 197,
+          "Guadeloupe": 161,
+          "Bermuda": 133,
+          "Cayman Islands": 129,
+          "Aruba": 101,
+          "Sint Maarten": 78,
+          "United States Virgin Islands": 69,
+          "Saint Martin": 39,
+          "Curaçao": 17,
+          "Falkland Islands (Malvinas)": 13,
+          "Turks and Caicos Islands": 12,
+          "Montserrat": 11,
+          "British Virgin Islands": 8,
+          "Bonaire, Sint Eustatius and Saba": 7,
+          "Saint Barthélemy": 6,
+          "Anguilla": 3,
+          "Saint Pierre and Miquelon": 1,
+
+          "Iran": 137724,
+          "Saudi Arabia": 74795,
+          "Pakistan": 57705,
+          "Qatar": 45465,
+          "United Arab Emirates": 30307,
+          "Kuwait": 21967,
+          "Egypt": 17967,
+          "Afghanistan": 11831,
+          "Bahrain": 9171,
+          "Oman": 7770,
+          "Morocco": 7532,
+          "Iraq": 4632,
+          "Sudan": 3976,
+          "Djibouti": 2468,
+          "Somalia": 1689,
+          "Lebanon": 1119,
+          "Tunisia": 1051,
+          "Jordan": 711,
+          "Yemen": 237,
+          "Syrian Arab Republic": 106,
+          "Libya": 75,
+          
+          "occupied Palestinian terriotory": 602,
+          
+          "Russian Federation": 362342,
+          "United Kingdom": 261188,
+          "Spain": 235400,
+          "Italy": 230158,
+          "Germany": 179002,
+          "Turkey": 157814,
+          "France": 142482,
+          "Belgium": 57342,
+          "Netherlands": 45445,
+          "Belarus": 37144,
+          "Sweden": 33843,
+          "Portugal": 30788,
+          "Switzerland": 30663,
+          "Ireland": 24698,
+          "Poland": 21631,
+          "Ukraine": 21584,
+          "Romania": 18283,
+          "Israel": 16720,
+          "Austria": 16459,
+          "Denmark": 11387,
+          "Serbia": 11193,
+          "Czechia": 9002,
+          "Kazakhstan": 8969,
+          "Norway": 8352,
+          "Armenia": 7402,
+          "Republic of Moldova": 7149,
+          "Finland": 6599,
+          "Azerbaijan": 4271,
+          "Luxembourg": 3993,
+          "Hungary": 3771,
+          "Uzbekistan": 3261,
+          "Tajikistan": 3100,
+          "Greece": 2882,
+          "Bulgaria": 2433,
+          "Bosnia and Herzegovina": 2405,
+          "Croatia": 2244,
+          "North Macedonia": 1999,
+          "Estonia": 1824,
+          "Iceland": 1804,
+          "Lithuania": 1635,
+          "Slovakia": 1511,
+          "Slovenia": 1469,
+          "Kyrgyzstan": 1468,
+          "Latvia": 1049,
+          "Albania": 1029,
+          "Cyprus": 937,
+          "Andorra": 763,
+          "Georgia": 732,
+          "San Marino": 672,
+          "Malta": 611,
+          "Montenegro": 324,
+          "Monaco": 98,
+          "Liechtenstein": 83,
+          "Holy See": 12,
+          
+          "Kosovo": 1038,
+          "Isle of Man": 336,
+          "Jersey": 306,
+          "Guernsey": 252,
+          "Faroe Islands": 187,
+          "Gibraltar": 155,
+          "Greenland": 12,
+          
+          "India": 145380,
+          "Bangladesh": 35585,
+          "Indonesia": 22750,
+          "Thailand": 3045,
+          "Maldives": 1395,
+          "Sri Lanka": 1182,
+          "Nepal": 682,
+          "Myanmar": 203,
+          "Bhutan": 27,
+          "Timor-Leste": 24,
+          
+          "China": 84543,
+          "Singapore": 31960,
+          "Japan": 16623,
+          "Philippines": 14319,
+          "Republic of Korea": 11225,
+          "Malaysia": 7417,
+          "Australia": 7118,
+          "New Zealand": 1154,
+          "Viet Nam": 326,
+          "Brunei Darussalam": 141,
+          "Mongolia": 141,
+          "Cambodia": 124,
+          "Lao People’s Democratic Republic": 19,
+          "Fiji": 18,
+          "Papua New Guinea": 8,
+          
+          "Guam": 161,
+          "French Polynesia": 60,
+          "Northern Mariana Islands (Commonwealth of the)": 22,
+          "New Caledonia": 18,
+          
+          "International conveyances": 741
+        },
+        "deaths": {
+          "Global": 343514,
+
+          "South Africa": 481,
+          "Algeria": 609,
+          "Nigeria": 233,
+          "Ghana": 32,
+          "Cameroon": 165,
+          "Guinea": 20,
+          "Senegal": 35,
+          "Côte d’Ivoire": 30,
+          "Democratic Republic of the Congo": 66,
+          "Gabon": 14,
+          "Kenya": 52,
+          "Guinea-Bissau": 6,
+          "Mali": 67,
+          "Equatorial Guinea": 12,
+          "Niger": 62,
+          "Zambia": 7,
+          "Burkina Faso": 52,
+          "Sierra Leone": 42,
+          "Chad": 61,
+          "Ethiopia": 5,
+          "South Sudan": 8,
+          "Central African Republic": 1, 
+          "Madagascar": 2,
+          "Congo": 17,
+          "United Republic of Tanzania": 21,
+          "Cabo Verde": 3,
+          "Togo": 13,
+          "Mauritius": 10,
+          "Liberia": 26,
+          "Mauritania": 9,
+          "Eswatini": 2,
+          "Mozambique": 1,
+          "Benin": 3,
+          "São Tomé and Príncipe": 10,
+          "Malawi": 4,
+          "Angola": 4,
+          "Zimbabwe": 4,
+          "Comoros": 1,
+          "Burundi": 1,
+          "Botswana": 1,
+          "Gambia": 1,
+          
+          "Mayotte": 20,
+          "Réunion": 1,
+          
+          "United States of America": 96909,
+          "Brazil": 22666,
+          "Peru": 3456,
+          "Canada": 6453,
+          "Chile": 761,
+          "Mexico": 7394,
+          "Ecuador": 3203,
+          "Colombia": 727,
+          "Dominican Republic": 460,
+          "Argentina": 452,
+          "Panama": 306,
+          "Bolivia (Plurinational State of)": 250,
+          "Honduras": 180,
+          "Guatemala": 58,
+          "El Salvador": 35,
+          "Cuba": 82,
+          "Venezuela (Bolivarian Republic of)": 10,
+          "Haiti": 27,
+          "Costa Rica": 10,
+          "Paraguay": 11,
+          "Uruguay": 22,
+          "Jamaica": 9,
+          "Nicaragua": 17,
+          "Guyana": 10,
+          "Trinidad and Tobago": 8,
+          "Bahamas": 11,
+          "Barbados": 7,
+          "Antigua and Barbuda": 3,
+          "Belize": 2,
+          "Suriname": 1,
+          
+          "Puerto Rico": 129,
+          "French Guiana": 1,
+          "Martinique": 14,
+          "Guadeloupe": 14,
+          "Bermuda": 9,
+          "Cayman Islands": 1,
+          "Aruba": 3,
+          "Sint Maarten": 15,
+          "United States Virgin Islands": 6,
+          "Saint Martin": 3,
+          "Curaçao": 1,
+          "Turks and Caicos Islands": 1,
+          "Montserrat": 1,
+          "British Virgin Islands": 1,
+
+          "Iran": 7451,
+          "Saudi Arabia": 399,
+          "Pakistan": 1197,
+          "Qatar": 26,
+          "United Arab Emirates": 248,
+          "Kuwait": 165,
+          "Egypt": 783,
+          "Afghanistan": 220,
+          "Bahrain": 14,
+          "Oman": 37,
+          "Morocco": 200,
+          "Iraq": 163,
+          "Sudan": 170,
+          "Djibouti": 14,
+          "Somalia": 66,
+          "Lebanon": 26,
+          "Tunisia": 48,
+          "Jordan": 9,
+          "Yemen": 45,
+          "Syrian Arab Republic": 4,
+          "Libya": 3,
+          
+          "occupied Palestinian territory": 5,
+          
+          "Russian Federation": 3807,
+          "United Kingdom": 36914,
+          "Spain": 26834,
+          "Italy": 32877,
+          "Germany": 8302,
+          "Turkey": 4369,
+          "France": 28379,
+          "Belgium": 9312,
+          "Netherlands": 5830,
+          "Belarus": 204,
+          "Sweden": 4029,
+          "Portugal": 1330,
+          "Switzerland": 1641,
+          "Ireland": 1606,
+          "Poland": 1007,
+          "Ukraine": 644,
+          "Romania": 1197,
+          "Israel": 280,
+          "Austria": 641,
+          "Denmark": 563,
+          "Serbia": 239,
+          "Czechia": 317,
+          "Kazakhstan": 35,
+          "Norway": 235,
+          "Armenia": 91,
+          "Republic of Moldova": 265,
+          "Finland": 308,
+          "Azerbaijan": 51,
+          "Luxembourg": 110,
+          "Hungary": 499,
+          "Uzbekistan": 13,
+          "Tajikistan": 46,
+          "Greece": 172,
+          "Bulgaria": 130,
+          "Bosnia and Herzegovina": 145,
+          "Croatia": 100,
+          "North Macedonia": 113,
+          "Estonia": 65,
+          "Iceland": 10,
+          "Lithuania": 63,
+          "Slovakia": 28,
+          "Slovenia": 106,
+          "Kyrgyzstan": 16,
+          "Latvia": 22,
+          "Albania": 33,
+          "Cyprus": 17,
+          "Andorra": 51,
+          "Georgia": 12,
+          "San Marino": 42,
+          "Malta": 6,
+          "Montenegro": 9,
+          "Monaco": 1,
+          "Liechtenstein": 1,
+          
+          "Kosovo": 30,
+          "Isle of Man": 24,
+          "Jersey": 29,
+          "Guernsey": 13,
+          "Gibraltar": 0,
+          
+          "India": 4167,
+          "Bangladesh": 501,
+          "Indonesia": 1391,
+          "Thailand": 57,
+          "Maldives": 4,
+          "Sri Lanka": 10,
+          "Nepal": 4,
+          "Myanmar": 6,
+          
+          "China": 4645,
+          "Singapore": 23,
+          "Japan": 846,
+          "Philippines": 873,
+          "Republic of Korea": 269,
+          "Malaysia": 115,
+          "Australia": 102,
+          "New Zealand": 21,
+          "Brunei Darussalam": 1,
+          
+          "Guam": 5,
+          "Northern Mariana Islands (Commonwealth of the)": 2,
+                   
+          "International conveyances": 13
+        }
+      }
+    },
+      	{
+      "2020-05-27": {
+        "cases": {
+          "Global": 5488825,
+
+          "South Africa": 24264,
+          "Algeria": 8697,
+          "Nigeria": 8344,
+          "Ghana": 6964,
+          "Cameroon": 5436,
+          "Guinea": 3358,
+          "Senegal": 3161,
+          "Côte d’Ivoire": 2477,
+          "Democratic Republic of the Congo": 2402,
+          "Gabon": 2238,
+          "Kenya": 1348,
+          "Guinea-Bissau": 1173,
+          "Mali": 1077,
+          "Equatorial Guinea": 1043,
+          "Niger": 952,
+          "Zambia": 920,
+          "Burkina Faso": 845,
+          "South Sudan": 806,
+          "Sierra Leone": 754,
+          "Ethiopia": 701,
+          "Chad": 700,
+          "Central African Republic": 652,
+          "Madagascar": 586,
+          "Congo": 569,
+          "United Republic of Tanzania": 509,
+          "Togo": 391,
+          "Cabo Verde": 390,
+          "Uganda": 341,
+          "Rwanda": 339,
+          "Mauritius": 334,
+          "São Tomé and Príncipe": 295,
+          "Liberia": 266,
+          "Mauritania": 262,
+          "Eswatini": 261,
+          "Mozambique": 213,
+          "Benin": 208,
+          "Malawi": 101,
+          "Angola": 71,
+          "Zimbabwe": 56,
+          "Comoros": 43,
+          "Burundi": 42,
+          "Eritrea" : 39,
+          "Botswana": 35,
+          "Gambia": 25,
+          "Namibia": 21,
+          "Seychelles": 11,
+          "Lesotho": 2,
+          
+          "Mayotte": 1634,
+          "Réunion": 459,
+
+          "United States of America": 1634010,
+          "Brazil": 374898,
+          "Peru": 123979,
+          "Canada": 85998,
+          "Chile": 77961,
+          "Mexico": 71105,
+          "Ecuador": 37355,
+          "Columbia": 21981,
+          "Dominican Republic": 15264,
+          "Argentina": 12628,
+          "Panama": 11183,
+          "Bolivia, Plurinational State of": 6660,
+          "Honduras": 4189,
+          "Guatemala": 3760,
+          "El Salvador": 2042,
+          "Cuba": 1963,
+          "Venezuela (Bolivarian Republic of)": 1177,
+          "Haiti": 1063,
+          "Costa Rica": 951,
+          "Paraguay": 877,
+          "Uruguay": 787,
+          "Jamaica": 556,
+          "Nicaragua": 279,
+          "Guyana": 137,
+          "Trinidad and Tobago": 116,
+          "Bahamas": 100,
+          "Barbados": 92,
+          "Antigua and Barbuda": 25,
+          "Grenada": 23,
+          "Belize": 18,
+          "Saint Lucia": 18,
+          "Saint Vincent and the Grenadines": 18,
+          "Dominica": 16,
+          "Saint Kitts and Nevis": 15,
+          "Suriname": 11,
+          
+          "Puerto Rico": 3324,
+          "French Guiana": 353,
+          "Martinique": 197,
+          "Guadeloupe": 161,
+          "Cayman Islands": 134,
+          "Bermuda": 133,
+          "Aruba": 101,
+          "Sint Maarten": 78,
+          "United States Virgin Islands": 69,
+          "Saint Martin": 40,
+          "Curaçao": 18,
+          "Falkland Islands (Malvinas)": 13,
+          "Turks and Caicos Islands": 12,
+          "Montserrat": 11,
+          "British Virgin Islands": 8,
+          "Bonaire, Sint Eustatius and Saba": 7,
+          "Saint Barthélemy": 6,
+          "Anguilla": 3,
+          "Saint Pierre and Miquelon": 1,
+
+          "Iran": 139511,
+          "Saudi Arabia": 76726,
+          "Pakistan": 59151,
+          "Qatar": 47207,
+          "United Arab Emirates": 31086,
+          "Kuwait": 22575,
+          "Egypt": 18756,
+          "Afghanistan": 12379,
+          "Bahrain": 9366,
+          "Oman": 8118,
+          "Morocco": 7577,
+          "Iraq": 4848,
+          "Sudan": 4146,
+          "Djibouti": 2468,
+          "Somalia": 1711,
+          "Lebanon": 1140,
+          "Tunisia": 1051,
+          "Jordan": 718,
+          "Yemen": 253,
+          "Syrian Arab Republic": 121,
+          "Libya": 77,
+          
+          "occupied Palestinian terriotory": 605,
+          
+          "Russian Federation": 370680,
+          "United Kingdom": 265231,
+          "Spain": 236631,
+          "Italy": 230555,
+          "Germany": 179364,
+          "Turkey": 158762,
+          "France": 142704,
+          "Belgium": 57455,
+          "Netherlands": 45578,
+          "Belarus": 38059,
+          "Sweden": 34440,
+          "Portugal": 31007,
+          "Switzerland": 30678,
+          "Ireland": 24735,
+          "Poland": 22074,
+          "Ukraine": 21905,
+          "Romania": 18429,
+          "Israel": 16743,
+          "Austria": 16497,
+          "Denmark": 11428,
+          "Serbia": 11227,
+          "Kazakhstan": 9304,
+          "Czechia": 9050,
+          "Norway": 8364,
+          "Armenia": 7774,
+          "Republic of Moldova": 7305,
+          "Finland": 6628,
+          "Azerbaijan": 4403,
+          "Luxembourg": 3995,
+          "Hungary": 3793,
+          "Uzbekistan": 3333,
+          "Tajikistan": 3266,
+          "Greece": 2892,
+          "Bulgaria": 2460,
+          "Bosnia and Herzegovina": 2415,
+          "Croatia": 2244,
+          "North Macedonia": 2015,
+          "Estonia": 1834,
+          "Iceland": 1804,
+          "Lithuania": 1639,
+          "Kyrgyzstan": 1520,
+          "Slovakia": 1513,
+          "Slovenia": 1469,
+          "Latvia": 1053,
+          "Albania": 1050,
+          "Cyprus": 939,
+          "Andorra": 763,
+          "Georgia": 735,
+          "San Marino": 672,
+          "Malta": 611,
+          "Montenegro": 324,
+          "Monaco": 98,
+          "Liechtenstein": 83,
+          "Holy See": 12,
+          
+          "Kosovo": 1038,
+          "Isle of Man": 336,
+          "Jersey": 307,
+          "Guernsey": 252,
+          "Faroe Islands": 187,
+          "Gibraltar": 154,
+          "Greenland": 12,
+          
+          "India": 151767,
+          "Bangladesh": 36751,
+          "Indonesia": 23165,
+          "Thailand": 3054,
+          "Maldives": 1438,
+          "Sri Lanka": 1319,
+          "Nepal": 772,
+          "Myanmar": 206,
+          "Bhutan": 27,
+          "Timor-Leste": 24,
+          
+          "China": 84544,
+          "Singapore": 32343,
+          "Japan": 16651,
+          "Philippines": 14669,
+          "Republic of Korea": 11265,
+          "Malaysia": 7604,
+          "Australia": 7133,
+          "New Zealand": 1154,
+          "Viet Nam": 327,
+          "Brunei Darussalam": 141,
+          "Mongolia": 141,
+          "Cambodia": 124,
+          "Lao People’s Democratic Republic": 19,
+          "Fiji": 18,
+          "Papua New Guinea": 8,
+          
+          "Guam": 163,
+          "French Polynesia": 60,
+          "Northern Mariana Islands (Commonwealth of the)": 22,
+          "New Caledonia": 18,
+          
+          "International conveyances": 741
+        },
+        "deaths": {
+          "Global": 349095,
+
+          "South Africa": 524,
+          "Algeria": 617,
+          "Nigeria": 249,
+          "Ghana": 32,
+          "Cameroon": 177,
+          "Guinea": 20,
+          "Senegal": 37,
+          "Côte d’Ivoire": 30,
+          "Democratic Republic of the Congo": 67,
+          "Gabon": 14,
+          "Kenya": 52,
+          "Guinea-Bissau": 6,
+          "Mali": 70,
+          "Equatorial Guinea": 12,
+          "Niger": 63,
+          "Zambia": 7,
+          "Burkina Faso": 53,
+          "South Sudan": 8,
+          "Sierra Leone": 44,
+          "Ethiopia": 6,
+          "Chad": 62,
+          "Central African Republic": 1,
+          "Madagascar": 2,
+          "Congo": 19,
+          "United Republic of Tanzania": 21,
+          "Togo": 13,
+          "Cabo Verde": 4,
+          "Mauritius": 10,
+          "São Tomé and Príncipe": 10,
+          "Liberia": 26,
+          "Mauritania": 9,
+          "Eswatini": 2,
+          "Mozambique": 1,
+          "Benin": 3,
+          "Malawi": 4,
+          "Angola": 4,
+          "Zimbabwe": 4,
+          "Comoros": 1,
+          "Burundi": 1,
+          "Botswana": 1,
+          "Gambia": 1,
+          
+          "Mayotte": 20,
+          "Réunion": 1,
+          
+          "United States of America": 97529,
+          "Brazil": 23473,
+          "Peru": 3629,
+          "Canada": 6566,
+          "Chile": 806,
+          "Mexico": 7633,
+          "Ecuador": 3203,
+          "Colombia": 750,
+          "Dominican Republic": 468,
+          "Argentina": 471,
+          "Panama": 310,
+          "Bolivia (Plurinational State of)": 261,
+          "Honduras": 182,
+          "Guatemala": 59,
+          "El Salvador": 36,
+          "Cuba": 82,
+          "Venezuela (Bolivarian Republic of)": 10,
+          "Haiti": 31,
+          "Costa Rica": 10,
+          "Paraguay": 11,
+          "Uruguay": 22,
+          "Jamaica": 9,
+          "Nicaragua": 17,
+          "Guyana": 11,
+          "Trinidad and Tobago": 8,
+          "Bahamas": 11,
+          "Barbados": 7,
+          "Antigua and Barbuda": 3,
+          "Belize": 2,
+          "Suriname": 1,
+          
+          "Puerto Rico": 129,
+          "French Guiana": 1,
+          "Martinique": 14,
+          "Guadeloupe": 14,
+          "Cayman Islands": 1,
+          "Bermuda": 9,
+          "Aruba": 3,
+          "Sint Maarten": 15,
+          "United States Virgin Islands": 6,
+          "Saint Martin": 3,
+          "Curaçao": 1,
+          "Turks and Caicos Islands": 1,
+          "Montserrat": 1,
+          "British Virgin Islands": 1,
+
+          "Iran": 7508,
+          "Saudi Arabia": 411,
+          "Pakistan": 1225,
+          "Qatar": 28,
+          "United Arab Emirates": 253,
+          "Kuwait": 172,
+          "Egypt": 797,
+          "Afghanistan": 226,
+          "Bahrain": 14,
+          "Oman": 37,
+          "Morocco": 202,
+          "Iraq": 169,
+          "Sudan": 184,
+          "Djibouti": 14,
+          "Somalia": 67,
+          "Lebanon": 26,
+          "Tunisia": 48,
+          "Jordan": 9,
+          "Yemen": 50,
+          "Syrian Arab Republic": 4,
+          "Libya": 3,
+          
+          "occupied Palestinian territory": 5,
+          
+          "Russian Federation": 3968,
+          "United Kingdom": 37048,
+          "Spain": 29035,
+          "Italy": 32955,
+          "Germany": 8349,
+          "Turkey": 4397,
+          "France": 28477,
+          "Belgium": 9334,
+          "Netherlands": 5856,
+          "Belarus": 208,
+          "Sweden": 4125,
+          "Portugal": 1342,
+          "Switzerland": 1647,
+          "Ireland": 1615,
+          "Poland": 1024,
+          "Ukraine": 658,
+          "Romania": 1210,
+          "Israel": 281,
+          "Austria": 643,
+          "Denmark": 563,
+          "Serbia": 239,
+          "Kazakhstan": 37,
+          "Czechia": 317,
+          "Norway": 235,
+          "Armenia": 98,
+          "Republic of Moldova": 273,
+          "Finland": 312,
+          "Azerbaijan": 52,
+          "Luxembourg": 110,
+          "Hungary": 505,
+          "Uzbekistan": 14,
+          "Tajikistan": 47,
+          "Greece": 173,
+          "Bulgaria": 133,
+          "Bosnia and Herzegovina": 149,
+          "Croatia": 101,
+          "North Macedonia": 116,
+          "Estonia": 65,
+          "Iceland": 10,
+          "Lithuania": 65,
+          "Kyrgyzstan": 16,
+          "Slovakia": 28,
+          "Slovenia": 106,
+          "Latvia": 22,
+          "Albania": 33,
+          "Cyprus": 17,
+          "Andorra": 51,
+          "Georgia": 12,
+          "San Marino": 42,
+          "Malta": 6,
+          "Montenegro": 9,
+          "Monaco": 1,
+          "Liechtenstein": 1,
+          
+          "Kosovo": 30,
+          "Isle of Man": 24,
+          "Jersey": 29,
+          "Guernsey": 13,
+          "Gibraltar": 0,
+          
+          "India": 4337,
+          "Bangladesh": 522,
+          "Indonesia": 1418,
+          "Thailand": 57,
+          "Maldives": 5,
+          "Sri Lanka": 10,
+          "Nepal": 4,
+          "Myanmar": 6,
+          
+          "China": 4645,
+          "Singapore": 23,
+          "Japan": 858,
+          "Philippines": 886,
+          "Republic of Korea": 269,
+          "Malaysia": 115,
+          "Australia": 102,
+          "New Zealand": 21,
+          "Brunei Darussalam": 1,
+          
+          "Guam": 5,
+          "Northern Mariana Islands (Commonwealth of the)": 2,
+                   
+          "International conveyances": 13
         }
       }
     }
